@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,27 +154,22 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    
 <h1> 2018-07-26 </h1>
 <ol>
-        <li> <a href="https://nyti.ms/2LRKdAf?smid=nytcore-ios-share">Mueller Examining Trump’s Tweets in Wide-Ranging Obstruction Inquiry</a> </li>
-        <li> <a href="https://www.nytimes.com/2018/07/25/business/media/white-house-cnn-kaitlan-collins.html">White House Bars CNN Reporter From Presidential Event - The New York Times</a> </li>
         <li> <a href="https://twitter.com/atdavidhoffman/status/1022094593226092546?s=12">There is now no log of who visits the White House. Phone calls with foreign leaders will no longer result in readouts for the public. The White House altered the video of his press conference with Putin. We are becoming Russia, North Korea, Turkey, China,</a> </li>
-        <li> <a href="https://nyti.ms/2mIEQIC?smid=nytcore-ios-share">Prosecutors Seek to Question Trump Organization’s Finance Chief</a> </li>
-        <li> <a href="http://thehill.com/policy/national-security/399010-meadows-swaps-rosenstein-impeachment-efforts-for-contempt-after?amp&amp;__twitter_impression=true">Meadows backs off impeaching Rosenstein after leadership talks | TheHill</a> </li>
-        <li> <a href="http://thehill.com/homenews/senate/399077-ariz-rep-lobbied-for-senate-seat-day-after-mccain-was-hospitalized?amp&amp;__twitter_impression=true">Ariz. rep lobbied for Senate seat day after McCain was hospitalized: report | TheHill</a> </li>
-        <li> <a href="http://thehill.com/homenews/administration/399129-giuliani-attacks-cohen-after-trump-tower-report-hes-a-pathological">Giuliani attacks Cohen after Trump Tower report: He's a 'pathological liar' | TheHill</a> </li>
-        <li> <a href="http://www.bbc.co.uk/news/uk-44973586">UK halts co-operation with US over Islamic state suspects</a> </li>
+        <li> <a href="https://nyti.ms/2LRKdAf?smid=nytcore-ios-share">Mueller Examining Trump’s Tweets in Wide-Ranging Obstruction Inquiry</a> </li>
+        <li> <a href="https://www.cnn.com/2018/07/25/politics/rosenstein-impeachment-resolution/index.html">Trump-ally congressmen introduce impeachment resolution against deputy AG Rosenstein - CNNPolitics</a> </li>
+        <li> <a href="https://twitter.com/jaketapper/status/1022241693037457408?s=12">Absolutely disgraceful behavior from @presssec and Shine. @kaitlancollins is a tough professional and had every right to ask about Cohen, about whom POTUS has repeatedly tweeted. WH press corps and media writ large needs to unite against this. https://t.c</a> </li>
+        <li> <a href="https://amp.cnn.com/money/2018/07/25/media/white-house-kaitlan-collins-press-pool/index.html?__twitter_impression=true">White House bans network pool reporter from Rose Garden event</a> </li>
         <li> <a href="https://www.cnbc.com/2018/07/26/trump-org-cfo-called-to-grand-jury-to-testify-wsj.html">www.cnbc.com</a> </li>
         <li> <a href="http://thehill.com/policy/cybersecurity/399095-russians-tried-to-hack-mccaskills-2018-campaign-report?amp&amp;__twitter_impression=true">Russians tried to hack McCaskill’s 2018 campaign: report | TheHill</a> </li>
+        <li> <a href="http://thehill.com/homenews/state-watch/398847-oregon-gop-official-leaves-party-over-racism-misogyny-of-trump?amp&amp;__twitter_impression=true">Oregon official leaves GOP over 'racism,' 'misogyny' of Trump administration | TheHill</a> </li>
+        <li> <a href="http://thehill.com/homenews/campaign/398741-axios-biden-is-the-democrat-that-trump-fears-most?amp&amp;__twitter_impression=true">Axios: Biden is the Democrat that Trump fears most | TheHill</a> </li>
+        <li> <a href="http://thehill.com/policy/national-security/399010-meadows-swaps-rosenstein-impeachment-efforts-for-contempt-after?amp&amp;__twitter_impression=true">Meadows backs off impeaching Rosenstein after leadership talks | TheHill</a> </li>
 </ol>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -200,17 +184,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:28.783321Z
--->
+<!--  BUILT: 2020-04-17T12:57:10.701616Z -->
 
 
 </body>

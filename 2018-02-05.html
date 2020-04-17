@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,28 +154,23 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    
 <h1> 2018-02-05 </h1>
 <ol>
-        <li> <a href="http://thehill.com/homenews/state-watch/372352-supreme-court-denies-stay-in-pa-gerrymandering-case-reports?amp">Supreme Court denies GOP request to block Pennsylvania gerrymandering decision | TheHill</a> </li>
-        <li> <a href="http://thehill.com/homenews/campaign/372277-holocaust-denier-is-sole-gop-contender-in-illinois-race-for-congress?amp&amp;__twitter_impression=true">Holocaust denier is sole GOP contender in Illinois race for Congress: reports | TheHill</a> </li>
+        <li> <a href="http://thehill.com/homenews/house/372213-schiff-possible-nunes-staff-worked-with-white-house-on-memo?amp&amp;__twitter_impression=true">Schiff: 'Very possible' Nunes's staff worked with White House on memo | TheHill</a> </li>
+        <li> <a href="https://www.wsj.com/amp/articles/house-releases-gop-surveillance-memo-1517592392?__twitter_impression=true">Memo’s Release Escalates Clash Over Russia Probe; Trump Says It ‘Totally Vindicates’ Him - WSJ</a> </li>
+        <li> <a href="http://thehill.com/homenews/senate/372386-gop-lawmaker-calls-for-dem-countermemo-to-be-made-public?amp&amp;__twitter_impression=true">GOP lawmaker calls for Dem countermemo to be made public | TheHill</a> </li>
         <li> <a href="https://www.theatlantic.com/magazine/archive/2018/03/boycott-the-gop/550907/">Wittes and Rauch: Boycott the Republican Party - The Atlantic</a> </li>
+        <li> <a href="https://shareblue.com/thousands-donate-1-50-to-paul-ryans-opponent-after-embarrassing-tax-tweet/#.WniMfPUuAE0.twitter">Thousands donate $1.50 to Paul Ryan’s opponent after embarrassing tax tweet</a> </li>
+        <li> <a href="http://thehill.com/homenews/state-watch/372352-supreme-court-denies-stay-in-pa-gerrymandering-case-reports?amp">Supreme Court denies GOP request to block Pennsylvania gerrymandering decision | TheHill</a> </li>
+        <li> <a href="https://www.nytimes.com/2018/02/05/us/politics/democratic-memo-adam-schiff-trump.html">Committee Votes to Release Democratic Rebuttal to G.O.P. Russia Memo</a> </li>
         <li> <a href="https://nyti.ms/2FMzeVc">The Times Asks Court to Unseal Documents on Surveillance of Carter Page</a> </li>
         <li> <a href="https://twitter.com/parkermolloy/status/960526673950232576?ref_src=twcamp%5Eshare%7Ctwsrc%5Eios%7Ctwgr%5Ecom.blork.Pinner.AddBookmarkExtension">twitter.com</a> </li>
-        <li> <a href="https://www.wsj.com/amp/articles/house-releases-gop-surveillance-memo-1517592392?__twitter_impression=true">Memo’s Release Escalates Clash Over Russia Probe; Trump Says It ‘Totally Vindicates’ Him - WSJ</a> </li>
+        <li> <a href="http://thehill.com/homenews/campaign/372277-holocaust-denier-is-sole-gop-contender-in-illinois-race-for-congress?amp&amp;__twitter_impression=true">Holocaust denier is sole GOP contender in Illinois race for Congress: reports | TheHill</a> </li>
         <li> <a href="http://thehill.com/homenews/house/372210-gowdy-surveillance-warrant-would-not-have-been-authorized-without-dossier">Gowdy: Surveillance warrant would not have been authorized without dossier | TheHill</a> </li>
-        <li> <a href="http://thehill.com/homenews/senate/372386-gop-lawmaker-calls-for-dem-countermemo-to-be-made-public?amp&amp;__twitter_impression=true">GOP lawmaker calls for Dem countermemo to be made public | TheHill</a> </li>
-        <li> <a href="https://shareblue.com/thousands-donate-1-50-to-paul-ryans-opponent-after-embarrassing-tax-tweet/#.WniMfPUuAE0.twitter">Thousands donate $1.50 to Paul Ryan’s opponent after embarrassing tax tweet</a> </li>
-        <li> <a href="https://www.nytimes.com/2018/02/05/us/politics/democratic-memo-adam-schiff-trump.html">Committee Votes to Release Democratic Rebuttal to G.O.P. Russia Memo</a> </li>
-        <li> <a href="http://thehill.com/homenews/house/372213-schiff-possible-nunes-staff-worked-with-white-house-on-memo?amp&amp;__twitter_impression=true">Schiff: 'Very possible' Nunes's staff worked with White House on memo | TheHill</a> </li>
 </ol>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -201,17 +185,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:28.520890Z
--->
+<!--  BUILT: 2020-04-17T12:57:10.181215Z -->
 
 
 </body>

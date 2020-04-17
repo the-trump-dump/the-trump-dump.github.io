@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,20 +154,13 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    
 <h1> 2017-10-19 </h1>
 <ol>
-        <li> <a href="https://twitter.com/philip_elliott/status/921096876560125952">The President yesterday threatened he had &quot;proof&quot; that he didn't say what reports said he did. Today, his chief of staff said he said it.</a> </li>
         <li> <a href="https://www.youtube.com/watch?v=ounkra5oouq">A look at the fact that trump is f***ing crazy</a> </li>
-        <li> <a href="http://thehill.com/homenews/administration/356254-poll-42-percent-think-trump-will-be-remembered-as-one-of-worst?amp">Poll: 42 percent think Trump will be remembered as one of worst presidents in history | TheHill</a> </li>
 </ol>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -193,17 +175,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:28.286553Z
--->
+<!--  BUILT: 2020-04-17T12:57:09.230538Z -->
 
 
 </body>

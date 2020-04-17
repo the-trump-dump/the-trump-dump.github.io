@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,24 +154,21 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    
 <h1> 2017-10-22 </h1>
 <ol>
-        <li> <a href="http://thehill.com/blogs/blog-briefing-room/news/356576-bush-ethics-lawyer-to-trump-do-you-think-its-october-2016-get-a?amp">Bush ethics lawyer to Trump: 'Do you think it's October 2016? Get a grip' | TheHill</a> </li>
-        <li> <a href="https://psmag.com/.amp/economics/trickle-down-economics-is-indeed-a-joke">The IMF Confirms That 'Trickle-Down' Economics Is, Indeed, a Joke | Pacific Standard</a> </li>
-        <li> <a href="https://twitter.com/brhodes/status/922093001572274176">This shows trump has no idea what's in Iran deal</a> </li>
-        <li> <a href="http://thehill.com/policy/national-security/356630-fbi-watched-then-acted-as-russian-spy-moved-closer-to-hillary?amp">FBI watched, then acted as Russian spy moved closer to Hillary Clinton | TheHill</a> </li>
-        <li> <a href="http://amp.nationalreview.com/corner/452978/why-bill-browder-banned-america">Why Is Bill Browder Banned from America? A | National Review</a> </li>
+        <li> <a href="http://thehill.com/blogs/blog-briefing-room/news/356571-every-investor-in-trumps-toronto-tower-lost-money-except-trump?amp">Every investor in Trump's Toronto tower lost money except Trump : report | TheHill</a> </li>
+        <li> <a href="http://amp.slate.com/articles/news_and_politics/politics/2017/10/without_president_george_w_bush_there_d_be_no_president_donald_trump.html">No Bush, No Trump</a> </li>
         <li> <a href="http://thehill.com/homenews/administration/356570-gold-star-families-receive-rush-delivered-condolence-letters-from?amp">Gold Star families receive condolence letters from Trump months after sons' deaths: report | TheHill</a> </li>
         <li> <a href="https://www.washingtonpost.com/amphtml/news/education/wp/2017/10/21/devos-rescinds-72-guidance-documents-outlining-rights-for-disabled-students/">DeVos rescinds 72 guidance documents outlining rights for disabled students</a> </li>
+        <li> <a href="https://psmag.com/.amp/economics/trickle-down-economics-is-indeed-a-joke">The IMF Confirms That 'Trickle-Down' Economics Is, Indeed, a Joke | Pacific Standard</a> </li>
+        <li> <a href="http://amp.nationalreview.com/corner/452978/why-bill-browder-banned-america">Why Is Bill Browder Banned from America? A | National Review</a> </li>
+        <li> <a href="http://thehill.com/policy/national-security/356630-fbi-watched-then-acted-as-russian-spy-moved-closer-to-hillary?amp">FBI watched, then acted as Russian spy moved closer to Hillary Clinton | TheHill</a> </li>
+        <li> <a href="https://twitter.com/brhodes/status/922093001572274176">This shows trump has no idea what's in Iran deal</a> </li>
+        <li> <a href="http://thehill.com/blogs/blog-briefing-room/news/356576-bush-ethics-lawyer-to-trump-do-you-think-its-october-2016-get-a?amp">Bush ethics lawyer to Trump: 'Do you think it's October 2016? Get a grip' | TheHill</a> </li>
 </ol>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -197,17 +183,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:28.289238Z
--->
+<!--  BUILT: 2020-04-17T12:57:09.233648Z -->
 
 
 </body>

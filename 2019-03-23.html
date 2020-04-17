@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,19 +154,15 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    
 <h1> 2019-03-23 </h1>
 <ol>
         <li> <a href="https://thehill.com/homenews/administration/435134-kushner-accused-of-using-whatsapp-personal-email-to-conduct-official?amp#click=https://t.co/fFibUcX7XZ">Kushner accused of using WhatsApp, personal email to conduct official business: report | TheHill</a> </li>
+        <li> <a href="https://www.nytimes.com/2019/03/22/world/asia/north-korea-sanctions.html">Trump Overrules Own Experts on Sanctions, in Favor to North Korea - The New York Times</a> </li>
         <li> <a href="https://eu.usatoday.com/story/news/politics/onpolitics/2019/03/22/aoc-tweets-but-his-whatsapp-kushner-news-clinton-responds/3243427002/">AOC tweets 'But his WhatsApp' at Kushner news. Clinton responds</a> </li>
 </ol>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -192,17 +177,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:29.270906Z
--->
+<!--  BUILT: 2020-04-17T12:57:11.659475Z -->
 
 
 </body>

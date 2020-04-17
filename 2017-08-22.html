@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,25 +154,13 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    
 <h1> 2017-08-22 </h1>
 <ol>
-        <li> <a href="http://thehill.com/homenews/administration/347592-trump-unloads-in-defense-of-his-charlottesville-response-at-phoenix?amp=1">Trump unloads in defense of his Charlottesville response at Phoenix rally | TheHill</a> </li>
-        <li> <a href="https://twitter.com/subodhchandra/status/900202688411037697">The rule of law and pardons</a> </li>
-        <li> <a href="https://pbs.twimg.com/media/DHyTNFeVwAAKfaa?format=jpg">The obama eclipse</a> </li>
         <li> <a href="http://thehill.com/homenews/state-watch/347362-poll-mcconnells-approval-in-kentucky-at-18-percent?amp">Poll: McConnell's approval in Kentucky at 18 percent | TheHill</a> </li>
-        <li> <a href="https://mobile.nytimes.com/2017/08/22/us/politics/mnuchin-louise-linton-treasury-instagram.html?referer=">Mnuchin’s Wife Mocks Oregon Woman Over Lifestyle and Wealth - NYTimes.com</a> </li>
-        <li> <a href="http://www.phoenixnewtimes.com/news/prisoners-hang-themselves-in-sheriff-joe-arpaios-jails-at-a-rate-that-dwarfs-other-county-lockups-7845679">Prisoners Hang Themselves in Arizona Sheriff Joe Arpaio's Jails at an Alarming Rate | Phoenix New Times</a> </li>
-        <li> <a href="http://thehill.com/homenews/administration/347556-mcconnell-and-trump-havent-spoken-in-weeks-report?amp">McConnell and Trump haven't spoken in weeks: report | TheHill</a> </li>
-        <li> <a href="https://fivethirtyeight.com/features/trump-weak-president/amp/">Trump Came In As A Weak President, And He’s Made Himself Weaker | FiveThirtyEight</a> </li>
 </ol>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -198,17 +175,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:28.038818Z
--->
+<!--  BUILT: 2020-04-17T12:57:09.151280Z -->
 
 
 </body>

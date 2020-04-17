@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,22 +154,14 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    
 <h1> 2018-01-28 </h1>
 <ol>
-        <li> <a href="https://www.youtube.com/watch?v=h0Idcz71Aog&amp;feature=youtu.be">Junit SpringOne Platform 2017 talk</a> </li>
+        <li> <a href="http://www.nydailynews.com/news/politics/trump-ordered-aides-smear-fbi-witnesses-report-article-1.3782875">Trump tried to smear potential FBI witnesses</a> </li>
         <li> <a href="https://www.huffingtonpost.com/entry/donald-trump-jay-malsky-disney-world_us_5a46714be4b06d1621b85979">Disney World Guest Mercilessly Heckles Animatronic Donald Trump | HuffPost</a> </li>
-        <li> <a href="https://www.nytimes.com/2018/01/28/business/energy-environment/oil-boom.html">Oil Boom Gives the U.S. a New Edge in Energy and Diplomacy</a> </li>
-        <li> <a href="http://thehill.com/policy/energy-environment/371129-trump-polar-ice-caps-are-at-a-record-level?amp&amp;__twitter_impression=true">Trump: Polar ice caps are 'at a record level' | TheHill</a> </li>
-        <li> <a href="https://www.nytimes.com/2018/01/28/business/davos-trump-china.html">At Davos, the Real Star May Have Been China, Not Trump</a> </li>
 </ol>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -195,17 +176,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:28.514102Z
--->
+<!--  BUILT: 2020-04-17T12:57:09.762877Z -->
 
 
 </body>

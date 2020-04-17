@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,24 +154,16 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    
 <h1> 2018-04-02 </h1>
 <ol>
-        <li> <a href="https://apple.news/AKSiIlyPbQiayGS22lTR6Xg">Kremlin says Trump suggested Putin visit the White House - Reuters</a> </li>
-        <li> <a href="https://www.nytimes.com/2018/04/01/us/charles-jared-kushner-white-house-real-estate.html">The Kushners Saw Redemption in the White House. It Was a Mirage.</a> </li>
-        <li> <a href="https://www.washingtonpost.com/news/politics/wp/2018/04/02/trump-administration-seeking-to-speed-deportations-will-impose-quotas-on-federal-immigration-judges/">The Washington Post: Trump administration, seeking to speed deportations, will impose quotas on federal immigration judges</a> </li>
-        <li> <a href="http://thehill.com/homenews/administration/381328-stormy-effect-trumps-support-falls-with-women-rises-with-men-in-new?amp#click=https://t.co/hmxo3iuZcj">'Stormy Effect': Trump's support falls with women, rises with men in new poll | TheHill</a> </li>
         <li> <a href="https://nyti.ms/2H3kZwZ">Treasury’s Tax Law Architect, Justin Muzinich, Is Tapped as Deputy Secretary</a> </li>
-        <li> <a href="https://nyti.ms/2q17WnQ">Looming China Trade Action Divides Industry and Roils Markets</a> </li>
+        <li> <a href="https://www.nytimes.com/2018/04/01/us/charles-jared-kushner-white-house-real-estate.html">The Kushners Saw Redemption in the White House. It Was a Mirage.</a> </li>
         <li> <a href="http://thehill.com/homenews/media/381218-ex-fbi-agent-warns-against-fox-news-hosts-attacking-fbi-other-institutions">Ex-agent warns against Fox News hosts attacking FBI, other institutions | TheHill</a> </li>
+        <li> <a href="https://www.washingtonpost.com/news/politics/wp/2018/04/02/trump-administration-seeking-to-speed-deportations-will-impose-quotas-on-federal-immigration-judges/">The Washington Post: Trump administration, seeking to speed deportations, will impose quotas on federal immigration judges</a> </li>
 </ol>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -197,17 +178,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:28.565057Z
--->
+<!--  BUILT: 2020-04-17T12:57:10.218322Z -->
 
 
 </body>

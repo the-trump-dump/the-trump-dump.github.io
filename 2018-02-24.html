@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,20 +154,15 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    
 <h1> 2018-02-24 </h1>
 <ol>
-        <li> <a href="https://www.wired.com/story/how-trump-conquered-facebookwithout-russian-ads/amp?__twitter_impression=true">How Trump Conquered Facebook Without Russian Ads</a> </li>
-        <li> <a href="http://thehill.com/opinion/judiciary/375385-the-method-to-muellers-madness-what-the-gates-deal-really-means?amp&amp;__twitter_impression=true">The method to Mueller's madness: What the Gates deal really means | TheHill</a> </li>
+        <li> <a href="https://www.washingtonpost.com/amphtml/politics/mueller-and-trump-born-to-wealth-raised-to-lead-then-sharply-different-choices/2018/02/22/ad50b7bc-0a99-11e8-8b0d-891602206fb7_story.html?__twitter_impression=true">Mueller and Trump: Born to wealth, raised to lead. Then, sharply different choices.</a> </li>
         <li> <a href="https://www.nytimes.com/2018/02/24/us/politics/democratic-memo-released-fbi-surveillance-carter-page.html">2 Weeks After Trump Blocked It, Democrats Release Rebuttal of G.O.P. Memo</a> </li>
+        <li> <a href="http://thehill.com/homenews/administration/375222-florida-school-shooting-victim-on-trump-call-ive-never-been-so?amp&amp;__twitter_impression=true">Florida school shooting victim on Trump call: 'I've never been so unimpressed in my life' | TheHill</a> </li>
 </ol>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -193,17 +177,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:28.537739Z
--->
+<!--  BUILT: 2020-04-17T12:57:10.196034Z -->
 
 
 </body>

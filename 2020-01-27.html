@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,20 +154,16 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    
 <h1> 2020-01-27 </h1>
 <ol>
-        <li> <a href="https://podcasts.apple.com/us/podcast/opening-arguments/id1147092464?i=1000463525458">podcasts.apple.com</a> </li>
         <li> <a href="https://www.washingtonpost.com/opinions/2020/01/27/four-big-takeaways-explosive-john-bolton-bombshell/">Four takeaways from the John Bolton revelations - The Washington Post</a> </li>
         <li> <a href="https://www.washingtonpost.com/opinions/2020/01/27/george-conway-oped-bolton-testimony-would-be-devastating-not-even-republicans-could-look-away/?wpisrc=nl_most">George Conway op-ed - Bolton’s testimony would be devastating. Not even Republicans could look away. - The Washington Post</a> </li>
+        <li> <a href="https://twitter.com/sethcotlar/status/1221457632705142784?s=12">This morning, across the DC area, dozens of the most powerful people in the country—from the Chief Justice to GOP Senators and representatives—see this and think “this is dictator sh*t and someone should stop it.” Yet no one looks in the mirror an</a> </li>
+        <li> <a href="https://podcasts.apple.com/us/podcast/opening-arguments/id1147092464?i=1000463525458">podcasts.apple.com</a> </li>
 </ol>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -193,17 +178,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:29.632742Z
--->
+<!--  BUILT: 2020-04-17T12:57:12.462400Z -->
 
 
 </body>

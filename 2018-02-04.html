@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,19 +154,18 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    
 <h1> 2018-02-04 </h1>
 <ol>
         <li> <a href="https://www.nytimes.com/2018/02/03/us/politics/trump-fbi-justice.html">Trump’s Unparalleled War on a Pillar of Society: Law Enforcement</a> </li>
+        <li> <a href="https://www.cnbc.com/amp/2017/11/03/59-percent-of-americans-consider-this-the-lowest-point-in-us-history.html?__twitter_impression=true">59 percent of Americans consider this the lowest point in US history</a> </li>
+        <li> <a href="http://thehill.com/homenews/administration/372187-trump-planning-to-withdraw-climate-skeptics-nomination-to?amp=1">Trump plans to withdraw climate skeptic's nomination to environmental office: report | TheHill</a> </li>
+        <li> <a href="https://www.cnn.com/2018/02/01/politics/pompeo-russian-spies-meeting/index.html">https://amp.cnn.com/cnn/2018/02/01/politics/pompeo-russian-spies-meeting/index.html#click=https://t.co/R2y5Yt0VgO</a> </li>
+        <li> <a href="https://slate.com/news-and-politics/2018/02/trump-celebrates-rasmussen-poll-that-reports-a-49-percent-approval-rating.html">Trump Celebrates Rasmussen Poll That Reports a 49 Percent Approval Rating</a> </li>
         <li> <a href="http://thehill.com/homenews/senate/372220-gillibrand-new-president-needed-to-pass-equality-act?amp&amp;__twitter_impression=true">Gillibrand: 'New president' is needed to pass Equality Act | TheHill</a> </li>
 </ol>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -192,17 +180,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:28.520001Z
--->
+<!--  BUILT: 2020-04-17T12:57:10.180336Z -->
 
 
 </body>

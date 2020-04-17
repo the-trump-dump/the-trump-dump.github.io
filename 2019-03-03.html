@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,22 +154,15 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    
 <h1> 2019-03-03 </h1>
 <ol>
         <li> <a href="https://www.newsweek.com/donald-trumps-talk-preserving-our-heritage-sick-and-reminiscent-hitler-says-1349955">Donald Trump's Talk of 'Preserving Our Heritage' Is 'Sick' and Reminiscent of Hitler, Says Former Obama Official</a> </li>
+        <li> <a href="https://nyti.ms/2Vr2RmG?smid=nytcore-ios-share">15 Claims From Trump’s Speech to CPAC, Fact-Checked</a> </li>
         <li> <a href="https://twitter.com/peterbeinart/status/1102285085078888449?s=12">Peter Beinart on Twitter: &quot;Just randomly overheard @realDonaldTrump on @CNN call @RepAdamSchiff &quot;little shifty Schiff.&quot; Doubt it will even make the papers. Think for a second what would have happened if @IlhanMN or @RashidaTlaib had said that. Then ask yo</a> </li>
-        <li> <a href="https://www.youtube.com/watch?v=0ab3ngPKBoE&amp;feature=share">Superintendent Charged For Helping Student Get Healthcare - YouTube</a> </li>
-        <li> <a href="https://www.cnn.com/2019/03/04/politics/trump-mueller-report-nadler-investigation-impeachment/index.html">Impending Mueller report may just be the beginning of Trump's investigation woes</a> </li>
-        <li> <a href="https://www.youtube.com/watch?v=79bflQzjDxk&amp;feature=share">Ex-prosecutor: Hannity might have bought himself a subpoena - YouTube</a> </li>
 </ol>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -195,17 +177,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:29.262771Z
--->
+<!--  BUILT: 2020-04-17T12:57:11.653230Z -->
 
 
 </body>

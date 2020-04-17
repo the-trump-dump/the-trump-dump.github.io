@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,21 +154,16 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    
 <h1> 2017-09-08 </h1>
 <ol>
         <li> <a href="http://thehill.com/blogs/floor-action/house/349763-house-republican-causes-stir-after-saying-female-lawmaker-doesnt?amp">House Republican causes stir claiming female lawmaker 'doesn't know a damn thing' | TheHill</a> </li>
-        <li> <a href="http://thehill.com/blogs/blog-briefing-room/349785-former-fema-director-its-not-about-climate-change-its-about-climate?amp">Former FEMA chief: It's not about climate change anymore, 'it's about climate adaptation' | TheHill</a> </li>
-        <li> <a href="http://thehill.com/blogs/blog-briefing-room/349698-coons-sends-out-statute-on-lying-to-congress-after-don-jr-testimony?amp">Coons shares statute on lying to Congress after Trump Jr. testimony | TheHill</a> </li>
         <li> <a href="http://thehill.com/homenews/administration/349722-cardinal-dolan-rips-bannon-for-catholic-church-immigration-remarks?amp">Cardinal Dolan rips Bannon for Catholic Church immigration remarks | TheHill</a> </li>
+        <li> <a href="http://amp.slate.com/blogs/the_slatest/2017/09/06/rolling_daca_cancellations_will_dog_the_trump_administration.html">The Slow Death of DACA Will Be a Rolling Catastrophe That Trump Can’t Escape   </a> </li>
+        <li> <a href="http://thehill.com/blogs/blog-briefing-room/349698-coons-sends-out-statute-on-lying-to-congress-after-don-jr-testimony?amp">Coons shares statute on lying to Congress after Trump Jr. testimony | TheHill</a> </li>
 </ol>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -194,17 +178,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:28.075499Z
--->
+<!--  BUILT: 2020-04-17T12:57:09.174642Z -->
 
 
 </body>

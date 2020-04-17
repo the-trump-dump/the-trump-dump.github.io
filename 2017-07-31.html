@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,19 +154,15 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    
 <h1> 2017-07-31 </h1>
 <ol>
-        <li> <a href="http://thehill.com/blogs/floor-action/senate/344630-gop-senator-meeting-with-price-governors-on-healthcare?amp">GOP senator meeting with Price, governors on healthcare | TheHill</a> </li>
         <li> <a href="http://www.vanityfair.com/news/2017/07/department-of-energy-risks-michael-lewis/amp">Why the Scariest Nuclear Threat May Be Coming from Inside the White House</a> </li>
+        <li> <a href="http://thehill.com/blogs/floor-action/senate/344630-gop-senator-meeting-with-price-governors-on-healthcare?amp">GOP senator meeting with Price, governors on healthcare | TheHill</a> </li>
+        <li> <a href="https://www.washingtonpost.com/amphtml/news/the-fix/wp/2017/07/29/trump-erupts-at-gop-senators-they-look-like-fools/">Trump insults and threatens GOP senators in long rant after health bill failure</a> </li>
 </ol>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -192,17 +177,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:27.991724Z
--->
+<!--  BUILT: 2020-04-17T12:57:09.126098Z -->
 
 
 </body>

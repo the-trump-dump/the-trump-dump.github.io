@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,23 +154,15 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    
 <h1> 2018-08-09 </h1>
 <ol>
-        <li> <a href="https://nyti.ms/2OREfRA?smid=nytcore-ios-share">U.S. Officials Scrambled Behind the Scenes to Shield NATO Deal From Trump</a> </li>
-        <li> <a href="https://www.axios.com/scoop-trump-privately-predicts-he-will-appoint-four-justices-1513306203-6274d9b0-1824-45ee-8556-fade9bdb2fd8.html">Scoop: Trump privately predicts he will appoint four justices - Axios</a> </li>
-        <li> <a href="https://www.motherjones.com/crime-justice/2018/08/read-justice-sotomayors-powerful-dissent-in-the-latest-battle-over-the-death-penalty-1/">Read Justice Sotomayor’s Powerful Dissent in the Latest Battle Over the Death Penalty – Mother Jones</a> </li>
-        <li> <a href="http://thehill.com/policy/finance/400928-trump-cuts-staff-from-financial-watchdog-office?amp&amp;__twitter_impression=true">Trump cuts staff from financial watchdog office: report | TheHill</a> </li>
         <li> <a href="https://twitter.com/mcjesse/status/1027402845505507329?s=12">She says this on the anniversary of the Charlottesville murder as Virginia declares a state of emergency. She knows what she’s doing. https://t.co/li3LKJo7Nq</a> </li>
-        <li> <a href="https://www.huffingtonpost.com/entry/judge-halts-deportation_us_5b6cb73fe4b0530743c8636d?section=politics&amp;ncid=fcbklnkushpmg00000063">Judge Orders Trump Administration To Bring Deported Mother, Daughter Back To U.S. | HuffPost</a> </li>
+        <li> <a href="http://thehill.com/policy/finance/400928-trump-cuts-staff-from-financial-watchdog-office?amp&amp;__twitter_impression=true">Trump cuts staff from financial watchdog office: report | TheHill</a> </li>
+        <li> <a href="https://t.co/aAsadFQacr?amp=1">http://thehill.com/blogs/in-the-know/in-the-know/400907-mark-hamill-replace-trumps-hollywood-star-with-one-for-carrie?amp#click=https://t.co/aAsadFQacr</a> </li>
 </ol>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -196,17 +177,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:28.792680Z
--->
+<!--  BUILT: 2020-04-17T12:57:10.710464Z -->
 
 
 </body>

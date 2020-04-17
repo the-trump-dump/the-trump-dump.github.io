@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,22 +154,27 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    
 <h1> 2018-05-22 </h1>
 <ol>
-        <li> <a href="https://www.washingtonpost.com/news/politics/wp/2018/05/22/congress-passes-rollback-of-banking-rules-put-in-place-after-financial-crisis-sending-bill-to-trump-to-sign/">The Washington Post: Congress passes rollback of banking rules put in place after financial crisis, sending bill to Trump to sign</a> </li>
-        <li> <a href="http://thehill.com/regulation/388810-devos-grilled-on-civil-rights-for-students?amp">DeVos grilled on civil rights for students | TheHill</a> </li>
+        <li> <a href="https://nyti.ms/2Lk8gHT">Republican Leaders Will Be Allowed to See Some Information on Russia Investigation</a> </li>
+        <li> <a href="https://www.washingtonpost.com/world/national-security/rosenstein-wray-to-meet-with-trump-amid-brewing-controversy-over-fbis-use-of-confidential-informant-in-russia-probe/2018/05/21/b3da543e-5d06-11e8-a4a4-c070ef53f315_story.html">The Washington Post: White House plans meeting between intelligence officials and GOP lawmakers on FBI source</a> </li>
         <li> <a href="http://www.bbc.co.uk/news/world-asia-44207986">Trump says summit with North Korea's Kim Jong-un may be delayed</a> </li>
-        <li> <a href="http://thehill.com/homenews/administration/388596-presidential-historian-impeachment-will-be-the-season-finale-of-trump?__twitter_impression=true&amp;__twitter_impression=true">Presidential historian: Impeachment will be the 'season finale' of Trump | TheHill</a> </li>
+        <li> <a href="https://nyti.ms/2IXFTRG">Bankers Hate the Volcker Rule. Now, It Could Be Watered Down.</a> </li>
         <li> <a href="https://www.washingtonpost.com/world/national-security/trumps-allies-in-congress-renew-demand-for-second-special-counsel-to-investigate-the-fbi-justice-dept/2018/05/22/1e5574e4-5ddc-11e8-b2b8-08a538d9dbd6_story.html">The Washington Post: Republican lawmakers will review classified information on FBI source Thursday, White House announces</a> </li>
+        <li> <a href="https://nyti.ms/2GCaDT9">Neal Katyal: Can’t Indict a President? That Could Hurt Trump</a> </li>
+        <li> <a href="https://www.washingtonpost.com/politics/when-it-comes-to-trump-men-and-women-remain-far-apart/2018/05/21/61d32e52-5925-11e8-858f-12becb4d6067_story.html">The Washington Post: When it comes to Trump, men and women remain far apart</a> </li>
+        <li> <a href="https://nyti.ms/2IXxcqj">Trump Team’s Mueller Strategy: Limit the Investigation and Attack the Investigators</a> </li>
+        <li> <a href="https://nyti.ms/2x0AEvT">By Demanding an Investigation, Trump Challenged a Constraint on His Power</a> </li>
+        <li> <a href="http://thehill.com/policy/energy-environment/388652-proposed-trump-administration-could-rollback-protections-on-alaskan?amp&amp;__twitter_impression=true">Proposed Trump administration rule would roll back protections on Alaskan bear cubs, coyote pups | TheHill</a> </li>
+        <li> <a href="https://www.washingtonpost.com/news/politics/wp/2018/05/22/congress-passes-rollback-of-banking-rules-put-in-place-after-financial-crisis-sending-bill-to-trump-to-sign/">The Washington Post: Congress passes rollback of banking rules put in place after financial crisis, sending bill to Trump to sign</a> </li>
+        <li> <a href="https://nyti.ms/2Lk2Uwh">Divisions Within Trump Team Undercut Quick Trade Victory With China</a> </li>
+        <li> <a href="http://thehill.com/blogs/blog-briefing-room/news/388716-ex-trump-campaign-adviser-rips-claims-of-spy-in-campaign-its?amp&amp;__twitter_impression=true">Ex-Trump campaign adviser rips claims of spy in campaign: It's 'embarrassing' | TheHill</a> </li>
+        <li> <a href="http://thehill.com/homenews/administration/388596-presidential-historian-impeachment-will-be-the-season-finale-of-trump?__twitter_impression=true&amp;__twitter_impression=true">Presidential historian: Impeachment will be the 'season finale' of Trump | TheHill</a> </li>
+        <li> <a href="https://www.washingtonpost.com/world/asia_pacific/whos-to-blame-for-the-hiccup-in-north-korea-talks-south-koreans-say-bolton/2018/05/21/f5099324-5cdf-11e8-8c93-8cf33c21da8d_story.html">The Washington Post: Who’s to blame for the hiccup in North Korea talks? South Koreans say Bolton.</a> </li>
 </ol>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -195,17 +189,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:28.724836Z
--->
+<!--  BUILT: 2020-04-17T12:57:10.645222Z -->
 
 
 </body>

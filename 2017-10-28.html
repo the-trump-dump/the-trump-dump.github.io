@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,22 +154,17 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    
 <h1> 2017-10-28 </h1>
 <ol>
-        <li> <a href="https://www.youtube.com/watch?v=ffgdjuas5d4&amp;feature=share">Why the republicans are bringing up Hillary Clinton right now</a> </li>
-        <li> <a href="http://www.sfchronicle.com/bayarea/williesworld/amp/Trump-wiping-out-what-s-left-of-old-GOP-12313205.php">Trump wiping out what’s left of old GOP</a> </li>
-        <li> <a href="http://thehill.com/homenews/administration/357646-trump-spokeswoman-accuses-clinton-campaign-of-russian-collusion?amp">Trump spokeswoman accuses Clinton campaign of Russian collusion | TheHill</a> </li>
-        <li> <a href="http://thehill.com/homenews/administration/357654-melania-spox-she-acts-acts-independently-from-her-husband?amp">Melania spox: She 'acts independently from her husband' | TheHill</a> </li>
+        <li> <a href="http://thehill.com/homenews/administration/357604-first-charges-filed-in-special-counsel-muellers-russia-probe-report?amp">First charges filed in special counsel Mueller's Russia probe: report | TheHill</a> </li>
         <li> <a href="http://thehill.com/blogs/blog-briefing-room/news/357642-trump-sons-to-launch-real-estate-project-in-india">Trump sons to launch real estate project in India | TheHill</a> </li>
+        <li> <a href="https://www.youtube.com/watch?v=ffgdjuas5d4&amp;feature=share">Why the republicans are bringing up Hillary Clinton right now</a> </li>
+        <li> <a href="http://thehill.com/blogs/blog-briefing-room/357554-dana-boente-resigns-as-federal-prosecutor-in-northern-virginia?amp">Dana Boente resigns as federal prosecutor in Northern Virginia | TheHill</a> </li>
+        <li> <a href="http://thehill.com/homenews/administration/357646-trump-spokeswoman-accuses-clinton-campaign-of-russian-collusion?amp">Trump spokeswoman accuses Clinton campaign of Russian collusion | TheHill</a> </li>
 </ol>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -195,17 +179,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:28.293468Z
--->
+<!--  BUILT: 2020-04-17T12:57:09.668757Z -->
 
 
 </body>

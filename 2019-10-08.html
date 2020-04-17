@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,22 +154,16 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    
 <h1> 2019-10-08 </h1>
 <ol>
-        <li> <a href="https://www.politico.com/news/2019/10/08/trump-rallies-unpaid-bills-039631">Unpaid bills pile up in Trump rallies’ wake - POLITICO</a> </li>
-        <li> <a href="https://www.rawstory.com/2019/10/garbage-george-conway-says-white-house-letter-is-so-bad-it-is-another-impeachable-offense/">www.rawstory.com</a> </li>
-        <li> <a href="https://www.washingtonpost.com/national-security/gordon-sondland-key-us-official-in-political-storm-over-ukraine-to-be-deposed-in-impeachment-inquiry/2019/10/07/c3c1703e-e942-11e9-9306-47cb0324fd44_story.html">House panels will subpoena Gordon Sondland after White House blocks deposition</a> </li>
         <li> <a href="https://apple.news/ASwqyhWJbSC6j893PyWmjvg">apple.news</a> </li>
         <li> <a href="https://www.nytimes.com/2019/10/08/us/politics/sondland-trump-ukraine-impeach.html?smid=nytcore-ios-share">Trump declares war on the impeachment inquiry</a> </li>
+        <li> <a href="https://www.washingtonpost.com/national-security/gordon-sondland-key-us-official-in-political-storm-over-ukraine-to-be-deposed-in-impeachment-inquiry/2019/10/07/c3c1703e-e942-11e9-9306-47cb0324fd44_story.html">House panels will subpoena Gordon Sondland after White House blocks deposition</a> </li>
+        <li> <a href="https://www.rawstory.com/2019/10/garbage-george-conway-says-white-house-letter-is-so-bad-it-is-another-impeachable-offense/">www.rawstory.com</a> </li>
 </ol>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -195,17 +178,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:29.440443Z
--->
+<!--  BUILT: 2020-04-17T12:57:12.037919Z -->
 
 
 </body>

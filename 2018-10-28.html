@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,19 +154,15 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    
 <h1> 2018-10-28 </h1>
 <ol>
         <li> <a href="https://apple.news/A-i-z9wnIRk2rOp98kDbUAg">72 hours in America: Three hate-filled crimes. Three hate-filled suspects. - CNN</a> </li>
+        <li> <a href="https://www.theverge.com/platform/amp/2018/8/9/17671188/microsoft-gab-hate-speech-hosting-ban-deplatform?__twitter_impression=true">Microsoft threatened to drop hosting for Gab over hate speech posts - The Verge</a> </li>
         <li> <a href="https://thehill.com/blogs/in-the-know/in-the-know/413504-jim-carrey-lays-into-trump-yet-again-at-la-gala-shamelessness">Jim Carrey lays into Trump at LA gala: Shamelessness is not 'a superpower' | TheHill</a> </li>
 </ol>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -192,17 +177,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:29.047071Z
--->
+<!--  BUILT: 2020-04-17T12:57:11.162497Z -->
 
 
 </body>

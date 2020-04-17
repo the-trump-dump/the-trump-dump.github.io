@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,21 +154,15 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    
 <h1> 2018-11-26 </h1>
 <ol>
+        <li> <a href="https://slate.com/news-and-politics/2018/11/gop-sen-mike-lee-trump-saudi-stance-is-inconsistent-with-the-intelligence.html">GOP Sen. Mike Lee: Trump Saudi stance is “inconsistent with the intelligence.”</a> </li>
         <li> <a href="https://slate.com/news-and-politics/2018/11/trumps-christian-apologists-are-unchristian.html">Trump’s Christian Apologists Are Unchristian</a> </li>
         <li> <a href="https://www.newsweek.com/disapproval-donald-trump-hits-all-time-high-rising-midterm-election-latest-1232037">Donald Trump's Disapproval Rating Hits All-time High, Rising After Midterm Election, Poll Shows</a> </li>
-        <li> <a href="https://www.washingtonpost.com/local/public-safety/mueller-says-manafort-lied-after-pleading-guilty-should-be-sentenced-immediately/2018/11/26/61c76d5a-f18d-11e8-aeea-b85fd44449f5_story.html">The Washington Post: Mueller says Manafort lied after pleading guilty, should be sentenced immediately</a> </li>
-        <li> <a href="https://slate.com/news-and-politics/2018/11/gop-sen-mike-lee-trump-saudi-stance-is-inconsistent-with-the-intelligence.html">GOP Sen. Mike Lee: Trump Saudi stance is “inconsistent with the intelligence.”</a> </li>
 </ol>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -194,17 +177,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:29.070630Z
--->
+<!--  BUILT: 2020-04-17T12:57:11.185234Z -->
 
 
 </body>

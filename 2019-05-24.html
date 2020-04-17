@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,18 +154,16 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    
 <h1> 2019-05-24 </h1>
 <ol>
         <li> <a href="https://thehill.com/homenews/administration/445253-trump-administration-announces-16b-aid-package-for-farmers-hurt-by">Trump administration announces $16B aid package for farmers hurt by trade war with China | TheHill</a> </li>
+        <li> <a href="https://twitter.com/kylegriffin1/status/1131658573300359169?s=12">Here is a 7 minute video, from ABC, of Trump calling on multiple senior aides to defend him and vouch for his 'calm' demeanor in the infrastructure meeting with Democrats after Nancy Pelosi said that he'd had a temper tantrum. https://t.co/iiLcrjnTe4</a> </li>
+        <li> <a href="https://thehill.com/homenews/state-watch/445268-los-angeles-county-votes-to-ban-travel-to-alabama-in-response-to-states?amp#click=https://t.co/QSGYtQpA8F">Los Angeles County votes to ban travel to Alabama over abortion law | TheHill</a> </li>
+        <li> <a href="https://twitter.com/chrislu44/status/1131741500893782017?s=12">You don't need to manipulate a video to make this president look bad. Undoctored ones work just fine. https://t.co/gqBuAcVciF</a> </li>
 </ol>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -191,17 +178,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:29.397166Z
--->
+<!--  BUILT: 2020-04-17T12:57:12.007233Z -->
 
 
 </body>

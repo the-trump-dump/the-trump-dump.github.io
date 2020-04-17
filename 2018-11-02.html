@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,21 +154,16 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    
 <h1> 2018-11-02 </h1>
 <ol>
         <li> <a href="https://www.washingtonpost.com/politics/judge-denies-trumps-request-for-stay-in-emoluments-case/2018/11/02/aa87611c-dec8-11e8-b3f0-62607289efee_story.html">The Washington Post: Judge denies Trump’s request for stay in emoluments case</a> </li>
         <li> <a href="https://www.wired.co.uk/article/brazil-election-runoff-bolsonaro-amazon">The Brazilian election could be a disaster for the Amazon rainforest | WIRED UK</a> </li>
-        <li> <a href="https://thehill.com/homenews/administration/414595-trump-fake-news-to-blame-for-violence?amp&amp;__twitter_impression=true">Trump: 'Fake news' to blame for violence | TheHill</a> </li>
         <li> <a href="https://www.newsweek.com/trump-administration-mattis-migrant-caravan-border-troops-1198043">Trump's Surprise Border Mission Is a Politically Motivated Waste of Money: Pentagon Sources</a> </li>
+        <li> <a href="https://thehill.com/homenews/administration/414595-trump-fake-news-to-blame-for-violence?amp&amp;__twitter_impression=true">Trump: 'Fake news' to blame for violence | TheHill</a> </li>
 </ol>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -194,17 +178,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:29.050669Z
--->
+<!--  BUILT: 2020-04-17T12:57:11.165665Z -->
 
 
 </body>

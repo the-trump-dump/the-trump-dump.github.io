@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,20 +154,15 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    
 <h1> 2018-09-16 </h1>
 <ol>
+        <li> <a href="http://cawp.rutgers.edu/women-congressional-candidates-1976-2014">Women Congressional Candidates 1976-2016 | CAWP</a> </li>
         <li> <a href="https://twitter.com/donnermaps/status/1039922145382424577">false</a> </li>
         <li> <a href="https://www.dailykos.com/stories/2018/9/12/1795197/-Democratic-women-have-obliterated-the-all-time-record-for-number-of-House-nominees?_=2018-09-12T09:49:32.617-07:00">Democratic women have obliterated the all-time record for number of House nominees</a> </li>
-        <li> <a href="http://cawp.rutgers.edu/women-congressional-candidates-1976-2014">Women Congressional Candidates 1976-2016 | CAWP</a> </li>
 </ol>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -193,17 +177,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:29.018340Z
--->
+<!--  BUILT: 2020-04-17T12:57:11.127276Z -->
 
 
 </body>

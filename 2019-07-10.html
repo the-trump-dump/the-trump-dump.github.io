@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,19 +154,14 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    
 <h1> 2019-07-10 </h1>
 <ol>
         <li> <a href="https://www.washingtonpost.com/local/dc-politics/trumps-july-fourth-event-and-weekend-protests-bankrupted-dc-security-fund-mayor-says/2019/07/10/fb0d1de4-a316-11e9-b732-41a79c2551bf_story.html?wpisrc=nl_most&amp;wpmm=1">Trump's July Fourth event and weekend protests bankrupted D.C. security fund - The Washington Post</a> </li>
         <li> <a href="https://www.washingtonpost.com/local/dc-politics/trump-still-owes-dc-7-million-in-inauguration-costs-as-he-plans-july-fourth-gala/2019/06/13/c55565b6-8df5-11e9-8f69-a2795fca3343_story.html">Trump still owes D.C. $7 million in inauguration costs as he plans July Fourth gala - The Washington Post</a> </li>
 </ol>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -192,17 +176,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:29.408216Z
--->
+<!--  BUILT: 2020-04-17T12:57:12.014026Z -->
 
 
 </body>

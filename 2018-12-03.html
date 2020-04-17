@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,22 +154,16 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    
 <h1> 2018-12-03 </h1>
 <ol>
-        <li> <a href="https://www.axios.com/mueller-investigation-report-details-court-filings-2511dd33-1928-4431-a9bb-09488ee216ef.html">Mueller's breadcrumbs suggest he has the goods - Axios</a> </li>
-        <li> <a href="https://www.washingtonpost.com/amphtml/news/opinions/wp/2018/12/03/trumps-not-winning-anything-anywhere/">Trump’s not winning anything, anywhere</a> </li>
-        <li> <a href="https://www.washingtonpost.com/amphtml/blogs/plum-line/wp/2018/12/03/after-a-historic-loss-the-gop-needs-to-change-course-heres-why-it-cant/?noredirect=on&amp;__twitter_impression=true">After a historic loss, the GOP needs to change course. Here’s why it can’t.</a> </li>
-        <li> <a href="https://www.washingtonpost.com/politics/just-a-lot-of-alarmism-trumps-skepticism-of-climate-science-is-echoed-across-gop/2018/12/02/f6ee9ca6-f4de-11e8-bc79-68604ed88993_story.html">‘Just a lot of alarmism’: Trump’s skepticism of climate science is echoed across GOP - The Washington Post</a> </li>
         <li> <a href="https://www.washingtonpost.com/politics/honorable-gracious-and-decent-in-death-bush-becomes-a-yardstick-for-president-trump/2018/12/02/a38c3f36-f656-11e8-8d64-4e79db33382f_story.html">‘Honorable, gracious and decent’: In death, Bush becomes a yardstick for President Trump - The Washington Post</a> </li>
+        <li> <a href="https://www.axios.com/mueller-investigation-report-details-court-filings-2511dd33-1928-4431-a9bb-09488ee216ef.html">Mueller's breadcrumbs suggest he has the goods - Axios</a> </li>
+        <li> <a href="https://www.washingtonpost.com/politics/just-a-lot-of-alarmism-trumps-skepticism-of-climate-science-is-echoed-across-gop/2018/12/02/f6ee9ca6-f4de-11e8-bc79-68604ed88993_story.html">‘Just a lot of alarmism’: Trump’s skepticism of climate science is echoed across GOP - The Washington Post</a> </li>
+        <li> <a href="https://www.washingtonpost.com/amphtml/news/opinions/wp/2018/12/03/trumps-not-winning-anything-anywhere/">Trump’s not winning anything, anywhere</a> </li>
 </ol>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -195,17 +178,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:29.076782Z
--->
+<!--  BUILT: 2020-04-17T12:57:11.191478Z -->
 
 
 </body>

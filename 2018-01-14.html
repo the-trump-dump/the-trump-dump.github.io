@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,22 +154,17 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    
 <h1> 2018-01-14 </h1>
 <ol>
         <li> <a href="http://thehill.com/blogs/blog-briefing-room/news/368891-obama-fox-viewers-living-on-a-different-planet-than-npr?amp&amp;__twitter_impression=true">Obama: Fox viewers 'living on a different planet' than NPR listeners | TheHill</a> </li>
-        <li> <a href="https://www.nytimes.com/2018/01/14/us/politics/david-perdue-trump-shithole.html">Hopes Dim for DACA Deal as Lawmakers Battle Over Trump’s Immigration Remarks</a> </li>
+        <li> <a href="http://thehill.com/homenews/state-watch/368867-california-lt-governor-calls-on-trump-to-resign-following-shithole?amp&amp;__twitter_impression=true">Gavin Newsom calls on Trump to resign following 's---hole' remarks | TheHill</a> </li>
+        <li> <a href="https://jira.spring.io/plugins/servlet/mobile#issue/DATAREST-264/comment/156390">[#DATAREST-264] Allow projections by listing properties to be returned - Spring JIRA</a> </li>
+        <li> <a href="http://www.sfchronicle.com/business/networth/article/Will-plan-to-replace-state-tax-deduction-with-12495087.php">Plain to replace tax deduction</a> </li>
         <li> <a href="http://thehill.com/homenews/administration/368940-trump-retweets-far-right-activist?__twitter_impression=true">t.co</a> </li>
-        <li> <a href="http://thehill.com/blogs/blog-briefing-room/news/368996-german-magazine-der-spiegel-shows-trump-as-devolved-man-in?amp">German magazine Der Spiegel shows Trump as devolved man in 'March of Progress' spoof | TheHill</a> </li>
-        <li> <a href="http://www.esquire.com/news-politics/politics/a15073652/trump-wall-street-journal-interview/">Trump’s insane wsj interview</a> </li>
 </ol>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -195,17 +179,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:28.352951Z
--->
+<!--  BUILT: 2020-04-17T12:57:09.749389Z -->
 
 
 </body>

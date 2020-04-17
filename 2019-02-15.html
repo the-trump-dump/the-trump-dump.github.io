@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,23 +154,16 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    
 <h1> 2019-02-15 </h1>
 <ol>
         <li> <a href="https://www.thedailybeast.com/portland-official-report-confirms-collusion-between-police-and-far-right-patriot-prayer-group">Portland Official: Report Confirms Collusion Between Police and Far-Right Patriot Prayer Group</a> </li>
         <li> <a href="https://www.thedailybeast.com/andrew-mccabe-portrays-former-ag-jeff-sessions-as-racist-in-new-book">Andrew McCabe Portrays Former A.G. Jeff Sessions as Racist in New Book</a> </li>
-        <li> <a href="https://www.thedailybeast.com/justice-department-opens-investigation-into-jeffrey-epsteins-controversial-plea-deal">Justice Department Opens Investigation Into Jeffrey Epstein’s Controversial Plea Deal</a> </li>
-        <li> <a href="https://nyti.ms/2V2h1dT?smid=nytcore-ios-share">Trump Declares National Emergency to Build Border Wall</a> </li>
         <li> <a href="https://www.thedailybeast.com/house-passes-funding-bill-now-on-its-way-to-trumps-desk">House Passes Funding Bill, Now on its Way to Trump</a> </li>
-        <li> <a href="https://twitter.com/peteralexander/status/1096443896245219330?s=12">Peter Alexander on Twitter: &quot;Trump, responding to my question, concedes there’s no national emergency to justify building his wall: “I didn’t need to do this... I just want to do it faster.” That answer will complicate his legal case.&quot;</a> </li>
+        <li> <a href="https://www.thedailybeast.com/justice-department-opens-investigation-into-jeffrey-epsteins-controversial-plea-deal">Justice Department Opens Investigation Into Jeffrey Epstein’s Controversial Plea Deal</a> </li>
 </ol>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -196,17 +178,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:29.250611Z
--->
+<!--  BUILT: 2020-04-17T12:57:11.641454Z -->
 
 
 </body>

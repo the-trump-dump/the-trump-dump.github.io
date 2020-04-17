@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,24 +154,16 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    
 <h1> 2018-10-25 </h1>
 <ol>
-        <li> <a href="https://nyti.ms/2JeCr2C?smid=nytcore-ios-share">Trump Considers Closing Southern Border to Migrants</a> </li>
-        <li> <a href="https://www.nytimes.com/2018/10/25/opinion/mikhail-gorbachev-inf-treaty-trump-nuclear-arms.html#click=https://t.co/kmxz3F95H7">Opinion | Mikhail Gorbachev: A New Nuclear Arms Race Has Begun - The New York Times</a> </li>
-        <li> <a href="https://nyti.ms/2JeYZQM?smid=nytcore-ios-share">Trump, Partisan and Pugilist, Abandons Calls for Unity After Bomb Scares</a> </li>
-        <li> <a href="https://nyti.ms/2JgYYvM?smid=nytcore-ios-share">Trump Dismisses Report on His Intercepted Cell Calls as ‘Boring’ and ‘Wrong’</a> </li>
-        <li> <a href="https://news.bloomberglaw.com/daily-labor-report/justice-department-says-transgender-discrimination-is-lawful">DOJ: Businesses Can Discriminate Against Transgender Workers (1)</a> </li>
         <li> <a href="https://apple.news/AXG6zxSCfQL6iLX58Az1Nsw">Trump proposes to lower drug prices by basing them on other countries’ costs - The New York Times</a> </li>
-        <li> <a href="https://nyti.ms/2JeDr6Y?smid=nytcore-ios-share">Pipe Bombs Investigation Turns Toward Florida as More Trump Critics Are Targeted</a> </li>
+        <li> <a href="https://www.washingtonpost.com/politics/trump-takes-aim-at-media-after-homemade-bombs-sent-to-clinton-obama-and-cnn/2018/10/24/4edcd62a-d7a8-11e8-aeb7-ddcad4a0a54e_story.html">The Washington Post: Trump takes aim at media after homemade bombs sent to Clinton, Obama and CNN</a> </li>
+        <li> <a href="https://news.bloomberglaw.com/daily-labor-report/justice-department-says-transgender-discrimination-is-lawful">DOJ: Businesses Can Discriminate Against Transgender Workers (1)</a> </li>
+        <li> <a href="https://www.nytimes.com/2018/10/25/opinion/mikhail-gorbachev-inf-treaty-trump-nuclear-arms.html#click=https://t.co/kmxz3F95H7">Opinion | Mikhail Gorbachev: A New Nuclear Arms Race Has Begun - The New York Times</a> </li>
 </ol>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -197,17 +178,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:29.044641Z
--->
+<!--  BUILT: 2020-04-17T12:57:11.159193Z -->
 
 
 </body>

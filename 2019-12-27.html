@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,19 +154,14 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    
 <h1> 2019-12-27 </h1>
 <ol>
-        <li> <a href="https://thehill.com/homenews/senate/476042-law-professor-writes-kentucky-newspaper-op-ed-accusing-mcconnell-of-breaking">Law professor writes Kentucky newspaper op-ed accusing McConnell of breaking two oaths | TheHill</a> </li>
+        <li> <a href="https://www.newsweek.com/trump-fires-back-cbc-removing-his-home-alone-2-cameo-blames-trudeau-says-movie-will-never-1479294?amp=1&amp;__twitter_impression=true">Trump Fires Back at CBC for Removing His 'Home Alone 2' Cameo, Blames Trudeau, Says the 'Movie Will Never Be the Same'</a> </li>
         <li> <a href="https://twitter.com/realDonaldTrump/status/359777715185913857?s=20">Donald J. Trump (@realDonaldTrump) Tweeted: @rexrode_lisa &quot;@realDonaldTrump you date girls young enough to be your daughter.That's perverted&quot; Dated. No, that's talent.</a> </li>
 </ol>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -192,17 +176,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:29.617826Z
--->
+<!--  BUILT: 2020-04-17T12:57:12.449989Z -->
 
 
 </body>

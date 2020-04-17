@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,23 +154,16 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    
 <h1> 2018-03-08 </h1>
 <ol>
         <li> <a href="https://www.washingtonpost.com/world/national-security/mueller-gathers-evidence-that-2016-seychelles-meeting-was-effort-to-establish-back-channel-to-kremlin/2018/03/07/b6a5fb8c-224b-11e8-94da-ebf9d112159c_story.html">The Washington Post: Mueller gathers evidence that 2017 Seychelles meeting was effort to establish back channel to Kremlin</a> </li>
-        <li> <a href="https://edition.cnn.com/2018/03/08/politics/trump-sarah-sanders-stormy-daniels/index.html">Trump upset with Sanders over Stormy Daniels response - CNNPolitics</a> </li>
-        <li> <a href="https://thinkprogress.org/paul-ryan-donald-trump-stormy-daniels-payment-d07a39cc09ef/amp/?__twitter_impression=true">Ryan doesn’t care about campaign finance pirn star hush money</a> </li>
-        <li> <a href="https://edition.cnn.com/2018/03/08/politics/donald-trump-kim-jong-un/index.html">Trump accepts offer to meet Kim Jong Un - CNNPolitics</a> </li>
         <li> <a href="http://thehill.com/homenews/administration/377332-kushner-leaves-us-ambassador-to-mexico-out-of-meeting-with-mexico?amp&amp;__twitter_impression=true">Kushner leaves US ambassador to Mexico out of meeting with Mexico president: report | TheHill</a> </li>
         <li> <a href="https://apple.news/AqEWzJzLuT9GRygUEGzguQw">Mueller gathers evidence that 2017 Seychelles meeting was effort to establish back channel to Kremlin - The Washington Post</a> </li>
+        <li> <a href="https://www.nytimes.com/2018/02/23/us/politics/mueller-investigation-charges.html?nytapp=true">Over 100 Charges, 19 People and 3 Companies: The Mueller Inquiry, Explained</a> </li>
 </ol>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -196,17 +178,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:28.547503Z
--->
+<!--  BUILT: 2020-04-17T12:57:10.204240Z -->
 
 
 </body>

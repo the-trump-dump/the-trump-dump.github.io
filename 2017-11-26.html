@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,19 +154,14 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    
 <h1> 2017-11-26 </h1>
 <ol>
-        <li> <a href="https://www.nytimes.com/2017/11/26/business/trump-cfpb-consumer-agency.html">Battle for Control of Consumer Agency Heads to Court</a> </li>
-        <li> <a href="https://www.nytimes.com/2017/11/26/business/dealbook/time-inc-meredith-corporation-koch-brothers.html">Time Inc. Sells Itself to Meredith Corp., Backed by Koch Brothers</a> </li>
+        <li> <a href="http://thehill.com/blogs/blog-briefing-room/361783-state-department-wracked-by-departures-under-trump-report">State Department wracked by departures under Trump: report | TheHill</a> </li>
+        <li> <a href="http://thehill.com/homenews/administration/361801-trump-frustrated-with-ivankas-condemnation-of-roy-moore-report?amp">Trump frustrated with Ivanka's condemnation of Roy Moore: report | TheHill</a> </li>
 </ol>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -192,17 +176,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:28.314775Z
--->
+<!--  BUILT: 2020-04-17T12:57:09.689836Z -->
 
 
 </body>

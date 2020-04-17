@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,26 +154,17 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    
 <h1> 2017-10-01 </h1>
 <ol>
-        <li> <a href="https://twitter.com/ajvicens/status/914301724818632705">The daily life of people in puerto rico</a> </li>
-        <li> <a href="https://www.vox.com/platform/amp/world/2017/9/28/16379286/puerto-rico-response-trump-honore-interview">The general who turned around the response in New Orleans after Katrina thinks we're failing Puerto Rico - Vox</a> </li>
-        <li> <a href="https://amp.cnn.com/cnn/2017/10/01/politics/donald-trump-rex-tillerson-north-korea/index.html">Trump: Tillerson 'wasting his time' negotiating with NK</a> </li>
-        <li> <a href="http://thehill.com/homenews/administration/353344-state-dept-spokeswoman-diplomatic-channels-open-to-north-korea-for?amp">State Department: Diplomatic channels open to North Korea 'for now' | TheHill</a> </li>
-        <li> <a href="http://thehill.com/homenews/administration/353362-trump-called-cowboys-jerry-jones-four-times-asking-him-not-to-kneel?amp">Trump called Cowboys' Jerry Jones four times about anthem protests: report | TheHill</a> </li>
-        <li> <a href="https://www.axios.com/inside-trumps-crazy-train-2491643924.html">Scoop: Trump urges staff to portray him as &quot;crazy guy&quot; - Axios</a> </li>
-        <li> <a href="https://www.buzzfeed.com/nidhisubbaraman/bacterial-infection-harvey#.sbNGdykkYA">A Texas Woman Died From A Devastating “Flesh-Eating Bacteria” After Harvey</a> </li>
-        <li> <a href="https://twitter.com/jordanuhl/status/907225682924752897">Trump happiest his building was tallest again after 9/11</a> </li>
         <li> <a href="http://thehill.com/homenews/sunday-talk-shows/353301-fema-chief-warns-of-fragmented-response-if-mayors-dont-participate?amp">FEMA chief warns of fragmented response if mayors don't participate | TheHill</a> </li>
+        <li> <a href="https://www.buzzfeed.com/nidhisubbaraman/bacterial-infection-harvey#.sbNGdykkYA">A Texas Woman Died From A Devastating “Flesh-Eating Bacteria” After Harvey</a> </li>
+        <li> <a href="http://thehill.com/homenews/administration/353238-a-look-back-at-trumps-response-to-the-humanitarian-crisis-in-puerto?amp">Timeline: Trump's response to the crisis in Puerto Rico | TheHill</a> </li>
+        <li> <a href="https://twitter.com/markharrisnyc/status/914289180653453312">To everyone in Trump's White House: Yes, what you're doing now WILL be the 1st line of your obits, in 4 years or 40.</a> </li>
+        <li> <a href="https://www.vox.com/platform/amp/world/2017/9/28/16379286/puerto-rico-response-trump-honore-interview">The general who turned around the response in New Orleans after Katrina thinks we're failing Puerto Rico - Vox</a> </li>
 </ol>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -199,17 +179,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:28.111569Z
--->
+<!--  BUILT: 2020-04-17T12:57:09.202399Z -->
 
 
 </body>

@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,21 +154,16 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    
 <h1> 2019-05-21 </h1>
 <ol>
-        <li> <a href="https://thehill.com/homenews/administration/444811-ben-carson-endures-dem-grilling-over-minority-inclusion-office?amp=1">Ben Carson endures Dem grilling over minority inclusion office | TheHill</a> </li>
-        <li> <a href="https://thehill.com/homenews/administration/444792-merrick-garland-denied-supreme-court-spot-on-court-set-to-consider?amp#click=https://t.co/PQhw7BTG62">Merrick Garland, denied Supreme Court spot, on court set to consider Trump subpoena appeal  | TheHill</a> </li>
         <li> <a href="https://thehill.com/homenews/administration/444794-security-concerns-hinder-trump-visit-to-sumo-tournament-on-japan-trip?amp=1">Security concerns hinder Trump visit to sumo tournament on Japan trip | TheHill</a> </li>
+        <li> <a href="https://thehill.com/homenews/administration/444792-merrick-garland-denied-supreme-court-spot-on-court-set-to-consider?amp#click=https://t.co/PQhw7BTG62">Merrick Garland, denied Supreme Court spot, on court set to consider Trump subpoena appeal  | TheHill</a> </li>
+        <li> <a href="https://thehill.com/homenews/administration/444811-ben-carson-endures-dem-grilling-over-minority-inclusion-office?amp=1">Ben Carson endures Dem grilling over minority inclusion office | TheHill</a> </li>
         <li> <a href="https://twitter.com/briantylercohen/status/1130911785840594944?s=12">Unreal. There's smug... and then there's this performance by Ben Carson today. Beyond shameful. https://t.co/qNsrGKqWPE</a> </li>
 </ol>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -194,17 +178,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:29.276952Z
--->
+<!--  BUILT: 2020-04-17T12:57:12.006427Z -->
 
 
 </body>

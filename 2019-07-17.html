@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,20 +154,13 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    
 <h1> 2019-07-17 </h1>
 <ol>
-        <li> <a href="https://www.youtube.com/watch?v=y0tkidzutzi&amp;feature=share">Trump cant spell Al Qaeda</a> </li>
-        <li> <a href="https://www.washingtonpost.com/politics/2019/07/17/president-trump-accuses-rep-omar-supporting-al-qaeda/#click=https://t.co/5qdqomiHiH">President Trump accuses Rep. Omar of supporting al-Qaeda - The Washington Post</a> </li>
-        <li> <a href="https://www.washingtonpost.com/politics/2019/07/17/president-trump-accuses-rep-omar-supporting-al-qaeda/?noredirect=on#click=https://t.co/5qdqomiHiH">President Trump accuses Rep. Omar of supporting al-Qaeda - The Washington Post</a> </li>
+        <li> <a href="https://www.mediaite.com/politics/exclusive-former-trump-aide-jason-miller-admits-to-hiring-prostitutes-in-2015-and-2017/">Jason Miller, Former Trump Aide, Says He Hired Prostitutes</a> </li>
 </ol>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -193,17 +175,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:29.410846Z
--->
+<!--  BUILT: 2020-04-17T12:57:12.016152Z -->
 
 
 </body>

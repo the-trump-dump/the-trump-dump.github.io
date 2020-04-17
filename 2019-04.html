@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,11 +154,9 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            <div class="monthly">
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    <div class="monthly">
     <h1>
         2019-04
     </h1>
@@ -205,14 +192,21 @@
         </div>
         <div class="monthly">
             <div class="date">
+                2019-04-09
+            </div>
+            <UL>
+                    <LI>
+                        <a href="https://twitter.com/thehill/status/1115463124721782784?s=12">IRS says it has issued $6 billion less in refunds compared to same time last year https://t.co/DtxfvYNjvS https://t.co/kgKpOik3Nk</a>
+                    </LI>
+            </UL>
+        </div>
+        <div class="monthly">
+            <div class="date">
                 2019-04-08
             </div>
             <UL>
                     <LI>
                         <a href="https://twitter.com/thehill/status/1115294759067815937">The Hill on Twitter: &quot;Trump demanding admin reimpose family separation policy: report https://t.co/pqSPHEm4qU… &quot;</a>
-                    </LI>
-                    <LI>
-                        <a href="https://twitter.com/thehill/status/1115463124721782784?s=12">IRS says it has issued $6 billion less in refunds compared to same time last year https://t.co/DtxfvYNjvS https://t.co/kgKpOik3Nk</a>
                     </LI>
             </UL>
         </div>
@@ -240,9 +234,6 @@
             </UL>
         </div>
 </div>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -257,17 +248,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:30.451330Z
--->
+<!--  BUILT: 2020-04-17T12:57:14.290816Z -->
 
 
 </body>

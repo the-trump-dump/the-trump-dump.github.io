@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,26 +154,15 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    
 <h1> 2019-12-08 </h1>
 <ol>
-        <li> <a href="https://www.washingtonpost.com/opinions/2019/12/08/nikki-haley-gets-history-confederate-flag-very-wrong/">Nikki Haley gets the history of the Confederate flag very wrong - The Washington Post</a> </li>
         <li> <a href="https://twitter.com/arlenparsa/status/1203807908661800960?s=12">Trump makes laughable claim that there’s no federal statuate corresponding to his articles of impeachment. And that this would be the first. False on all counts. It’s not the first: Jackson was impeached for bringing disgrace. And Trump <em>could</em> be cha</a> </li>
-        <li> <a href="https://www.washingtonpost.com/opinions/2019/12/08/its-come-this-ted-cruz-is-putins-stooge/">It has come to this: Ted Cruz is Putin’s stooge - The Washington Post</a> </li>
-        <li> <a href="https://www.marketwatch.com/story/president-trump-blasted-by-jewish-group-for-his-vile-and-bigoted-remarks-2019-12-08?mod=mw_share_twitter">President Trump blasted by Jewish group for his ‘vile and bigoted remarks’ - MarketWatch</a> </li>
         <li> <a href="https://www.miamiherald.com/news/politics-government/national-politics/article238150139.html">Trump attends state Republican dinner in Aventura, Florida | Miami Herald</a> </li>
-        <li> <a href="https://thehill.com/blogs/blog-briefing-room/news/473608-california-church-depicts-holy-family-in-cages-as-family">California nativity scene depicts Jesus, Mary and Joseph as caged family separated at border | TheHill</a> </li>
-        <li> <a href="https://www.nytimes.com/2019/12/08/us/politics/giuliani-trump-impeachment.html?smid=nytcore-ios-share">How Giuliani led Trump to the brink of impeachment</a> </li>
-        <li> <a href="https://www.washingtonpost.com/opinions/2019/12/04/nato-is-life-support-trumps-one-who-put-it-there/">NATO is on life support — and Trump’s the one who put it there - The Washington Post</a> </li>
-        <li> <a href="https://www.washingtonpost.com/opinions/2019/12/07/trump-just-assured-his-own-impeachment/">Trump just assured his own impeachment - The Washington Post</a> </li>
+        <li> <a href="https://www.marketwatch.com/story/president-trump-blasted-by-jewish-group-for-his-vile-and-bigoted-remarks-2019-12-08?mod=mw_share_twitter">President Trump blasted by Jewish group for his ‘vile and bigoted remarks’ - MarketWatch</a> </li>
 </ol>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -199,17 +177,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:29.607788Z
--->
+<!--  BUILT: 2020-04-17T12:57:12.440747Z -->
 
 
 </body>

@@ -15,25 +15,14 @@
 </head>
 <body>
 
-<div class="container">
 
-    <div style="height: 50px;" class="w-100"></div>
-
-
-    <div class="row">
-        <div class="col" id="menu">
-            <a href="/">
-                Home
-            </a>
-        </div>
-    </div>
-
-    <div style="height: 50px;" class="w-100"></div>
-
-    <div class="row">
-        <div class="col-2">
-            <!--        YEARS   -->
-            <div id="years">
+<div id="menu">
+    <a href="/">
+        Home
+    </a>
+</div>
+<div style="top: 50px; width: 100px" id="years">
+    <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -165,24 +154,19 @@
 
 </div>
 
-            <!--        YEARS   -->
-        </div>
-        <div class="col-10">
-            <!--            CONTENT-->
-            
+</div>
+<div style="top: 50px; left: 120px; position: absolute;" id="body">
+    
 <h1> 2017-09-02 </h1>
 <ol>
-        <li> <a href="http://thehill.com/homenews/administration/348990-report-trump-starts-plans-to-withdraw-from-south-korea-free-trade?amp">Trump prepares withdrawal from South Korea trade deal: report | TheHill</a> </li>
-        <li> <a href="http://www.sfchronicle.com/opinion/amp/Trump-s-pitch-to-cut-taxes-for-the-rich-is-a-12167897.php">Trump’s pitch to cut taxes for the rich is a doozy</a> </li>
-        <li> <a href="http://thehill.com/homenews/administration/348979-5-changes-john-kelly-has-made-in-the-white-house?amp">5 changes John Kelly has made in the White House | TheHill</a> </li>
+        <li> <a href="http://thehill.com/homenews/campaign/348940-alabama-senate-candidate-defends-not-knowing-daca-people-dont-care-about">Alabama Senate candidate defends not knowing DACA: ‘People don’t care about acronyms’ | TheHill</a> </li>
         <li> <a href="http://thehill.com/policy/international/348948-health-attacks-on-us-diplomats-in-cuba-continued-in-august?amp">US: Health incidents involving diplomats in Cuba continued in August | TheHill</a> </li>
         <li> <a href="https://www.racked.com/platform/amp/2017/8/25/16197020/chanel-gabrielle-marketing-campaign-nazi-spy">Chanel Sure Picked a Bad Time to Center a Marketing Campaign Around Coco - Racked</a> </li>
-        <li> <a href="http://thehill.com/homenews/campaign/348940-alabama-senate-candidate-defends-not-knowing-daca-people-dont-care-about">Alabama Senate candidate defends not knowing DACA: ‘People don’t care about acronyms’ | TheHill</a> </li>
         <li> <a href="http://thehill.com/latino/348937-rick-scott-announces-opposition-to-ending-daca?amp">Rick Scott calls on Congress to protect 'Dreamers' | TheHill</a> </li>
+        <li> <a href="http://www.sfchronicle.com/opinion/amp/Trump-s-pitch-to-cut-taxes-for-the-rich-is-a-12167897.php">Trump’s pitch to cut taxes for the rich is a doozy</a> </li>
+        <li> <a href="http://thehill.com/homenews/administration/348979-5-changes-john-kelly-has-made-in-the-white-house?amp">5 changes John Kelly has made in the White House | TheHill</a> </li>
+        <li> <a href="http://thehill.com/homenews/administration/348990-report-trump-starts-plans-to-withdraw-from-south-korea-free-trade?amp">Trump prepares withdrawal from South Korea trade deal: report | TheHill</a> </li>
 </ol>
-            <!--            CONTENT-->
-        </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -197,17 +181,14 @@
 <script>
     window.addEventListener('load', () => {
         Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+            .from(document.getElementsByTagName('a'))
+            .forEach((linkElement) => {
+                linkElement.setAttribute('target', '_href');
+            });
     });
 </script>
 
-
-<!--
-BUILT: 2020-04-17T09:52:28.064344Z
--->
+<!--  BUILT: 2020-04-17T12:57:09.166567Z -->
 
 
 </body>

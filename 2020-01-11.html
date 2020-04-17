@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,15 +165,20 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2020-01-11 </h1>
 <ol>
-        <li> <a href="https://www.cnn.com/2020/01/09/opinions/doug-collins-remark-crosses-line-preet-bharara/index.html">Preet Bharara to Georgia congressman: You've hit a shocking new low (opinion) - CNN</a> </li>
-        <li> <a href="https://thehill.com/homenews/state-watch/477838-vermonts-gop-governor-reaffirms-commitment-to-accepting-new-refugees?amp">Vermont's GOP governor reaffirms commitment to accepting new refugees after Trump order | TheHill</a> </li>
         <li> <a href="https://www.dallasnews.com/news/crime/2020/01/10/north-texas-militia-vigilante-who-rounded-up-migrants-at-border-found-dead-after-months-on-the-run/">North Texas militia vigilante who rounded up migrants at border found dead after months on the run</a> </li>
+        <li> <a href="https://thehill.com/homenews/state-watch/477838-vermonts-gop-governor-reaffirms-commitment-to-accepting-new-refugees?amp">Vermont's GOP governor reaffirms commitment to accepting new refugees after Trump order | TheHill</a> </li>
+        <li> <a href="https://www.cnn.com/2020/01/09/opinions/doug-collins-remark-crosses-line-preet-bharara/index.html">Preet Bharara to Georgia congressman: You've hit a shocking new low (opinion) - CNN</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -177,14 +193,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:15.149301Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:29.624896Z
+-->
 
 
 </body>

@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,14 +165,21 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2018-11-23 </h1>
 <ol>
         <li> <a href="https://twitter.com/ericholthaus/status/1066047421770276864?s=12">Eric Holthaus on Twitter: &quot;The report says “there would be virtually no chance” of keeping warming to safe levels if the countries of the world don’t meet their emissions reductions commitments under the Paris Agreement. The report notes that Presid</a> </li>
         <li> <a href="https://nyti.ms/2zmesuU?smid=nytcore-ios-share">Climate Change Will Take a Bite From U.S. Economy, Report Finds</a> </li>
+        <li> <a href="https://thehill.com/homenews/administration/418045-trump-denies-report-hes-unhappy-with-mnuchin?amp&amp;__twitter_impression=true">Trump denies report he's unhappy with Mnuchin | TheHill</a> </li>
+        <li> <a href="https://apple.news/AZYV2ZZ8rRH-RCBqaT65P7Q">Impact of climate change is growing, and the U.S. must act, federal report warns - National Geographic</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -176,14 +194,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:13.803399Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:29.068978Z
+-->
 
 
 </body>

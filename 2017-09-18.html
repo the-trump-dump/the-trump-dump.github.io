@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,17 +165,23 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2017-09-18 </h1>
 <ol>
-        <li> <a href="http://thehill.com/homenews/administration/351114-trump-lawyers-battle-over-cooperating-with-muellers-probe-report?amp">Trump lawyers battle over cooperating with Mueller's probe: report | TheHill</a> </li>
-        <li> <a href="https://www.nytimes.com/2017/09/17/world/americas/nikki-haley-un-trump.html">When U.N. Envoy Nikki Haley Talks, Does President Trump Listen?</a> </li>
-        <li> <a href="https://www.nytimes.com/2017/09/17/us/politics/trump-lawyers-white-house-russia-mcgahn-ty-cobb.html">Trump Lawyers Clash Over How Much to Cooperate With Russia Inquiry</a> </li>
+        <li> <a href="https://twitter.com/keitholbermann/status/909960771492368386">NEW VIDEO: Mueller's Facebook Warrant means the game is over for Kushner, Bannon, Cambridge Analytica. Oh, and Trump https://t.co/r8AjXncUVI</a> </li>
+        <li> <a href="https://www.vox.com/platform/amp/2017/9/18/16330978/paul-manafort-wiretap-indictment">Reports: Paul Manafort was wiretapped, has been told to expect an indictment - Vox</a> </li>
+        <li> <a href="http://thehill.com/blogs/floor-action/senate/351242-mccain-blasts-latest-obamacare-repeal-process?amp">McCain blasts latest ObamaCare repeal process | TheHill</a> </li>
         <li> <a href="http://thehill.com/latino/351256-rhode-island-announces-plan-to-pay-daca-renewal-fee-for-every-dreamer-in-state">Rhode Island announces plan to pay DACA renewal fee for every 'Dreamer' in state | TheHill</a> </li>
-        <li> <a href="https://www.washingtonpost.com/national/health-science/shrink-at-least-4-national-monuments-and-modify-a-half-dozen-others-zinke-tells-trump/2017/09/17/a0df45cc-9b48-11e7-82e4-f1076f6d6152_story.html">The Washington Post: Shrink at least 4 national monuments and modify a half-dozen others, Zinke tells Trump</a> </li>
+        <li> <a href="https://www.nytimes.com/2017/09/18/us/politics/mueller-russia-investigation.html?hp&amp;action=click&amp;pgtype=Homepage&amp;clickSource=story-heading&amp;module=first-column-region&amp;region=top-news&amp;WT.nav=top-news">With a Picked Lock and a Threatened Indictment, Mueller’s Inquiry Sets a Tone - The New York Times</a> </li>
+        <li> <a href="http://thehill.com/policy/defense/351274-us-opens-first-permanent-military-base-in-israel">t.co</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -179,14 +196,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:11.902121Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:28.090819Z
+-->
 
 
 </body>

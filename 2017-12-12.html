@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,18 +165,21 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2017-12-12 </h1>
 <ol>
+        <li> <a href="https://www.nytimes.com/2017/12/12/us/politics/alabama-senate-race-winner.html">Once a Long Shot, Democrat Doug Jones Wins Alabama Senate Race</a> </li>
+        <li> <a href="https://fivethirtyeight.com/features/what-the-hell-is-happening-with-these-alabama-polls/">What The Hell Is Happening With These Alabama Polls? | FiveThirtyEight</a> </li>
         <li> <a href="https://arstechnica.com/information-technology/2017/12/net-neutrality-repeal-based-on-false-description-of-internet-inventors-say/">Net neutrality repeal based on false description of Internet, inventors say | Ars Technica</a> </li>
         <li> <a href="https://twitter.com/arimelber/status/940576702224363520">Trump wants a special counsel to investigate special counsel</a> </li>
-        <li> <a href="https://twitter.com/lcmoser/status/939987565192667136">“Every single county in which blacks make up more than 75 percent of registered voters will see their driver license office closed. Every one.” https://t.co/A1IyJTL32P</a> </li>
-        <li> <a href="https://www.bloomberg.com/amp/news/articles/2017-12-11/how-steve-bannon-rescued-roy-moore-s-campaign-against-all-odds?__twitter_impression=true">How Steve Bannon Rescued Roy Moore’s Campaign Against All Odds</a> </li>
-        <li> <a href="http://thehill.com/homenews/campaign/364308-pro-trump-group-has-12-year-old-girl-interview-roy-moore?amp&amp;__twitter_impression=true">Pro-Trump group has 12-year-old girl interview Roy Moore | TheHill</a> </li>
-        <li> <a href="https://fivethirtyeight.com/features/what-the-hell-is-happening-with-these-alabama-polls/">What The Hell Is Happening With These Alabama Polls? | FiveThirtyEight</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -180,14 +194,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:12.368521Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:28.326434Z
+-->
 
 
 </body>

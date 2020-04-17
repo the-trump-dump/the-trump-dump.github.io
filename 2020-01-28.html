@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,15 +165,22 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2020-01-28 </h1>
 <ol>
-        <li> <a href="https://www.reddit.com/r/worldnews/comments/ev4igq/pompeo_heads_to_kiev_days_after_saying_americans/?utm_name=iossmf">Pompeo heads to Kiev, days after saying 'Americans couldn't f*****g care about Ukraine'</a> </li>
+        <li> <a href="https://www.nytimes.com/2020/01/28/us/politics/impeachment-trial-senate-questions.html?smid=nytcore-ios-share">They’re gonna let senators ask questions now. Imagine!</a> </li>
+        <li> <a href="https://www.rawstory.com/2020/01/trump-loving-conspiracy-nuts-tout-drinking-bleach-as-a-miracle-cure-for-coronavirus/">Trump-loving conspiracy nuts tout drinking bleach as a ‘miracle’ cure for coronavirus – Raw Story</a> </li>
         <li> <a href="https://thehill.com/homenews/senate/480198-mcconnell-struggles-to-maintain-gop-unity-post-bolton">McConnell struggles to maintain GOP unity post-Bolton | TheHill</a> </li>
+        <li> <a href="https://www.reddit.com/r/worldnews/comments/ev4igq/pompeo_heads_to_kiev_days_after_saying_americans/?utm_name=iossmf">Pompeo heads to Kiev, days after saying 'Americans couldn't f*****g care about Ukraine'</a> </li>
         <li> <a href="https://thehill.com/homenews/senate/480375-republicans-signal-renewed-confidence-theyll-skip-impeachment-witnesses">Republicans signal renewed confidence they'll avoid witness fight | TheHill</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -177,14 +195,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:15.156250Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:29.633389Z
+-->
 
 
 </body>

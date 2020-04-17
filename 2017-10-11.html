@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,22 +165,27 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2017-10-11 </h1>
 <ol>
         <li> <a href="http://thehill.com/blogs/blog-briefing-room/news/354908-poll-two-thirds-say-trump-comments-making-north-korean?amp">Poll: Two-thirds say Trump comments making North Korean situation worse | TheHill</a> </li>
-        <li> <a href="http://thehill.com/policy/cybersecurity/355000-sens-mccain-cardin-scold-trump-for-missing-russian-sanctions-deadline?amp">McCain scolds Trump for missing Russian sanctions deadline | TheHill</a> </li>
-        <li> <a href="http://thehill.com/homenews/media/354655-wall-street-journal-corker-giving-trump-good-advice?amp">Wall Street Journal: Corker giving Trump good advice | TheHill</a> </li>
-        <li> <a href="https://fivethirtyeight.com/features/six-unlikely-scenarios-that-could-change-the-2018-senate-map/amp/">Six (Unlikely) Scenarios That Could Change The 2018 Senate Map | FiveThirtyEight</a> </li>
-        <li> <a href="http://thehill.com/policy/defense/354898-foreign-affairs-chairman-us-should-stay-in-iran-deal-but-enforce-the-hell-out?amp">House Foreign Affairs chairman: US should stay in Iran deal, but 'enforce the hell' out of it | TheHill</a> </li>
-        <li> <a href="http://thehill.com/blogs/blog-briefing-room/news/354858-longtime-trump-friend-shocked-and-stunned-by-presidents?amp=1">Longtime Trump friend 'shocked' and 'stunned' by president's rhetoric | TheHill</a> </li>
-        <li> <a href="https://www.washingtonpost.com/politics/hes-better-than-this-says-thomas-barrack-trumps-loyal-whisperer/2017/10/10/067fc776-a215-11e7-8cfe-d5b912fabc99_story.html">The Washington Post: ‘He’s better than this,’ says Thomas Barrack, Trump’s loyal whisperer</a> </li>
+        <li> <a href="http://thehill.com/policy/technology/354971-trump-tweet-on-nbc-license-draws-bipartisan-backlash?amp">Backlash swift after Trump tweet on NBC | TheHill</a> </li>
+        <li> <a href="http://thehill.com/homenews/administration/354965-trump-disgusting-press-able-to-write-whataver-it-wants?amp">Trump: 'Disgusting' that press able to write whatever it wants | TheHill</a> </li>
         <li> <a href="http://www.msnbc.com/rachel-maddow/watch/d-block-puerto-rico-1067297859792?cid=sm_npd_ms_tw_ma">FEMA: Not our job to distribute food and water in Puerto Rico | MSNBC</a> </li>
         <li> <a href="http://thehill.com/blogs/blog-briefing-room/news/354985-limbaugh-trumps-comments-on-nfl-starting-to-make-me-nervous?amp">Limbaugh: Trump's comments on NFL 'starting to make me nervous' | TheHill</a> </li>
         <li> <a href="http://thehill.com/blogs/blog-briefing-room/news/354863-dalai-lama-worried-us-becoming-more-selfish-nationalist?amp">Dalai Lama worried US becoming more 'selfish, nationalist' | TheHill</a> </li>
+        <li> <a href="https://www.washingtonpost.com/politics/hes-better-than-this-says-thomas-barrack-trumps-loyal-whisperer/2017/10/10/067fc776-a215-11e7-8cfe-d5b912fabc99_story.html">The Washington Post: ‘He’s better than this,’ says Thomas Barrack, Trump’s loyal whisperer</a> </li>
+        <li> <a href="http://thehill.com/policy/cybersecurity/355000-sens-mccain-cardin-scold-trump-for-missing-russian-sanctions-deadline?amp">McCain scolds Trump for missing Russian sanctions deadline | TheHill</a> </li>
+        <li> <a href="http://thehill.com/blogs/blog-briefing-room/news/354858-longtime-trump-friend-shocked-and-stunned-by-presidents?amp=1">Longtime Trump friend 'shocked' and 'stunned' by president's rhetoric | TheHill</a> </li>
+        <li> <a href="http://thehill.com/policy/defense/354898-foreign-affairs-chairman-us-should-stay-in-iran-deal-but-enforce-the-hell-out?amp">House Foreign Affairs chairman: US should stay in Iran deal, but 'enforce the hell' out of it | TheHill</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -184,14 +200,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:11.937466Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:28.133366Z
+-->
 
 
 </body>

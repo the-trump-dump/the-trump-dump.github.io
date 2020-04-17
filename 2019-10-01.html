@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,13 +165,22 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2019-10-01 </h1>
 <ol>
+        <li> <a href="https://twitter.com/dearauntcrabby/status/1179187304583385088?s=12">#TuesdayNightThoughts Any desire Pompeo EVER had to become POTUS has vanished Lewendowski is dropping Senate run. Awww, shucks Chris Collins pleads guilty to federal crimes Will the Senate remove Trump if impeached in the House. Possible! Rudy is bat-shit</a> </li>
+        <li> <a href="https://thehill.com/homenews/administration/463941-democrats-warn-gop-trump-putting-whistleblower-safety-at-risk?amp=1&amp;amp_recirculation=1">Democrats warn GOP, Trump putting whistleblower safety at risk | TheHill</a> </li>
+        <li> <a href="https://thehill.com/homenews/administration/463827-pompeo-balks-at-dems-subpoena-i-will-not-tolerate-house-efforts-to?amp">Pompeo rejects Dem demands for officials' testimony | TheHill</a> </li>
+        <li> <a href="https://thehill.com/homenews/administration/463928-trump-suggested-shooting-migrants-in-the-legs-nyt?amp#click=https://t.co/DjmMDy74tU">Trump suggested shooting migrants in the legs: NYT | TheHill</a> </li>
         <li> <a href="https://thehill.com/homenews/administration/463766-house-democrats-suggest-trump-may-have-lied-to-mueller-about?amp&amp;__twitter_impression=true">House Democrats suggest Trump may have lied to Mueller about WikiLeaks contacts | TheHill</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -175,14 +195,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:14.696496Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:29.435252Z
+-->
 
 
 </body>

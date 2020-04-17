@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,21 +165,28 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2018-08-14 </h1>
 <ol>
-        <li> <a href="http://thehill.com/policy/energy-environment/401824-epa-challenged-trump-administrations-safety-argument-for-car?amp#click=https://t.co/g8QbY4jSzF">EPA challenged Trump officials' claim car efficiency rollback would save lives | TheHill</a> </li>
-        <li> <a href="http://thehill.com/homenews/campaign/401708-gop-florida-house-candidate-admits-to-lying-about-degree-wont-drop-out-of?amp&amp;__twitter_impression=true">GOP Florida state House candidate admits to lying about degree, won't drop out of race | TheHill</a> </li>
         <li> <a href="http://thehill.com/policy/finance/401731-us-crop-export-prices-fall-at-steepest-rate-since-2011?amp&amp;__twitter_impression=true">US crop export prices fall at steepest rate since 2011 | TheHill</a> </li>
+        <li> <a href="http://www.latimes.com/nation/la-na-kobach-kansas-20180814-story.html">Kansas Gov. Jeff Colyer concedes GOP primary to Kris Kobach, a staunch Trump ally</a> </li>
+        <li> <a href="http://thehill.com/policy/energy-environment/401824-epa-challenged-trump-administrations-safety-argument-for-car?amp#click=https://t.co/g8QbY4jSzF">EPA challenged Trump officials' claim car efficiency rollback would save lives | TheHill</a> </li>
+        <li> <a href="http://thehill.com/homenews/administration/401663-trump-rips-mccain-hours-after-signing-bill-named-after-him?amp&amp;__twitter_impression=true">Trump rips McCain hours after signing bill named after him | TheHill</a> </li>
+        <li> <a href="http://thehill.com/homenews/campaign/401708-gop-florida-house-candidate-admits-to-lying-about-degree-wont-drop-out-of?amp&amp;__twitter_impression=true">GOP Florida state House candidate admits to lying about degree, won't drop out of race | TheHill</a> </li>
+        <li> <a href="https://abcnews.go.com/Politics/manafort-attorneys-opt-skip-defense-proceed-closing-arguments/story?id=57168855">Manafort trial takes sudden turn as defense rests without calling witnesses - ABC News</a> </li>
+        <li> <a href="http://thehill.com/policy/energy-environment/401736-zinke-environmental-terrorist-groups-responsible-for-california?amp&amp;__twitter_impression=true">Zinke blames 'environmental terrorist groups' for scale of California wildfires | TheHill</a> </li>
+        <li> <a href="https://www.nytimes.com/2018/08/14/opinion/trump-obamacare-illegal.html?smtyp=cur&amp;smid=tw-nytopinion">Opinion | Trump’s Sabotage of Obamacare Is Illegal - The New York Times</a> </li>
         <li> <a href="http://thehill.com/policy/national-security/401675-roger-stone-theres-no-circumstance-where-i-would-testify-against?amp&amp;__twitter_impression=true">Roger Stone: 'No circumstance' where I would testify against Trump | TheHill</a> </li>
         <li> <a href="https://nyti.ms/2MklUhP?smid=nytcore-ios-share">Trump’s ‘That Dog’ Attack on Omarosa Manigault Newman Is Latest Insult Aimed at Black People</a> </li>
-        <li> <a href="https://www.nytimes.com/2018/08/14/opinion/trump-obamacare-illegal.html?smtyp=cur&amp;smid=tw-nytopinion">Opinion | Trump’s Sabotage of Obamacare Is Illegal - The New York Times</a> </li>
         <li> <a href="https://nyti.ms/2MkWHnr?smid=nytcore-ios-share">Manafort Lawyers Rest Without Calling Witnesses in Fraud Trial</a> </li>
-        <li> <a href="https://abcnews.go.com/Politics/manafort-attorneys-opt-skip-defense-proceed-closing-arguments/story?id=57168855">Manafort trial takes sudden turn as defense rests without calling witnesses - ABC News</a> </li>
-        <li> <a href="http://thehill.com/homenews/administration/401663-trump-rips-mccain-hours-after-signing-bill-named-after-him?amp&amp;__twitter_impression=true">Trump rips McCain hours after signing bill named after him | TheHill</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -183,14 +201,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:13.346447Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:28.796421Z
+-->
 
 
 </body>

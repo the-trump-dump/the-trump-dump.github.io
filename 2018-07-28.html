@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,14 +165,20 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2018-07-28 </h1>
 <ol>
-        <li> <a href="http://thehill.com/homenews/administration/399315-hhs-ousts-employee-who-spread-pizzagate-conspiracy-theory?amp">HHS ousts employee who spread Pizzagate conspiracy theory | TheHill</a> </li>
         <li> <a href="https://twitter.com/kmac/status/1022770260162691073">Kate Mackenzie on Twitter: &quot;If you only learn one thing about climate change from all these northern hemisphere extreme heat incidents: 2C of warming doesn’t mean “like now, but 2C warmer”.&quot;</a> </li>
+        <li> <a href="http://thehill.com/homenews/administration/399364-top-koch-network-officials-vent-frustration-with-white-house-gop-led?amp&amp;__twitter_impression=true">Top Koch Network officials vent frustration with White House, GOP-led Congress | TheHill</a> </li>
+        <li> <a href="https://apple.news/Axkb983ZPT067ne8vWiRgSA">Michael Cohen tapes: Here's what we know about the secret recordings - USA TODAY</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -176,14 +193,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:13.336641Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:28.784849Z
+-->
 
 
 </body>

@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,20 +165,22 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2018-03-09 </h1>
 <ol>
         <li> <a href="https://nyti.ms/2DcCSpw">Stormy Daniels Lawsuit Opens Door to Further Trouble for Trump</a> </li>
         <li> <a href="https://itunes.apple.com/us/podcast/trump-inc/id1344894187?mt=2&amp;i=1000403209355">itunes.apple.com</a> </li>
         <li> <a href="https://nyti.ms/2G8WJsI">Trump Authorizes Tariffs, Defying Allies at Home and Abroad</a> </li>
-        <li> <a href="https://edition.cnn.com/2018/03/08/politics/donald-trump-kim-jong-un/index.html">Trump accepts offer to meet Kim Jong Un - CNNPolitics</a> </li>
-        <li> <a href="https://edition.cnn.com/2018/03/08/politics/trump-sarah-sanders-stormy-daniels/index.html">Trump upset with Sanders over Stormy Daniels response - CNNPolitics</a> </li>
-        <li> <a href="https://thinkprogress.org/paul-ryan-donald-trump-stormy-daniels-payment-d07a39cc09ef/amp/?__twitter_impression=true">Ryan doesn’t care about campaign finance pirn star hush money</a> </li>
-        <li> <a href="http://thehill.com/homenews/administration/377460-marist-poll-trump-job-approval-rating-reaches-highest-point?amp&amp;__twitter_impression=true">Marist poll: Trump job approval rating reaches highest point | TheHill</a> </li>
         <li> <a href="http://thehill.com/policy/national-security/377547-mueller-has-heard-testimony-apparently-conflicting-with-erik-princes?amp&amp;__twitter_impression=true">Mueller has heard testimony apparently conflicting with Erik Prince's House Intel answers: report | TheHill</a> </li>
+        <li> <a href="http://thehill.com/homenews/administration/377460-marist-poll-trump-job-approval-rating-reaches-highest-point?amp&amp;__twitter_impression=true">Marist poll: Trump job approval rating reaches highest point | TheHill</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -182,14 +195,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:12.832411Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:28.548191Z
+-->
 
 
 </body>

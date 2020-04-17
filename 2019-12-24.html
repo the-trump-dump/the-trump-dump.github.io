@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,14 +165,21 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2019-12-24 </h1>
 <ol>
+        <li> <a href="https://twitter.com/mingcat/status/1209262412387569666?s=12">@AmyMcGrathKY https://t.co/toOEKmfemF</a> </li>
+        <li> <a href="https://apple.news/A3WKWu8ccR7aL_C1Iu8_tkw">Trump says Pelosi hates him</a> </li>
+        <li> <a href="https://apple.news/A57Q7QtTaRUe4ku6cZ4DiYQ">apple.news</a> </li>
         <li> <a href="https://www.cnn.com/2019/12/23/opinions/trump-adminstration-hiding-impeachment-information-honig/index.html">The Trump administration is hiding something (opinion) - CNN</a> </li>
-        <li> <a href="https://twitter.com/davidcayj/status/1208982205088837632?s=12">@rldwebb @DavidBrodyCBN @realDonaldTrump Donald Trump calls Christians &quot;fools&quot; &amp; &quot;idiots&quot; &amp; &quot;schmucks&quot; in his book &quot;Think Big&quot; &amp; in speeches, while declaring his life philosophy is 1 word: revenge. He also said he's never had reason to ask God</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -176,14 +194,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:15.143613Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:29.616434Z
+-->
 
 
 </body>

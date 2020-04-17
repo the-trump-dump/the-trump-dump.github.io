@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,16 +165,18 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2019-03-12 </h1>
 <ol>
         <li> <a href="https://www.washingtonpost.com/business/2019/03/12/trump-vowed-eliminate-debt-years-hes-track-leave-it-least-percent-higher/?noredirect=on">Trump's budget calls for massive increases to the deficit - The Washington Post</a> </li>
-        <li> <a href="https://twitter.com/nowthisnews/status/1104885542615953408">(1) NowThis on Twitter: &quot;Tucker Carlson used the c-word, said women are ‘primitive’ and ‘like dogs,’ and joked about a 13-year-old being molested during newly unearthed radio appearances https://t.co/Y1g3FurLe4&quot; / Twitter</a> </li>
-        <li> <a href="https://twitter.com/mmfa/status/1104879700944523264">(1) Media Matters on Twitter: &quot;In unearthed audio, Tucker Carlson makes numerous misogynistic and perverted comments https://t.co/g2xDnIk7N3 https://t.co/TO3os8RjsM&quot; / Twitter</a> </li>
-        <li> <a href="https://www.sciencemag.org/news/2019/03/trump-once-again-requests-deep-cuts-us-science-spending">Trump once again requests deep cuts in U.S. science spending | Science | AAAS</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -178,14 +191,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:14.268633Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:29.264576Z
+-->
 
 
 </body>

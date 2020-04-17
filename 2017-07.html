@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,9 +165,11 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    <div class="monthly">
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            <div class="monthly">
     <h1>
         2017-07
     </h1>
@@ -165,9 +178,6 @@
                 2017-07-31
             </div>
             <UL>
-                    <LI>
-                        <a href="https://www.washingtonpost.com/amphtml/news/the-fix/wp/2017/07/29/trump-erupts-at-gop-senators-they-look-like-fools/">Trump insults and threatens GOP senators in long rant after health bill failure</a>
-                    </LI>
                     <LI>
                         <a href="http://www.vanityfair.com/news/2017/07/department-of-energy-risks-michael-lewis/amp">Why the Scariest Nuclear Threat May Be Coming from Inside the White House</a>
                     </LI>
@@ -178,11 +188,11 @@
         </div>
         <div class="monthly">
             <div class="date">
-                2017-07-28
+                2017-07-30
             </div>
             <UL>
                     <LI>
-                        <a href="https://www.foxnews.com/politics/anthony-scaramucci-uses-vulgar-language-to-lash-out-at-priebus-make-fun-of-bannon-in-interview">Anthony Scaramucci uses vulgar language to lash out at Priebus, make fun of Bannon in interview | Fox News</a>
+                        <a href="https://www.washingtonpost.com/amphtml/news/the-fix/wp/2017/07/29/trump-erupts-at-gop-senators-they-look-like-fools/">Trump insults and threatens GOP senators in long rant after health bill failure</a>
                     </LI>
             </UL>
         </div>
@@ -205,6 +215,9 @@
                     </LI>
                     <LI>
                         <a href="http://scoutingwire.org/chief-perspective-presidential-visit/">From the Chief: Our Perspective on the Presidential Visit - Scouting Wire : Scouting Wire</a>
+                    </LI>
+                    <LI>
+                        <a href="https://www.foxnews.com/politics/anthony-scaramucci-uses-vulgar-language-to-lash-out-at-priebus-make-fun-of-bannon-in-interview">Anthony Scaramucci uses vulgar language to lash out at Priebus, make fun of Bannon in interview | Fox News</a>
                     </LI>
             </UL>
         </div>
@@ -348,7 +361,7 @@
         </div>
         <div class="monthly">
             <div class="date">
-                2017-07-07
+                2017-07-06
             </div>
             <UL>
                     <LI>
@@ -357,6 +370,9 @@
             </UL>
         </div>
 </div>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -371,14 +387,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:16.667603Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:30.269089Z
+-->
 
 
 </body>

@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,19 +165,24 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2017-12-13 </h1>
 <ol>
-        <li> <a href="https://www.cnbc.com/amp/2017/12/11/gop-tax-reform-plan-takes-a-quirky-swipe-at-the-little-guys.html?__twitter_impression=true">GOP tax reform plan takes a quirky swipe at the little guys</a> </li>
         <li> <a href="https://www.nytimes.com/2017/12/12/us/politics/alabama-senate-election-moore.html">Alabama Senate Race Between Roy Moore and Doug Jones Carries National Implications</a> </li>
-        <li> <a href="http://thehill.com/homenews/media/364596-usa-today-hits-trump-for-gillibrand-tweet-he-has-shown-he-is-not-fit-for?amp&amp;__twitter_impression=true">USA Today hits Trump for Gillibrand tweet: He has shown 'he is not fit for office' | TheHill</a> </li>
+        <li> <a href="https://www.vox.com/platform/amp/policy-and-politics/2017/12/13/16771692/usa-today-trump-gillibrand?__twitter_impression=true">USA Today just ran the most anti-Trump editorial of the year - Vox</a> </li>
+        <li> <a href="https://www.nytimes.com/interactive/2017/12/12/upshot/tax-hacks.html">Hacking the Tax Plan: 13 Ways to Profit Off the Republican Tax Bill</a> </li>
         <li> <a href="https://t.co/tfuXgA3IHi?ssr=true">Deputy AG breaks with Trump: Mueller investigation is not a ‘witch hunt.’</a> </li>
         <li> <a href="https://apnews.com/d0a7101b285244d5b6a078c66dec90ef/Prominent-black-supporter-of-Trump-set-to-leave-White-House">Prominent black supporter of Trump set to leave White House</a> </li>
-        <li> <a href="https://www.nytimes.com/interactive/2017/12/12/upshot/tax-hacks.html">Hacking the Tax Plan: 13 Ways to Profit Off the Republican Tax Bill</a> </li>
-        <li> <a href="https://www.nytimes.com/2017/12/12/us/politics/alabama-senate-race-winner.html">Once a Long Shot, Democrat Doug Jones Wins Alabama Senate Race</a> </li>
+        <li> <a href="http://thehill.com/homenews/media/364596-usa-today-hits-trump-for-gillibrand-tweet-he-has-shown-he-is-not-fit-for?amp&amp;__twitter_impression=true">USA Today hits Trump for Gillibrand tweet: He has shown 'he is not fit for office' | TheHill</a> </li>
+        <li> <a href="https://www.cnbc.com/amp/2017/12/11/gop-tax-reform-plan-takes-a-quirky-swipe-at-the-little-guys.html?__twitter_impression=true">GOP tax reform plan takes a quirky swipe at the little guys</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -181,14 +197,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:12.369188Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:28.327022Z
+-->
 
 
 </body>

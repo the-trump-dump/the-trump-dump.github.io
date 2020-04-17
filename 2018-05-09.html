@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,20 +165,26 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2018-05-09 </h1>
 <ol>
-        <li> <a href="https://nyti.ms/2FXL9z5">Don Blankenship Loses West Virginia Republican Primary for Senate</a> </li>
         <li> <a href="https://www.nytimes.com/2018/05/08/us/politics/michael-cohen-shell-company-payments.html#click=https://t.co/pxDgAydnF9">Firm Tied to Russian Oligarch Made Payments to Michael Cohen - The New York Times</a> </li>
-        <li> <a href="http://thehill.com/homenews/administration/386810-mueller-team-interviewed-putin-tied-oligarch-about-payments-to-cohen?amp&amp;__twitter_impression=true">Mueller team interviewed Putin-tied oligarch about payments to Cohen: report | TheHill</a> </li>
+        <li> <a href="http://thehill.com/homenews/administration/386858-iranian-supreme-leader-trump-made-maybe-more-than-10-lies-in-his?amp&amp;__twitter_impression=true">Iranian supreme leader: Trump ‘made maybe more than 10 lies in his comments’ | TheHill</a> </li>
         <li> <a href="https://www.thedailybeast.com/michael-cohen-took-cash-from-russian-oligarch-after-election">Michael Cohen Took Cash From Oligarch-Connected Firm After Election</a> </li>
-        <li> <a href="https://washingtonpress.com/2018/05/08/att-just-confirmed-major-piece-of-avenattis-stormy-cohen-dossier/">AT&amp;T just incriminated itself, Trump, and Michael Cohen in huge pay-for-play scandal</a> </li>
+        <li> <a href="https://nyti.ms/2FXL9z5">Don Blankenship Loses West Virginia Republican Primary for Senate</a> </li>
         <li> <a href="https://www.usatoday.com/story/news/nation-now/2018/05/07/louisiana-nursing-home-eviction-notices-could-create-mass-chaos/588867002/">Louisiana nursing home eviction notices could create 'mass chaos'</a> </li>
         <li> <a href="https://shareblue.com/nick-ackerman-viktor-vekselberg-payment-to-michael-cohen-conspiracy/amp/?__twitter_impression=true">Watergate prosecutor: Cohen money 'could prove conspiracy' with Russia</a> </li>
-        <li> <a href="http://thehill.com/homenews/administration/386858-iranian-supreme-leader-trump-made-maybe-more-than-10-lies-in-his?amp&amp;__twitter_impression=true">Iranian supreme leader: Trump ‘made maybe more than 10 lies in his comments’ | TheHill</a> </li>
+        <li> <a href="https://washingtonpress.com/2018/05/08/att-just-confirmed-major-piece-of-avenattis-stormy-cohen-dossier/">AT&amp;T just incriminated itself, Trump, and Michael Cohen in huge pay-for-play scandal</a> </li>
+        <li> <a href="https://www.theverge.com/platform/amp/2017/12/11/16765092/fcc-ftc-a-show-about-nothing?__twitter_impression=true">The FCC and FTC announce partnership to watch the internet burn</a> </li>
+        <li> <a href="http://thehill.com/homenews/administration/386810-mueller-team-interviewed-putin-tied-oligarch-about-payments-to-cohen?amp&amp;__twitter_impression=true">Mueller team interviewed Putin-tied oligarch about payments to Cohen: report | TheHill</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -182,14 +199,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:12.879531Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:28.598776Z
+-->
 
 
 </body>

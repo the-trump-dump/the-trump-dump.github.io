@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,14 +165,19 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2019-07-16 </h1>
 <ol>
         <li> <a href="https://start.att.net/news/read/category/news/article/newsweek-kellyanne_conway_says_trumps_get_out_demand_applie-rnewsweek">Kellyanne Conway Says Trump's 'Get Out' Demand Applies to Anyone Criticizing America - news - att.net</a> </li>
-        <li> <a href="https://www.huffpost.com/entry/ilhan-omar-citizen-longer-melania-trump_n_5d2cfd80e4b0a5833c5d8a31">Rep. Ilhan Omar Has Been A U.S. Citizen Longer Than Melania Trump | HuffPost</a> </li>
+        <li> <a href="https://www.mediaite.com/politics/exclusive-former-trump-aide-jason-miller-admits-to-hiring-prostitutes-in-2015-and-2017/">Jason Miller, Former Trump Aide, Says He Hired Prostitutes</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -176,14 +192,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:14.679584Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:29.410464Z
+-->
 
 
 </body>

@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,16 +165,21 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2017-10-29 </h1>
 <ol>
-        <li> <a href="http://thehill.com/homenews/administration/357654-melania-spox-she-acts-acts-independently-from-her-husband?amp">Melania spox: She 'acts independently from her husband' | TheHill</a> </li>
-        <li> <a href="https://twitter.com/renato_mariotti/status/924451221485756416">Thread on why the trump staff lawyers haven’t been notified of an indictment yet</a> </li>
-        <li> <a href="http://www.sfchronicle.com/bayarea/williesworld/amp/Trump-wiping-out-what-s-left-of-old-GOP-12313205.php">Trump wiping out what’s left of old GOP</a> </li>
+        <li> <a href="http://thehill.com/blogs/in-the-know/in-the-know/357745-john-boehner-jason-chaffetz-is-an-asshole?amp">John Boehner: Jordan, Chaffetz are 'a--holes' | TheHill</a> </li>
         <li> <a href="https://twitter.com/altuspresssec/status/924447493705912320">The prosecutor in the region where manafort is being investigated was just asked by trump to step down</a> </li>
+        <li> <a href="https://twitter.com/renato_mariotti/status/924451221485756416">Thread on why the trump staff lawyers haven’t been notified of an indictment yet</a> </li>
+        <li> <a href="http://nymag.com/daily/intelligencer/2017/10/trump-nearly-deported-an-asylum-seeker-at-a-donors-request.html">Trump Nearly Deported an Asylum-Seeker at a Donor’s Request</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -178,14 +194,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:12.338520Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:28.294316Z
+-->
 
 
 </body>

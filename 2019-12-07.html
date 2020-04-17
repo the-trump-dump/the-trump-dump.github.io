@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,18 +165,21 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2019-12-07 </h1>
 <ol>
-        <li> <a href="https://www.politico.com/2020-election/candidates-views-on-the-issues/health-care/medicare-for-all/">2020 Candidates Views on Medicare For All: A Voter’s Guide - POLITICO</a> </li>
-        <li> <a href="https://www.nytimes.com/2019/12/05/us/politics/pelosi-impeachment.html?smid=nytcore-ios-share">House could impeach by Christmas</a> </li>
         <li> <a href="https://www.propublica.org/article/inside-the-cell-where-a-sick-16-year-old-boy-died-in-border-patrol-care/amp?__twitter_impression=true">Inside the Cell Where a Sick 16-Year-Old Boy Died in Border Patrol Care</a> </li>
-        <li> <a href="https://www.usatoday.com/story/news/politics/2019/12/06/trump-americans-flushing-toilets-10-times-15-times/4360782002/">Trump rants about Americans flushing toilets 10 or 15 times</a> </li>
+        <li> <a href="https://www.politico.com/2020-election/candidates-views-on-the-issues/health-care/medicare-for-all/">2020 Candidates Views on Medicare For All: A Voter’s Guide - POLITICO</a> </li>
         <li> <a href="https://www.washingtonpost.com/opinions/2019/12/06/lock-her-up-we-now-know-trump-did-far-worse/">To GOP hypocrites: I never want to hear about Hillary Clinton’s emails again - The Washington Post</a> </li>
-        <li> <a href="https://www.washingtonpost.com/immigration/pregnant-immigration-detainees-spiked-52-percent-under-trump-administration/2019/12/05/610ed714-16bb-11ea-8406-df3c54b3253e_story.html">Pregnant immigration detainees spiked 52 percent under Trump administration</a> </li>
+        <li> <a href="https://www.usatoday.com/story/news/politics/2019/12/06/trump-americans-flushing-toilets-10-times-15-times/4360782002/">Trump rants about Americans flushing toilets 10 or 15 times</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -180,14 +194,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:15.135467Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:29.607224Z
+-->
 
 
 </body>

@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,14 +165,19 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2017-08-09 </h1>
 <ol>
-        <li> <a href="https://twitter.com/zeeshanaleem/status/895352463414501376">Hello friends every single North Korean expert I've spoken to is more nervous about Trump than Kim Jong Un vox.com/world/2017/5/9…</a> </li>
         <li> <a href="http://thehill.com/policy/technology/345887-netflix-ceo-criticized-peter-thiel-for-his-trump-support?amp">Netflix CEO criticized Peter Thiel for supporting Trump | TheHill</a> </li>
+        <li> <a href="https://twitter.com/zeeshanaleem/status/895352463414501376">Hello friends every single North Korean expert I've spoken to is more nervous about Trump than Kim Jong Un vox.com/world/2017/5/9…</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -176,14 +192,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:11.853733Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:28.008892Z
+-->
 
 
 </body>

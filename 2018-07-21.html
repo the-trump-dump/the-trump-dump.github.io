@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,14 +165,21 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2018-07-21 </h1>
 <ol>
         <li> <a href="https://www.washingtonpost.com/politics/trumps-putin-fallout-inside-the-white-houses-tumultuous-week-of-walk-backs/2018/07/20/7cfdfc34-8c3d-11e8-8b20-60521f27434e_story.html">The Washington Post: Trump’s Putin fallout: Inside the White House’s tumultuous week of walk backs</a> </li>
+        <li> <a href="https://lh3.googleusercontent.com/-aDy2DpTXnI8/W1P2D6kN1eI/AAAAAAAAFFg/JemBIUbEWDEqsoB5W1Du8SabeLdSLuH1ACL0BGAYYCw/h1667/c21c22f9-c82c-42ac-b2f5-184fbfc9ecf7">c21c22f9-c82c-42ac-b2f5-184fbfc9ecf7 (1296×1667)</a> </li>
         <li> <a href="https://www.washingtonpost.com/politics/your-favorite-president-did-nothing-wrong-trump-lashes-out-at-secret-cohen-recording/2018/07/21/79b9bfd6-8ce2-11e8-a345-a1bf7847b375_story.html">The Washington Post: Trump lashes out at former attorney Cohen over secret recording seized by FBI</a> </li>
+        <li> <a href="https://twitter.com/krassenstein/status/1020724335198138368?s=12">twitter.com</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -176,14 +194,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:13.331221Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:28.779397Z
+-->
 
 
 </body>

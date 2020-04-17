@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,13 +165,18 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2018-07-30 </h1>
 <ol>
-        <li> <a href="https://www.nytco.com/statement-of-a-g-sulzberger-publisher-the-new-york-times-in-response-to-president-trumps-tweet-about-their-meeting/">Statement of A.G. Sulzberger, Publisher, The New York Times, in Response to President Trump’s Tweet About Their Meeting | The New York Times Company</a> </li>
+        <li> <a href="https://itunes.apple.com/us/podcast/the-young-turks/id597919007?mt=2#episodeGuid=17064726-27c8-11e8-9abd-9fe7403d81a6">itunes.apple.com</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -175,14 +191,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:13.337472Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:28.785976Z
+-->
 
 
 </body>

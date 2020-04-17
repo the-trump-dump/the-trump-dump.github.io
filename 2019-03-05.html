@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,17 +165,19 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2019-03-05 </h1>
 <ol>
-        <li> <a href="https://thehill.com/homenews/media/432586-hannity-blasts-house-investigation-into-trump-as-gruesome-display-of-modern">Hannity blasts House investigation into Trump as 'gruesome display of modern-day McCarthyism' | TheHill</a> </li>
         <li> <a href="https://www.cnbc.com/2019/03/04/robert-mueller-notifies-judge-that-roger-stone-shared-instagram-image.html">Robert Mueller notifies judge that Roger Stone shared Instagram image</a> </li>
-        <li> <a href="https://www.washingtonpost.com/politics/2019/03/04/president-trump-has-made-false-or-misleading-claims-over-days/">President Trump has made 9,014 false or misleading claims over 773 days - The Washington Post</a> </li>
-        <li> <a href="https://nyti.ms/2Vy0OgI?smid=nytcore-ios-share">Trump’s Grip Shows Signs of Slipping as Senate Prepares to Block Wall Emergency</a> </li>
-        <li> <a href="https://www.vox.com/policy-and-politics/2019/3/3/18236271/senate-republicans-national-emergency?fbclid=IwAR1CgqzUXx0Ve7XAJeCG7fJMQ6UMu3ez70hFl4ixT4Qy7B7MHPwbhIGc_G8">Rand Paul gives Senate Democrats the votes they need to terminate Trump’s national emergency - Vox</a> </li>
+        <li> <a href="https://thehill.com/homenews/media/432586-hannity-blasts-house-investigation-into-trump-as-gruesome-display-of-modern">Hannity blasts House investigation into Trump as 'gruesome display of modern-day McCarthyism' | TheHill</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -179,14 +192,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:14.268205Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:29.263686Z
+-->
 
 
 </body>

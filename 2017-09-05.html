@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,21 +165,26 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2017-09-05 </h1>
 <ol>
-        <li> <a href="http://thehill.com/homenews/administration/349269-obama-calls-trump-dreamers-decision-cruel-self-defeating-and-wrong?amp">Obama calls Trump's DACA decision cruel, self-defeating and wrong | TheHill</a> </li>
-        <li> <a href="https://www.vox.com/platform/amp/policy-and-politics/2017/9/5/16240282/obamacare-sabotage-trump">This is what Obamacare sabotage looks like - Vox</a> </li>
-        <li> <a href="http://thehill.com/homenews/state-watch/349302-dems-threaten-to-sue-trump-over-daca?amp">Dems threaten to sue Trump over DACA | TheHill</a> </li>
-        <li> <a href="https://gutierrez.house.gov/media-center/press-releases/guti-rrez-daca-announcement-implications-approps-fights">Gutiérrez: DACA Announcement</a> </li>
-        <li> <a href="http://thehill.com/business-a-lobbying/business-a-lobbying/349270-business-backlash-hits-trumps-daca-decision?amp">Business backlash hits Trump's DACA decision | TheHill</a> </li>
-        <li> <a href="http://www.politico.com/magazine/story/2017/09/01/joe-arpaio-pardon-sheriffs-movement-215566">Arpaio and the constitutional sheriff movement</a> </li>
-        <li> <a href="http://thehill.com/homenews/senate/349255-mcconnell-praises-trump-for-ending-daca?amp">McConnell praises Trump for ending DACA | TheHill</a> </li>
+        <li> <a href="http://thehill.com/business-a-lobbying/349271-read-obama-statement-on-daca-phaseout?amp">Read Obama's statement on DACA phaseout | TheHill</a> </li>
         <li> <a href="http://thehill.com/latino/349230-rahm-emanuel-chicago-will-continue-to-welcome-dreamers?amp">Emanuel declares Chicago 'a Trump-free zone' after DACA decision | TheHill</a> </li>
-        <li> <a href="https://www.youtube.com/watch?v=k_p9pr5ckfk">Why building a wall wouldn't stop immigration</a> </li>
+        <li> <a href="http://thehill.com/homenews/administration/349269-obama-calls-trump-dreamers-decision-cruel-self-defeating-and-wrong?amp">Obama calls Trump's DACA decision cruel, self-defeating and wrong | TheHill</a> </li>
+        <li> <a href="https://t.co/MOygJCsGld?amp=1">http://thehill.com/homenews/senate/349340-mccain-whitehouse-urge-scotus-to-affirm-wisconsin-gerrymandering-decision?amp</a> </li>
+        <li> <a href="http://thehill.com/business-a-lobbying/business-a-lobbying/349270-business-backlash-hits-trumps-daca-decision?amp">Business backlash hits Trump's DACA decision | TheHill</a> </li>
+        <li> <a href="https://gutierrez.house.gov/media-center/press-releases/guti-rrez-daca-announcement-implications-approps-fights">Gutiérrez: DACA Announcement</a> </li>
+        <li> <a href="http://thehill.com/homenews/state-watch/349302-dems-threaten-to-sue-trump-over-daca?amp">Dems threaten to sue Trump over DACA | TheHill</a> </li>
+        <li> <a href="http://thehill.com/homenews/senate/349255-mcconnell-praises-trump-for-ending-daca?amp">McConnell praises Trump for ending DACA | TheHill</a> </li>
+        <li> <a href="https://www.vox.com/platform/amp/policy-and-politics/2017/9/5/16240282/obamacare-sabotage-trump">This is what Obamacare sabotage looks like - Vox</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -183,14 +199,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:11.889894Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:28.072503Z
+-->
 
 
 </body>

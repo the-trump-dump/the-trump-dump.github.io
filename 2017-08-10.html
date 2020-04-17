@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,13 +165,21 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2017-08-10 </h1>
 <ol>
+        <li> <a href="https://www.gq.com/story/donald-trump-undo-obama">Donald Trump's Only Policy Agenda Seems to Be &quot;Undo Obama Stuff&quot; | GQ</a> </li>
+        <li> <a href="http://thehill.com/policy/transportation/345971-trump-rule-change-ignites-safety-debate?amp">Trump rule change ignites safety debate | TheHill</a> </li>
         <li> <a href="https://www.washingtonpost.com/news/post-politics/wp/2017/08/10/trump-says-he-is-very-thankful-to-putin-for-expelling-u-s-diplomats-from-russia/">Trump says he is ‘very thankful’ to Putin for expelling U.S. diplomats from Russia - The Washington Post</a> </li>
+        <li> <a href="https://www.washingtonpost.com/politics/gaming-out-the-north-korea-crisis-how-the-conflict-might-escalate/2017/08/10/06d0207a-7ddc-11e7-a669-b400c5c7e1cc_story.html">The Washington Post: Gaming out the North Korea crisis: How the conflict might escalate</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -175,14 +194,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:11.854518Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:28.011241Z
+-->
 
 
 </body>

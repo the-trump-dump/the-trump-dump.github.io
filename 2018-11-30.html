@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,25 +165,24 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2018-11-30 </h1>
 <ol>
-        <li> <a href="https://www.washingtonpost.com/amphtml/politics/2018/11/30/new-warning-federal-employees-no-talk-resistance-or-opinions-about-impeachment-work/?noredirect=on&amp;__twitter_impression=true">No talk of ‘the Resistance’ or opinions about impeachment at work, federal employees are warned</a> </li>
-        <li> <a href="https://www.youtube.com/watch?v=DW45eoYTPkA&amp;feature=share">Trump Voters Go UNHINGED When Given Facts - YouTube</a> </li>
-        <li> <a href="https://www.washingtonpost.com/politics/individual-1-trump-emerges-as-a-central-subject-of-mueller-probe/2018/11/29/e3968994-f3f7-11e8-80d0-f7e1948d55f4_story.html">The Washington Post: ‘Individual 1’: Trump emerges as a central subject of Mueller probe</a> </li>
-        <li> <a href="https://thehill.com/policy/international/419147-macron-overheard-discussing-khashoggi-investigation-with-saudi-crown?amp#click=https://t.co/Q7t89WfAiA">French president to Saudi crown prince: 'You never listen to me' | TheHill</a> </li>
-        <li> <a href="https://www.cnn.com/2018/11/29/politics/donald-trump-russia-michael-cohen/index.html">The smoke around Donald Trump and Russia is choking his presidency</a> </li>
-        <li> <a href="https://www.washingtonpost.com/national/health-science/new-insurance-guidelines-would-undermine-rules-of-the-affordable-care-act/2018/11/29/ff467f46-f357-11e8-aeea-b85fd44449f5_story.html">The Washington Post: Trump administration targets basic rule of Obama’s health law</a> </li>
-        <li> <a href="https://nyti.ms/2DSwlEI?smid=nytcore-ios-share">How a Trump Lawyer, a Felon and a Russian General Chased a Moscow Deal</a> </li>
-        <li> <a href="https://nyti.ms/2zvflkU?smid=nytcore-ios-share">Trump Is Compromised by Russia</a> </li>
-        <li> <a href="https://twitter.com/pickardje/status/1068407226153533440?s=12">Jim Pickard on Twitter: &quot;this is one of the greatest newspaper corrections in history… &quot;</a> </li>
-        <li> <a href="https://www.theguardian.com/us-news/2018/nov/29/michael-cohen-mueller-donald-trump-analysis">Michael Cohen deal a critical step for Mueller that exposes Trump to new risk | US news | The Guardian</a> </li>
-        <li> <a href="https://thehill.com/homenews/administration/419040-cnns-gloria-borger-source-close-to-cohen-says-he-has-the-goods?amp#click=https://t.co/lffmElhDaj">CNN's Gloria Borger: Source close to Cohen says he has 'the goods' | TheHill</a> </li>
-        <li> <a href="https://nyti.ms/2zAGvGV?smid=nytcore-ios-share">Cohen Lied. Here’s Why It Matters</a> </li>
         <li> <a href="https://twitter.com/jules_su/status/1068637724608000000?s=12">Jules Suzdaltsev on Twitter: &quot;LMAO HOW DID WE MISS THIS… &quot;</a> </li>
+        <li> <a href="https://slate.com/news-and-politics/2018/11/trump-g20-buenos-aires.html">Trump’s Summit of Futility</a> </li>
+        <li> <a href="https://www.npr.org/2018/11/30/672188201/trump-jr-s-2017-testimony-conflicts-with-cohen-s-account-of-russian-talks?t=1543629853571">NPR Choice page</a> </li>
+        <li> <a href="https://thehill.com/homenews/administration/419040-cnns-gloria-borger-source-close-to-cohen-says-he-has-the-goods?amp#click=https://t.co/lffmElhDaj">CNN's Gloria Borger: Source close to Cohen says he has 'the goods' | TheHill</a> </li>
+        <li> <a href="https://thehill.com/policy/international/419147-macron-overheard-discussing-khashoggi-investigation-with-saudi-crown?amp#click=https://t.co/Q7t89WfAiA">French president to Saudi crown prince: 'You never listen to me' | TheHill</a> </li>
+        <li> <a href="https://www.washingtonpost.com/amphtml/politics/2018/11/30/new-warning-federal-employees-no-talk-resistance-or-opinions-about-impeachment-work/?noredirect=on&amp;__twitter_impression=true">No talk of ‘the Resistance’ or opinions about impeachment at work, federal employees are warned</a> </li>
+        <li> <a href="https://twitter.com/pickardje/status/1068407226153533440?s=12">Jim Pickard on Twitter: &quot;this is one of the greatest newspaper corrections in history… &quot;</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -187,14 +197,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:13.808948Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:29.074505Z
+-->
 
 
 </body>

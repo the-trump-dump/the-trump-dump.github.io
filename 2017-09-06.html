@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,18 +165,21 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2017-09-06 </h1>
 <ol>
         <li> <a href="http://thehill.com/homenews/administration/349234-protests-erupt-outside-white-house-trump-tower-after-daca-reversal">DACA reversal sparks protests outside White House, Trump Tower | TheHill</a> </li>
-        <li> <a href="http://thehill.com/business-a-lobbying/349271-read-obama-statement-on-daca-phaseout?amp">Read Obama's statement on DACA phaseout | TheHill</a> </li>
+        <li> <a href="https://www.usatoday.com/story/news/2017/09/06/trump-gets-millions-golf-members-ceos-and-lobbyists-get-access-president/632505001/">Donald Trump gets millions from golf members, and lobbyists get access</a> </li>
         <li> <a href="http://thehill.com/homenews/senate/349447-dems-say-trump-agrees-to-short-term-funding-debt-package?amp">Dems say Trump agrees to short-term funding, debt package | TheHill</a> </li>
         <li> <a href="https://www.vox.com/platform/amp/2017/9/6/16259076/trump-daca-congress">The government is already winding down DACA — no matter what Trump tweets - Vox</a> </li>
-        <li> <a href="https://t.co/MOygJCsGld?amp=1">http://thehill.com/homenews/senate/349340-mccain-whitehouse-urge-scotus-to-affirm-wisconsin-gerrymandering-decision?amp</a> </li>
-        <li> <a href="https://www.usatoday.com/story/news/2017/09/06/trump-gets-millions-golf-members-ceos-and-lobbyists-get-access-president/632505001/">Donald Trump gets millions from golf members, and lobbyists get access</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -180,14 +194,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:11.891093Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:28.073763Z
+-->
 
 
 </body>

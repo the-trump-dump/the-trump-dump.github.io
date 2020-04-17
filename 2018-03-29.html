@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,21 +165,28 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2018-03-29 </h1>
 <ol>
-        <li> <a href="https://www.washingtonpost.com/world/national-security/sessions-for-now-rebuffs-gop-calls-for-second-special-counsel-to-probe-fbi-actions-in-clinton-and-russia-probes/2018/03/29/3f79a938-3393-11e8-8bdd-cdb33a5eef83_story.html">The Washington Post: Sessions, for now, rebuffs GOP calls for second special counsel to probe FBI actions in Clinton and Russia probes</a> </li>
-        <li> <a href="https://apple.news/Au6BmPudTS4ysTxP2_5x51A">Analysis | Trump doesn’t know what his own attorneys are up to. That’s what voters are supposed to believe, anyway. - The Washington Post</a> </li>
-        <li> <a href="http://thehill.com/homenews/administration/380857-judge-halts-stormy-daniels-effort-to-depose-trump?__twitter_impression=true">Judge halts Stormy Daniels effort to depose Trump | TheHill</a> </li>
-        <li> <a href="http://thehill.com/policy/healthcare/other/380889-azar-taps-former-cvs-executive-to-lead-drug-pricing-initiative">Azar taps former CVS executive to help lower drug prices | TheHill</a> </li>
-        <li> <a href="http://thehill.com/homenews/administration/380512-white-house-not-probing-whether-jared-kushner-violated-the-law">White House 'not probing whether Jared Kushner violated the law' | TheHill</a> </li>
-        <li> <a href="https://www.washingtonpost.com/world/europe/russia-to-expel-us-diplomats-close-st-petersburg-consulate/2018/03/29/1d1b6fc4-3376-11e8-b6bd-0084a1666987_story.html">The Washington Post: Russia to expel U.S. diplomats, close St. Petersburg consulate</a> </li>
         <li> <a href="http://thehill.com/homenews/administration/380897-trump-rushes-to-embrace-roseanne-ratings-success">Trump rushes to embrace 'Roseanne' success | TheHill</a> </li>
-        <li> <a href="http://thehill.com/policy/international/russia/380899-russian-diplomat-seeks-gop-senators-help-meeting-pence-cabinet">Russian diplomat seeks GOP senator's help meeting Pence, Cabinet officials | TheHill</a> </li>
+        <li> <a href="https://www.washingtonpost.com/world/national-security/sessions-for-now-rebuffs-gop-calls-for-second-special-counsel-to-probe-fbi-actions-in-clinton-and-russia-probes/2018/03/29/3f79a938-3393-11e8-8bdd-cdb33a5eef83_story.html">The Washington Post: Sessions, for now, rebuffs GOP calls for second special counsel to probe FBI actions in Clinton and Russia probes</a> </li>
         <li> <a href="http://thehill.com/homenews/administration/380391-california-ag-to-sue-trump-administration-over-census-citizenship">California AG to sue Trump administration over census citizenship question | TheHill</a> </li>
+        <li> <a href="http://thehill.com/policy/healthcare/other/380889-azar-taps-former-cvs-executive-to-lead-drug-pricing-initiative">Azar taps former CVS executive to help lower drug prices | TheHill</a> </li>
+        <li> <a href="https://amp.cnn.com/cnn/2018/03/27/politics/donald-trump-border-wall-military/index.html?__twitter_impression=true">Trump suggests US military foot the bill for border wall</a> </li>
+        <li> <a href="http://thehill.com/homenews/administration/380857-judge-halts-stormy-daniels-effort-to-depose-trump?__twitter_impression=true">Judge halts Stormy Daniels effort to depose Trump | TheHill</a> </li>
+        <li> <a href="http://thehill.com/policy/international/russia/380899-russian-diplomat-seeks-gop-senators-help-meeting-pence-cabinet">Russian diplomat seeks GOP senator's help meeting Pence, Cabinet officials | TheHill</a> </li>
+        <li> <a href="http://thehill.com/homenews/administration/380512-white-house-not-probing-whether-jared-kushner-violated-the-law">White House 'not probing whether Jared Kushner violated the law' | TheHill</a> </li>
+        <li> <a href="http://thehill.com/homenews/administration/380869-trump-touts-border-wall-construction-during-stop-in-ohio?amp&amp;__twitter_impression=true">Trump touts construction on older border fence during stop in Ohio | TheHill</a> </li>
+        <li> <a href="https://apple.news/Au6BmPudTS4ysTxP2_5x51A">Analysis | Trump doesn’t know what his own attorneys are up to. That’s what voters are supposed to believe, anyway. - The Washington Post</a> </li>
+        <li> <a href="https://www.washingtonpost.com/world/europe/russia-to-expel-us-diplomats-close-st-petersburg-consulate/2018/03/29/1d1b6fc4-3376-11e8-b6bd-0084a1666987_story.html">The Washington Post: Russia to expel U.S. diplomats, close St. Petersburg consulate</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -183,14 +201,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:12.843457Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:28.562163Z
+-->
 
 
 </body>

@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,18 +165,20 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2018-01-01 </h1>
 <ol>
-        <li> <a href="http://thehill.com/homenews/house/366923-judiciary-republican-if-there-was-any-trump-russia-collusion-it-would-have?amp&amp;__twitter_impression=true">Judiciary Republican: If there was any Trump-Russia collusion, it would have leaked months ago | TheHill</a> </li>
         <li> <a href="https://www.lawfareblog.com/why-trumps-war-deep-state-failing%E2%80%94so-far">Why Trump’s War on the Deep State Is Failing—So Far - Lawfare</a> </li>
-        <li> <a href="https://t.co/s3xPhBpMUu?ssr=true">t.co</a> </li>
-        <li> <a href="http://thehill.com/policy/international/366940-un-secretary-general-issues-red-alert-for-world-ahead-of-2018?amp&amp;__twitter_impression=true">UN secretary-general issues 'red alert' for world ahead of 2018 | TheHill</a> </li>
-        <li> <a href="http://thehill.com/homenews/campaign/366934-kobach-election-integrity-commission-has-been-bogged-down-in-litigation?amp&amp;__twitter_impression=true">Kobach: Election integrity commission has been 'bogged down in litigation' | TheHill</a> </li>
         <li> <a href="http://abcnews.go.com/amp/US/beginning-today-transgender-individuals-join-us-military/story?id=52051204#click=https://t.co/AKJUo3EJuR">Beginning today, transgender individuals can join the US military</a> </li>
+        <li> <a href="https://www.washingtonpost.com/news/wonk/wp/2017/12/29/the-u-s-has-one-of-the-stingiest-minimum-wage-policies-of-any-wealthy-nation/">The us has one of the stingiest minimum wage policies of any wealthy nation</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -180,14 +193,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:12.395285Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:28.341335Z
+-->
 
 
 </body>

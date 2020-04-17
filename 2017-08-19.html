@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,19 +165,23 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2017-08-19 </h1>
 <ol>
         <li> <a href="https://www.nytimes.com/2017/08/19/us/politics/donald-and-melania-trump-to-skip-kennedy-center-honors.html">Donald and Melania Trump to Skip Kennedy Center Honors</a> </li>
         <li> <a href="https://twitter.com/breznican/status/898586524874186753">Watch CNN shutdown a trump supporting liar about job creation</a> </li>
+        <li> <a href="http://www.independent.co.uk/news/world/americas/us-politics/trump-charities-galas-mar-a-lago-american-cancer-red-cross-samaritans-cancel-a7901486.html?amp">Slew of major charities cancel galas at Trump's Mar-a-Lago</a> </li>
+        <li> <a href="https://www.nytimes.com/2017/08/18/opinion/sunday/president-trump-resignation.html">The Week When President Trump Resigned</a> </li>
         <li> <a href="https://twitter.com/davidrutz/status/898613526033563648">Great segment on bannons ouster</a> </li>
         <li> <a href="http://www.thedailybeast.com/seb-gorkas-fate-extremely-uncertain-as-his-boss-bannon-is-ousted">Seb Gorka’s Fate ‘Extremely Uncertain’ as His Boss Bannon Is Ousted</a> </li>
-        <li> <a href="http://thehill.com/blogs/blog-briefing-room/347119-new-york-post-updates-trump-survivor-cover-with-bannons-ouster?amp">New York Post updates Trump 'Survivor' cover with Bannon's ouster | TheHill</a> </li>
-        <li> <a href="https://www.nytimes.com/2017/08/18/opinion/sunday/president-trump-resignation.html">The Week When President Trump Resigned</a> </li>
-        <li> <a href="http://www.independent.co.uk/news/world/americas/us-politics/trump-charities-galas-mar-a-lago-american-cancer-red-cross-samaritans-cancel-a7901486.html?amp">Slew of major charities cancel galas at Trump's Mar-a-Lago</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -181,14 +196,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:11.868079Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:28.033961Z
+-->
 
 
 </body>

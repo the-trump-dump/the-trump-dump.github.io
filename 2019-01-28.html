@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,16 +165,20 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2019-01-28 </h1>
 <ol>
-        <li> <a href="https://thehill.com/homenews/sunday-talk-shows/427147-christie-roger-stone-indictment-is-pretty-damning?amp&amp;__twitter_impression=true">Christie: Roger Stone indictment is 'pretty damning' | TheHill</a> </li>
+        <li> <a href="https://www.washingtonpost.com/world/national-security/justice-dept-charges-huawei-with-fraud-ratcheting-up-us-china-tensions/2019/01/28/70a7f550-2320-11e9-81fd-b7b05d5bed90_story.html">Justice Dept. charges Huawei with fraud, ratcheting up U.S.-China tensions - The Washington Post</a> </li>
         <li> <a href="https://nyti.ms/2S9DOXu?smid=nytcore-ios-share">U.S. and Taliban Agree in Principle to Peace Framework, Envoy Says</a> </li>
         <li> <a href="https://www.washingtonpost.com/world/national-security/mueller-investigation-is-close-to-being-completed-acting-attorney-general-says/2019/01/28/6bcf09b4-2349-11e9-81fd-b7b05d5bed90_story.html">Mueller investigation is ‘close to being completed,’ acting attorney general says - The Washington Post</a> </li>
-        <li> <a href="https://www.washingtonpost.com/world/national-security/justice-dept-charges-huawei-with-fraud-ratcheting-up-us-china-tensions/2019/01/28/70a7f550-2320-11e9-81fd-b7b05d5bed90_story.html">Justice Dept. charges Huawei with fraud, ratcheting up U.S.-China tensions - The Washington Post</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -178,14 +193,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:14.249803Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:29.242491Z
+-->
 
 
 </body>

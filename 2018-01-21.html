@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,17 +165,22 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2018-01-21 </h1>
 <ol>
-        <li> <a href="http://thehill.com/policy/energy-environment/369934-ex-epa-administrator-epa-will-need-20-to-30-years-to-recover-from?amp&amp;__twitter_impression=true">Ex-EPA chief: Agency will need '20 to 30' years to recover from Pruitt | TheHill</a> </li>
-        <li> <a href="http://nymag.com/selectall/2018/01/600-000-people-retweeted-russian-propaganda-during-election.html">600,000 People Retweeted Russian Propaganda During Election</a> </li>
+        <li> <a href="http://thehill.com/policy/international/369992-trump-requested-credit-for-pushing-north-south-korea-to-talk-report?__twitter_impression=true&amp;__twitter_impression=true">Trump asked South Korea's president to give him credit for talks with North: report | TheHill</a> </li>
         <li> <a href="https://twitter.com/nowthisnews/status/954825373572726784?ref_src=twcamp%5Eshare%7Ctwsrc%5Eios%7Ctwgr%5Ecom.blork.Pinner.AddBookmarkExtension">The hypocrisy of the trumpshutdown</a> </li>
-        <li> <a href="http://thehill.com/blogs/blog-briefing-room/news/369903-gop-strategist-shutdown-is-on-trump-and-gop?amp&amp;__twitter_impression=true">GOP strategist: Shutdown is on Trump and GOP | TheHill</a> </li>
+        <li> <a href="http://thehill.com/homenews/senate/370006-graham-stephen-miller-makes-immigration-deal-impossible?amp&amp;__twitter_impression=true">Graham: Stephen Miller makes immigration deal impossible | TheHill</a> </li>
         <li> <a href="https://twitter.com/jrubinblogger/status/954881644229521409?ref_src=twcamp%5Eshare%7Ctwsrc%5Eios%7Ctwgr%5Ecom.blork.Pinner.AddBookmarkExtension">The notion R’s are entitled to D votes to break 60 without negotiating with them is bizarre. If you say take it or leave it, you have to be prepared for leave it.</a> </li>
+        <li> <a href="https://www.nytimes.com/2018/01/21/us/politics/congress-government-shutdown.html">Shutdown Goes Into Monday as Senate Inches Toward Deal</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -179,14 +195,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:12.415707Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:28.359506Z
+-->
 
 
 </body>

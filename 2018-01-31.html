@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,21 +165,25 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2018-01-31 </h1>
 <ol>
-        <li> <a href="http://thehill.com/homenews/house/371429-ryan-calls-for-a-cleanse-of-the-fbi?amp&amp;__twitter_impression=true">Ryan calls for a 'cleanse' of the FBI | TheHill</a> </li>
-        <li> <a href="https://www.huffingtonpost.com/entry/white-supremacist-murders-2017-report_us_5a5f59b0e4b0ee2ff32c4bea">Murders By U.S. White Supremacists More Than Doubled In 2017, New Report Shows | HuffPost</a> </li>
-        <li> <a href="http://thehill.com/homenews/senate/371365-sen-collins-absolutely-essential-mueller-be-allowed-to-finish-probe">Sen. Collins: ‘Absolutely essential’ Mueller be allowed to finish probe | TheHill</a> </li>
-        <li> <a href="http://abcnews.go.com/US/doj-special-counsel-internal-docs-thwarted-sessions-resignation/story?id=52721241&amp;cid=clicksource_4380645_1_hero_headlines_headlines_hed">Details on the thwarted firing of AG Jeff Sessions</a> </li>
-        <li> <a href="https://www.washingtonpost.com/politics/justice-dept-officials-appealed-to-white-house-to-halt-release-of-memo-alleging-fbi-abuses-related-to-author-of-trump-dossier/2018/01/30/32f9d15a-060d-11e8-ae28-e370b74ea9a7_story.html">The Washington Post: Justice Dept. officials appealed to White House to halt release of memo alleging FBI abuses related to author of Trump dossier</a> </li>
-        <li> [Michael Coté on Twitter: &quot;‘There's not another US politician who in 1 night could call for…paid family leave, keeping Gitmo open, [strengthening] the nuclear arsenal, making prescription[s] less expensive, cracking down on drug dealers, &amp; <a href="https://twitter.com/cote/status/958683634222837760">giving) co</a> </li>
-        <li> <a href="http://thehill.com/homenews/administration/371558-trump-tells-republican-hes-100-percent-for-releasing-nunes-memo">Trump tells Republican he's '100 percent' for releasing Nunes memo | TheHill</a> </li>
         <li> <a href="https://itunes.apple.com/us/podcast/msnbc-rachel-maddow/id294055449?mt=2&amp;i=1000401019721">Maddow: Trump is systematically firing everyone who could trouble him in the Mueller investigation</a> </li>
+        <li> [Michael Coté on Twitter: &quot;‘There's not another US politician who in 1 night could call for…paid family leave, keeping Gitmo open, [strengthening] the nuclear arsenal, making prescription[s] less expensive, cracking down on drug dealers, &amp; <a href="https://twitter.com/cote/status/958683634222837760">giving) co</a> </li>
         <li> <a href="https://www.nytimes.com/2018/01/30/us/politics/president-trump-sotu.html">Trump Can Sell an Improved Economy, but Not Himself</a> </li>
+        <li> <a href="http://thehill.com/homenews/house/371429-ryan-calls-for-a-cleanse-of-the-fbi?amp&amp;__twitter_impression=true">Ryan calls for a 'cleanse' of the FBI | TheHill</a> </li>
+        <li> <a href="https://www.nytimes.com/2018/01/31/us/politics/trump-russia-hope-hicks-mueller.html">Mueller Zeros In on Story Put Together About Trump Tower Meeting</a> </li>
+        <li> <a href="http://thehill.com/homenews/administration/371659-federal-judge-rips-trump-in-daca-case-for-recurring-redundant?amp&amp;__twitter_impression=true">Judge rips Trump in DACA case for 'drumbeat of anti-Latino commentary' | TheHill</a> </li>
+        <li> <a href="http://abcnews.go.com/US/doj-special-counsel-internal-docs-thwarted-sessions-resignation/story?id=52721241&amp;cid=clicksource_4380645_1_hero_headlines_headlines_hed">Details on the thwarted firing of AG Jeff Sessions</a> </li>
+        <li> <a href="http://thehill.com/homenews/senate/371365-sen-collins-absolutely-essential-mueller-be-allowed-to-finish-probe">Sen. Collins: ‘Absolutely essential’ Mueller be allowed to finish probe | TheHill</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -183,14 +198,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:12.425074Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:28.516685Z
+-->
 
 
 </body>

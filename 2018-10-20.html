@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,13 +165,20 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2018-10-20 </h1>
 <ol>
+        <li> <a href="http://www.wetmachine.com/tales-of-the-sausage-factory/hurricane-michael-a-wake-up-call-on-why-total-dereg-of-telecom-a-very-bad-idea/">Wetmachine » Tales of the Sausage Factory » Hurricane Michael A Wake Up Call On Why Total Dereg of Telecom A Very Bad Idea.</a> </li>
         <li> <a href="https://t.co/NDy6Dap5Ig?amp=1">https://thehill.com/homenews/administration/412401-trump-confirms-us-will-withdraw-from-key-arms-control-treaty?amp#click=https://t.co/NDy6Dap5Ig</a> </li>
+        <li> <a href="https://arstechnica.com/tech-policy/2018/10/ajit-pai-killed-rules-that-could-have-helped-florida-recover-from-hurricane/">Ajit Pai killed rules that could have helped Florida recover from hurricane | Ars Technica</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -175,14 +193,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:13.764425Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:29.040706Z
+-->
 
 
 </body>

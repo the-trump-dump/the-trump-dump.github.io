@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,15 +165,22 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2018-11-05 </h1>
 <ol>
-        <li> <a href="https://www.independent.co.uk/news/world/americas/donald-trump-jews-antisemitic-hate-crimes-false-flag-reverse-david-duke-kkk-ku-klux-klan-a7604801.html">Donald Trump suggests Jews might secretly be committing anti-Semitic hate crimes on themselves so he looks bad | The Independent</a> </li>
-        <li> <a href="https://www.washingtonpost.com/politics/full-trumpism-the-presidents-apocalyptic-attacks-reach-a-new-level-of-falsity/2018/11/04/8e4fb87e-e043-11e8-b759-3d88a5ce9e19_story.html">The Washington Post: ‘Full Trumpism’: The president’s apocalyptic attacks reach a new level of falsity</a> </li>
         <li> <a href="https://www.washingtonpost.com/politics/on-eve-of-midterm-elections-democrats-republicans-make-their-final-pitch/2018/11/05/ac84d86c-e0ff-11e8-b759-3d88a5ce9e19_story.html">The Washington Post: On eve of midterm election, Democrats, Republicans make their final pitches</a> </li>
+        <li> <a href="https://www.independent.co.uk/news/world/americas/donald-trump-jews-antisemitic-hate-crimes-false-flag-reverse-david-duke-kkk-ku-klux-klan-a7604801.html">Donald Trump suggests Jews might secretly be committing anti-Semitic hate crimes on themselves so he looks bad | The Independent</a> </li>
+        <li> <a href="https://thehill.com/homenews/media/415051-jake-tapper-expresses-amazement-that-fox-news-pulled-controversial-trump-ad?amp&amp;__twitter_impression=true">Jake Tapper: Trump ad 'so full of falsehoods' even Fox News turned it down | TheHill</a> </li>
+        <li> <a href="https://www.washingtonpost.com/politics/full-trumpism-the-presidents-apocalyptic-attacks-reach-a-new-level-of-falsity/2018/11/04/8e4fb87e-e043-11e8-b759-3d88a5ce9e19_story.html">The Washington Post: ‘Full Trumpism’: The president’s apocalyptic attacks reach a new level of falsity</a> </li>
+        <li> <a href="https://thehill.com/homenews/administration/415084-trump-says-he-wants-to-unite-the-country-eventually?amp#click=https://t.co/bpV8lbA1du">Trump says he wants to unite the country 'eventually' | TheHill</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -177,14 +195,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:13.777597Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:29.052805Z
+-->
 
 
 </body>

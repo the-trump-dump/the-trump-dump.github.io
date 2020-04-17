@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,17 +165,21 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2018-08-03 </h1>
 <ol>
-        <li> <a href="https://www.rollingstone.com/politics/politics-news/nra-financial-trouble-706371/">www.rollingstone.com</a> </li>
-        <li> <a href="https://www.washingtonpost.com/news/politics/wp/2018/07/30/the-wave-thats-building-for-november-may-not-be-blue-so-much-as-pink/">The Washington Post: The wave that’s building for November may not be blue so much as pink</a> </li>
-        <li> <a href="https://www.washingtonpost.com/politics/trump-administration-stresses-its-focus-on-election-security-amid-criticism/2018/08/02/1e60c3ae-9675-11e8-810c-5fa705927d54_story.html">The Washington Post: Trump administration stresses its focus on election security amid criticism</a> </li>
         <li> <a href="https://www.cnn.com/2018/08/02/politics/russian-spy-us-embassy-moscow/index.html">Suspected Russian spy caught working inside US embassy in Moscow - CNNPolitics</a> </li>
+        <li> <a href="https://www.rollingstone.com/politics/politics-news/nra-financial-trouble-706371/">www.rollingstone.com</a> </li>
         <li> <a href="http://thehill.com/opinion/white-house/400237-obstruction-of-justice-bombshell-will-explode-before-midterms?amp&amp;__twitter_impression=true">Obstruction of justice bombshell will explode before midterms | TheHill</a> </li>
+        <li> <a href="https://www.washingtonpost.com/news/politics/wp/2018/07/30/the-wave-thats-building-for-november-may-not-be-blue-so-much-as-pink/">The Washington Post: The wave that’s building for November may not be blue so much as pink</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -179,14 +194,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:13.339735Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:28.788509Z
+-->
 
 
 </body>

@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,16 +165,21 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2018-01-02 </h1>
 <ol>
-        <li> <a href="https://twitter.com/freedlander/status/948200836429164544?ref_src=twcamp%5Eshare%7Ctwsrc%5Eios%7Ctwgr%5Ecom.blork.Pinner.AddBookmarkExtension">Trump on FAA</a> </li>
-        <li> <a href="https://www.theguardian.com/commentisfree/2018/jan/02/trump-biased-liberal-media-television">Trump's attacks against a biased liberal media obscure one fact: it doesn't exist | Lucia Graves | Opinion | The Guardian</a> </li>
         <li> <a href="https://twitter.com/topherspiro/status/948273768966885376?ref_src=twcamp%5Eshare%7Ctwsrc%5Eios%7Ctwgr%5Ecom.blork.Pinner.AddBookmarkExtension">Orin hatch of Utah is retiring; here are the despicable things he did during trump’s era</a> </li>
-        <li> <a href="https://www.washingtonpost.com/news/wonk/wp/2017/12/29/the-u-s-has-one-of-the-stingiest-minimum-wage-policies-of-any-wealthy-nation/">The us has one of the stingiest minimum wage policies of any wealthy nation</a> </li>
+        <li> <a href="https://twitter.com/freedlander/status/948200836429164544?ref_src=twcamp%5Eshare%7Ctwsrc%5Eios%7Ctwgr%5Ecom.blork.Pinner.AddBookmarkExtension">Trump on FAA</a> </li>
+        <li> <a href="https://apnews.com/8720fde079e84237b8e6cca4219aafb2/trump-accuses-doj-of-being-part-of-'deep-state'">Trump accuses the DOJ of being part of the deep state</a> </li>
+        <li> <a href="https://www.theguardian.com/commentisfree/2018/jan/02/trump-biased-liberal-media-television">Trump's attacks against a biased liberal media obscure one fact: it doesn't exist | Lucia Graves | Opinion | The Guardian</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -178,14 +194,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:12.395775Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:28.341987Z
+-->
 
 
 </body>

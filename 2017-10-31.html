@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,23 +165,23 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2017-10-31 </h1>
 <ol>
-        <li> <a href="http://thehill.com/homenews/senate/357928-gop-senators-dismiss-calls-for-bill-to-protect-mueller-from-trump?amp">GOP senators dismiss calls for bill to protect Mueller from Trump | TheHill</a> </li>
-        <li> <a href="http://thehill.com/homenews/administration/357939-clinton-after-manafort-indictment-we-know-everything?amp">Clinton after Manafort indictment: 'We know everything we need to know' | TheHill</a> </li>
         <li> <a href="http://thehill.com/policy/energy-environment/358043-epa-blocks-scientists-who-get-grants-from-advisory-boards?amp">EPA blocks scientists who get grants from its advisory boards | TheHill</a> </li>
-        <li> <a href="https://www.nytimes.com/2017/10/30/us/politics/paul-manafort-indicted.html">Trump Ex-Campaign Chief Indicted on Tax Fraud and Other Charges</a> </li>
+        <li> <a href="http://thehill.com/homenews/administration/357939-clinton-after-manafort-indictment-we-know-everything?amp">Clinton after Manafort indictment: 'We know everything we need to know' | TheHill</a> </li>
+        <li> <a href="http://thehill.com/homenews/senate/357928-gop-senators-dismiss-calls-for-bill-to-protect-mueller-from-trump?amp">GOP senators dismiss calls for bill to protect Mueller from Trump | TheHill</a> </li>
         <li> <a href="https://www.vox.com/platform/amp/world/2017/10/30/16561272/chris-murphy-trump-north-korea-war-senate">Sen. Chris Murphy explains his plan to stop Trump from bombing North Korea - Vox</a> </li>
+        <li> <a href="http://www.slate.com/blogs/the_slatest/2017/10/29/watch_msnbc_s_joy_reid_expertly_debunk_lies_around_uranium_clinton_story.html">Watch MSNBC’s Joy Reid expertly debunk lies around uranium-Clinton story.</a> </li>
         <li> <a href="http://thehill.com/homenews/administration/357943-trump-exasperated-disgusted-over-indictments-report?amp">Trump exasperated, disgusted over indictment: report | TheHill</a> </li>
-        <li> <a href="https://twitter.com/jonsteingart/status/925049703141728257">Federal judge doesn’t just quote trump tweets she screenshots them</a> </li>
-        <li> <a href="https://www.washingtonpost.com/politics/upstairs-at-home-with-the-tv-on-trump-fumes-over-russia-indictments/2017/10/30/fd0d0b16-bd87-11e7-8444-a0d4f04b89eb_story.html">The Washington Post: Upstairs at home, with the TV on, Trump fumes over Russia indictments</a> </li>
-        <li> <a href="https://www.nytimes.com/2017/10/30/us/politics/george-papadopoulos-russia.html">Trump Campaign Adviser Met With Russian to Discuss ‘Dirt’ on Clinton</a> </li>
-        <li> <a href="https://www.nbcnews.com/news/us-news/trump-campaign-adviser-george-papadopoulos-pleads-guilty-lying-n815596">Ex-Trump Adviser George Papadopoulos Pleads Guilty in Mueller's Russia Probe - NBC News</a> </li>
-        <li> <a href="https://twitter.com/thehill/status/925224838947659776">The Hill on Twitter: &quot;Trump pollster: Sanders would have beat Trump in the presidential election https://t.co/vcLkenebUJ https://t.co/9cxUyuwrOz&quot;</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -185,14 +196,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:12.340326Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:28.296026Z
+-->
 
 
 </body>

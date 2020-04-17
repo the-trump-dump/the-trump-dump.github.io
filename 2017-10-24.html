@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,16 +165,24 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2017-10-24 </h1>
 <ol>
         <li> <a href="http://thehill.com/homenews/campaign/356933-flake-targets-trump-with-senate-floor-speech?amp">Flake targets Trump with Senate retirement speech | TheHill</a> </li>
+        <li> <a href="https://amp.azcentral.com/amp/794958001">Read Flake's bombshell Senate speech: 'Mr. President, I rise today to say: Enough'</a> </li>
+        <li> <a href="http://www.snappytv.com/tc/6139557">Corker unloads on Trump: he tells provable untruths</a> </li>
+        <li> <a href="http://insider.foxnews.com/2017/10/20/maria-bartiromo-has-exclusive-interview-president-donald-trump">TUNE IN: Maria Bartiromo Has an Exclusive Interview With President Trump | Fox News Insider</a> </li>
+        <li> <a href="https://www.nytimes.com/2017/10/24/business/senate-vote-wall-street-regulation.html">Consumer Bureau Loses Fight to Allow More Class-Action Suits</a> </li>
         <li> <a href="https://www.vox.com/platform/amp/policy-and-politics/2017/10/23/16522456/trump-bartiromo-transcript">Trump’s latest big interview is both funny and terrifying - Vox</a> </li>
         <li> <a href="https://www.washingtonpost.com/world/national-security/clinton-campaign-dnc-paid-for-research-that-led-to-russia-dossier/2017/10/24/226fabf0-b8e4-11e7-a908-a3470754bbb9_story.html">The Washington Post: Clinton campaign, DNC paid for research that led to Russia dossier</a> </li>
-        <li> <a href="http://www.snappytv.com/tc/6139557">Corker unloads on Trump: he tells provable untruths</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -178,14 +197,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:12.335036Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:28.290209Z
+-->
 
 
 </body>

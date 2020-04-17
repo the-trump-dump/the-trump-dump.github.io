@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,16 +165,24 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2019-02-21 </h1>
 <ol>
-        <li> <a href="https://www.washingtonpost.com/politics/candidate-says-new-congressional-election-warranted-in-north-carolina/2019/02/21/acae4482-35e0-11e9-854a-7a14d7fec96a_story.html">The Washington Post: Candidate says new congressional election warranted in North Carolina</a> </li>
         <li> <a href="https://www.nytimes.com/2019/02/21/us/north-carolina-voter-fraud.html?smid=nytcore-ios-share">North Carolina Republican at Center of Fraud Inquiry Calls for New Election</a> </li>
+        <li> <a href="https://www.washingtonpost.com/politics/candidate-says-new-congressional-election-warranted-in-north-carolina/2019/02/21/acae4482-35e0-11e9-854a-7a14d7fec96a_story.html">The Washington Post: Candidate says new congressional election warranted in North Carolina</a> </li>
+        <li> <a href="https://twitter.com/funder/status/1098581248212193280?s=12">Scott Dworkin on Twitter: &quot;Trump didn’t even respond to Putin’s threat against the US yesterday. He didn’t condemn the terrorist who was planning an attack on Democrats. He did take the time to attack Democrats, the press, FBI and DoJ. Trump will be</a> </li>
         <li> <a href="https://www.nytimes.com/2019/02/21/opinion/mueller-report-trump-democrats-barr.html#click=https://t.co/6UN7QGoL8D">Opinion | The Mueller Report Is Coming. Here’s What to Expect. - The New York Times</a> </li>
+        <li> <a href="https://thehill.com/latino/430974-venezuela-closes-border-with-brazil?amp&amp;__twitter_impression=true">Venezuela closes border with Brazil | TheHill</a> </li>
         <li> <a href="https://twitter.com/tictoc/status/1098631155375583235?s=12">TicToc by Bloomberg on Twitter: &quot;JUST IN: The Trump administration says it has ended discussions with California about auto emissions. &quot;It is time to acknowledge that CARB has failed to put forward a productive alternative since the SAFE Vehicles Rule was</a> </li>
+        <li> <a href="https://www.youtube.com/watch?v=3U_QZoEPqJY&amp;feature=share">Fox host blasts Trump over Jussie Smollett hypocrisy - YouTube</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -178,14 +197,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:14.259602Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:29.255056Z
+-->
 
 
 </body>

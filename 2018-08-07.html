@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,14 +165,20 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2018-08-07 </h1>
 <ol>
-        <li> <a href="https://www.nytimes.com/2018/08/07/opinion/democrats-senate-midterm-elections.html?smtyp=cur&amp;smid=tw-nytopinion">Opinion | Democrats, Do Not Give Up on the Senate - The New York Times</a> </li>
         <li> <a href="http://thehill.com/policy/finance/400761-south-carolina-manufacturer-says-its-closing-plant-over-trump-tariffs?amp&amp;__twitter_impression=true">South Carolina manufacturer says it's closing plant over Trump tariffs | TheHill</a> </li>
+        <li> <a href="https://www.nytimes.com/2018/08/07/opinion/democrats-senate-midterm-elections.html?smtyp=cur&amp;smid=tw-nytopinion">Opinion | Democrats, Do Not Give Up on the Senate - The New York Times</a> </li>
+        <li> <a href="https://www.washingtonpost.com/politics/ohio-race-shows-democrats-remain-on-the-march--even-if-they-dont-win-tuesday/2018/08/07/1d0817da-9a50-11e8-8d5e-c6c594024954_story.html">The Washington Post: Ohio race shows Democrats remain on the march — even if they don’t win Tuesday</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -176,14 +193,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:13.342555Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:28.791466Z
+-->
 
 
 </body>

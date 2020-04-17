@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,16 +165,21 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2019-11-13 </h1>
 <ol>
-        <li> <a href="https://crooksandliars.com/2019/11/stephen-millers-white-nationalism-now-us">Stephen Miller's White Nationalism Is Now Official Policy, Emails Show | Crooks and Liars</a> </li>
         <li> <a href="https://www.nytimes.com/2019/11/13/us/politics/impeachment-hearings.html?smid=nytcore-ios-share">Trumps guilty af</a> </li>
-        <li> <a href="https://apnews.com/015702afdb4d4fbf85cf5070cd2c6824">US held record number of migrant children in custody in 2019</a> </li>
+        <li> <a href="https://crooksandliars.com/2019/11/stephen-millers-white-nationalism-now-us">Stephen Miller's White Nationalism Is Now Official Policy, Emails Show | Crooks and Liars</a> </li>
         <li> <a href="https://apple.news/AC5R5NXSgSwGtK89j-rQDxg">apple.news</a> </li>
+        <li> <a href="https://apnews.com/015702afdb4d4fbf85cf5070cd2c6824">US held record number of migrant children in custody in 2019</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -178,14 +194,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:15.126080Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:29.593431Z
+-->
 
 
 </body>

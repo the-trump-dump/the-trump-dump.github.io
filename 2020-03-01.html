@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,16 +165,24 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2020-03-01 </h1>
 <ol>
         <li> <a href="https://twitter.com/sensanders/status/1232825677960925185?s=12">Bernie on Trump’s coronavirus response</a> </li>
-        <li> <a href="https://www.theguardian.com/world/2020/mar/01/trump-coronavirus-cuts-robert-reich">Coronavirus is bad enough – Trump's cuts have made the danger far worse | World news | The Guardian</a> </li>
-        <li> <a href="https://www.theguardian.com/world/2020/mar/01/coronavirus-mike-pence-donald-trump-jr-democrats-millions-die">Coronavirus: Pence defends Trump Jr claim Democrats want 'millions' to die | World news | The Guardian</a> </li>
         <li> <a href="https://twitter.com/realdanlyons/status/1232712764856115200?s=20">Dan Lyons (@realdanlyons) Tweeted: CAPITOL HILL: @LindseyGrahamSC says @realDonaldTrump &quot;probably knows more about medicine and specifically viruses than any of the so-called scientists at the NIH and CDC. If anyone is going to eradicate this plague it'll</a> </li>
+        <li> <a href="https://www.cbsnews.com/news/ken-cuccinelli-unlawfully-tapped-uscis-judge-voids-some-asylum-orders/?ftag=CNM-00-10aab6j&amp;linkId=83344664">Judge rules Cuccinelli appointment to top immigration post was unlawful, voiding some asylum orders - CBS News</a> </li>
+        <li> <a href="https://twitter.com/thepubliususa/status/1234253914234609664?s=12">Roger Stone: Unhinged (coming to a theater near you - holy shit) https://t.co/CQY52OW7Kd</a> </li>
+        <li> <a href="https://www.theguardian.com/world/2020/mar/01/coronavirus-mike-pence-donald-trump-jr-democrats-millions-die">Coronavirus: Pence defends Trump Jr claim Democrats want 'millions' to die | World news | The Guardian</a> </li>
+        <li> <a href="https://www.theguardian.com/world/2020/mar/01/trump-coronavirus-cuts-robert-reich">Coronavirus is bad enough – Trump's cuts have made the danger far worse | World news | The Guardian</a> </li>
+        <li> <a href="https://www.freedomwatchusa.org/roger-stone-video-deposition">Roger Stone Video Deposition</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -178,14 +197,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:15.459458Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:29.732605Z
+-->
 
 
 </body>

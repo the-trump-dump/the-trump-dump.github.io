@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,13 +165,21 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2018-05-13 </h1>
 <ol>
-        <li> <a href="https://nyti.ms/2KVZG21">A Surge of Women Candidates, but Crowded Primaries and Tough Races Await</a> </li>
+        <li> <a href="http://thehill.com/homenews/media/387479-trump-spokesman-says-he-doesnt-know-if-aide-made-mccain-comment-she-apologized?amp&amp;__twitter_impression=true">Trump spokesman says he doesn’t 'know' if aide made McCain comment she apologized for | TheHill</a> </li>
+        <li> <a href="https://twitter.com/thehill/status/995815230793043969?s=12">Ex-Obama aide &quot;speechless&quot; at Trump's reversal on Chinese telecom giant https://t.co/ldtFAhDTLL https://t.co/Wb7CCYVlhU</a> </li>
+        <li> <a href="https://twitter.com/thehill/status/995816238357078016?s=12">Bolton refuses to denounce White House aide who mocked McCain's brain cancer https://t.co/q3pJj7zleq https://t.co/h76jKW53uw</a> </li>
+        <li> <a href="http://thehill.com/policy/technology/387357-dems-increasingly-see-electoral-wins-from-net-neutrality-fight">Dems increasingly see 'electoral dynamite' in net neutrality fight | TheHill</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -175,14 +194,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:12.881770Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:28.601359Z
+-->
 
 
 </body>

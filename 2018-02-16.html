@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,14 +165,22 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2018-02-16 </h1>
 <ol>
+        <li> <a href="https://www.wired.com/story/courageous-grieving-and-the-tragedy-in-parkland/amp?__twitter_impression=true">How Parkland Students Are Setting and Keeping the Record Straight</a> </li>
+        <li> <a href="https://www.nytimes.com/2018/02/16/us/politics/russians-indicted-mueller-election-interference.html">13 Russians Indicted as Mueller Reveals Effort to Aid Trump Campaign</a> </li>
+        <li> <a href="http://thehill.com/homenews/senate/374190-dem-senator-trump-dhs-lobbying-defeated-immigration-bill?amp&amp;__twitter_impression=true">Dem senator: Trump 'spread falsehoods' about immigration bill | TheHill</a> </li>
+        <li> <a href="https://twitter.com/page88/status/964526656575635457?s=12">Some hope for the fight against guns</a> </li>
         <li> <a href="https://assets.bwbx.io/documents/users/iqjWHBFdfxIU/rwUFGxaf6nlA/v0">Mueller indicts 13 Russian nationals</a> </li>
-        <li> <a href="https://twitter.com/ashleyfeinberg/status/964141485829566467">The kids are better than us</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -176,14 +195,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:12.816884Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:28.530600Z
+-->
 
 
 </body>

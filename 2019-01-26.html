@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,20 +165,23 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2019-01-26 </h1>
 <ol>
-        <li> <a href="https://twitter.com/thehill/status/1089026654540886016?s=12">The Hill on Twitter: &quot;WATCH: Roger Stone faces chants of &quot;lock him up&quot; as he speaks after arrest, court appearance https://t.co/JU5v4NwRtV… &quot;</a> </li>
-        <li> <a href="https://amp.cnn.com/cnn/2018/11/28/politics/trump-mueller-answers-wikileaks-trump-tower/index.html?__twitter_impression=true">Two key answers from Trump to Mueller - CNNPolitics</a> </li>
-        <li> <a href="https://twitter.com/sogrady/status/1088819701617229827?s=12">steve o'grady on Twitter: &quot;here we go: ground hold/stops at EWR, LGA, and PHL due to &quot;staffing&quot;… &quot;</a> </li>
-        <li> <a href="https://www.theregister.co.uk/AMP/2019/01/25/fcc_accused_of_colluding/?__twitter_impression=true">FCC accused of colluding with Big Cable to game 5G legal challenge • The Register</a> </li>
-        <li> <a href="https://www.washingtonpost.com/politics/donald-trumps-demand-for-a-border-wall-shut-down-the-government-at-the-same-time-his-company-was-firing-undocumented-workers/2019/01/26/8cf75d66-20c5-11e9-8e21-59a09ff1e2a1_story.html">The Washington Post: Donald Trump’s demand for a border wall shut down the government. At the same time, his company was firing undocumented workers.</a> </li>
         <li> <a href="https://nyti.ms/2SasQkn?smid=nytcore-ios-share">A Bruised Trump Faces Uncertain 2020 Prospects. His Team Fears a Primary Fight.</a> </li>
         <li> <a href="https://twitter.com/kristin_hook/status/1088833209687777280?s=12">Kristin Hook on Twitter: &quot;As a furloughed scientist, I thought it worthwhile to use my PhD skills to look at evidence for the president’s claims of a national security crisis &amp; whether his desire for a wall is an adequate justification for a government </a> </li>
-        <li> <a href="https://www.washingtonpost.com/politics/senate-leaders-continue-to-seek-a-deal-to-end-shutdown-that-will-satisfy-trump/2019/01/25/09c898dc-20ad-11e9-8e21-59a09ff1e2a1_story.html">The Washington Post: House approves bill to reopen the government, sends measure to Trump for his signature</a> </li>
+        <li> <a href="https://www.washingtonpost.com/politics/donald-trumps-demand-for-a-border-wall-shut-down-the-government-at-the-same-time-his-company-was-firing-undocumented-workers/2019/01/26/8cf75d66-20c5-11e9-8e21-59a09ff1e2a1_story.html">The Washington Post: Donald Trump’s demand for a border wall shut down the government. At the same time, his company was firing undocumented workers.</a> </li>
+        <li> <a href="https://www.theregister.co.uk/AMP/2019/01/25/fcc_accused_of_colluding/?__twitter_impression=true">FCC accused of colluding with Big Cable to game 5G legal challenge • The Register</a> </li>
+        <li> <a href="https://www.youtube.com/watch?v=p5JjG1h09-w&amp;feature=share">A Democrat just went viral with the best speech EVER on Senate floor - YouTube</a> </li>
+        <li> <a href="https://www.youtube.com/watch?v=bAFu9KJkz18&amp;feature=share">Trump Blames Himself for Government Shutdown - YouTube</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -182,14 +196,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:14.249022Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:29.241666Z
+-->
 
 
 </body>

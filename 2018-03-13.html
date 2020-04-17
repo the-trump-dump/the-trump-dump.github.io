@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,20 +165,29 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2018-03-13 </h1>
 <ol>
         <li> <a href="http://thehill.com/regulation/administration/377947-usda-withdraws-animal-welfare-rule?amp&amp;__twitter_impression=true">USDA withdraws animal welfare rule | TheHill</a> </li>
-        <li> <a href="https://taskandpurpose.com/trump-space-force/">Trump Proposes A 'Space Force' That His Generals Definitely Don't Want</a> </li>
-        <li> <a href="http://thehill.com/homenews/senate/377893-collins-attention-span-of-white-house-a-real-problem?amp&amp;__twitter_impression=true">Collins: Attention span of White House 'a real problem' | TheHill</a> </li>
-        <li> <a href="http://thehill.com/blogs/blog-briefing-room/378210-stormy-daniels-discussed-affair-with-trump-in-2007-radio-appearance?amp&amp;__twitter_impression=true">Stormy Daniels spoke about alleged affair with Trump in 2007 radio appearance: report | TheHill</a> </li>
-        <li> <a href="http://thehill.com/homenews/news/378069-fbi-tried-to-contact-jailed-sex-coaches-who-say-they-have-proof-of-russian?amp&amp;__twitter_impression=true">FBI tried to contact jailed 'sex coaches' who say they have proof of Russian interferences: CNN | TheHill</a> </li>
-        <li> <a href="https://twitter.com/AP/status/973592726787756032">The Associated Press on Twitter: &quot;BREAKING: Officials: White House fires top Tillerson aide who contradicted account of secretary of state's dismissal.&quot;</a> </li>
-        <li> <a href="https://www.washingtonpost.com/politics/trump-ousts-tillerson-will-replace-him-as-secretary-of-state-with-cia-chief-pompeo/2018/03/13/30f34eea-26ba-11e8-b79d-f3d931db7f68_story.html">The Washington Post: Trump ousts Secretary of State Rex Tillerson, will replace him with CIA Director Mike Pompeo</a> </li>
+        <li> <a href="https://articles.al.com/news/birmingham/index.ssf/2018/03/etowah_sheriff_pocketed_over_7.amp">Etowah sheriff pockets $750k in jail food funds, buys $740k beach house | AL.com</a> </li>
         <li> <a href="https://www.washingtonpost.com/national/health-science/tillerson-says-ex-spys-poisoning-in-uk-clearly-came-from-russia-vows-it-will-trigger-a-response/2018/03/12/b2717dd8-2648-11e8-a227-fd2b009466bc_story.html">Tillerson says ex-spy’s poisoning in UK ‘clearly came from Russia,’ vows it ‘will trigger a response’ - The Washington Post</a> </li>
+        <li> <a href="https://www.washingtonpost.com/politics/trump-ousts-tillerson-will-replace-him-as-secretary-of-state-with-cia-chief-pompeo/2018/03/13/30f34eea-26ba-11e8-b79d-f3d931db7f68_story.html">The Washington Post: Trump ousts Secretary of State Rex Tillerson, will replace him with CIA Director Mike Pompeo</a> </li>
+        <li> <a href="https://twitter.com/thehill/status/973650917781311490?s=12">Rex: eat the salad</a> </li>
+        <li> <a href="https://twitter.com/AP/status/973592726787756032">The Associated Press on Twitter: &quot;BREAKING: Officials: White House fires top Tillerson aide who contradicted account of secretary of state's dismissal.&quot;</a> </li>
+        <li> <a href="https://www.cnn.com/videos/politics/2018/03/13/trump-mcmaster-john-kelly-sciutto-sot-erin.cnn">Sources: McMaster, Kelly poised to depart soon - CNN Video</a> </li>
+        <li> <a href="https://taskandpurpose.com/trump-space-force/">Trump Proposes A 'Space Force' That His Generals Definitely Don't Want</a> </li>
+        <li> <a href="https://www.nytimes.com/2018/03/13/us/politics/gina-haspel-cia-director-nominee-trump-torture-waterboarding.html">Gina Haspel, Trump’s Choice for C.I.A., Played Role in Torture Program</a> </li>
+        <li> <a href="https://www.nytimes.com/2018/03/13/us/politics/lamb-saccone-pennsylvania-election.html">Pennsylvania House Race, in a District Trump Won by 20 Points, Is Too Close to Call</a> </li>
+        <li> <a href="http://thehill.com/homenews/news/378069-fbi-tried-to-contact-jailed-sex-coaches-who-say-they-have-proof-of-russian?amp&amp;__twitter_impression=true">FBI tried to contact jailed 'sex coaches' who say they have proof of Russian interferences: CNN | TheHill</a> </li>
+        <li> <a href="http://thehill.com/blogs/blog-briefing-room/378210-stormy-daniels-discussed-affair-with-trump-in-2007-radio-appearance?amp&amp;__twitter_impression=true">Stormy Daniels spoke about alleged affair with Trump in 2007 radio appearance: report | TheHill</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -182,14 +202,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:12.835776Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:28.552144Z
+-->
 
 
 </body>

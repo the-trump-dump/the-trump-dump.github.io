@@ -15,14 +15,25 @@
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,19 +165,25 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2017-12-08 </h1>
 <ol>
-        <li> <a href="https://www.politico.com/story/2017/12/08/trent-franks-sex-surrogacy-impregnate-287808">Female aides fretted Franks wanted to have sex to impregnate them - POLITICO</a> </li>
-        <li> <a href="https://www.nytimes.com/interactive/2017/12/08/us/puerto-rico-hurricane-maria-death-toll.html">Storm Deaths in Puerto Rico May Be Vastly Underestimated</a> </li>
-        <li> <a href="https://www.nytimes.com/2017/12/08/us/politics/hope-hicks-russia-trump-fbi.html">F.B.I. Warned Hope Hicks About Emails From Russian Operatives</a> </li>
-        <li> <a href="https://www.nytimes.com/2017/12/07/us/politics/trump-jerusalem-palestinians.html">Did Trump Kill Off a Two-State Solution? He Says No, Palestinians Say Yes</a> </li>
-        <li> <a href="https://www.wsj.com/amp/articles/trumps-frankenmoore-nightmare-1512603383?__twitter_impression=true">Trump’s Frankenmoore Nightmare - WSJ</a> </li>
         <li> <a href="http://thehill.com/opinion/white-house/363875-a-presidential-plea-deal-is-better-than-impeachment?amp&amp;__twitter_impression=true">A presidential plea deal is better than impeachment | TheHill</a> </li>
-        <li> <a href="http://thehill.com/homenews/administration/363703-trump-didnt-seem-to-have-complete-understanding-of-jerusalem-decision?amp&amp;__twitter_impression=true">Trump didn't seem to have complete understanding of Jerusalem decision: report | TheHill</a> </li>
+        <li> <a href="https://www.nytimes.com/2017/12/08/us/politics/hope-hicks-russia-trump-fbi.html">F.B.I. Warned Hope Hicks About Emails From Russian Operatives</a> </li>
+        <li> <a href="http://thehill.com/homenews/administration/363965-trump-touts-poll-showing-his-approval-rating-at-45-percent?amp&amp;__twitter_impression=true">Trump touts poll showing his approval rating at 45 percent | TheHill</a> </li>
+        <li> <a href="https://www.nytimes.com/interactive/2017/12/08/us/puerto-rico-hurricane-maria-death-toll.html">Storm Deaths in Puerto Rico May Be Vastly Underestimated</a> </li>
+        <li> <a href="https://www.politico.com/story/2017/12/08/trent-franks-sex-surrogacy-impregnate-287808">Female aides fretted Franks wanted to have sex to impregnate them - POLITICO</a> </li>
+        <li> <a href="https://www.nytimes.com/2017/12/07/us/politics/trump-jerusalem-palestinians.html">Did Trump Kill Off a Two-State Solution? He Says No, Palestinians Say Yes</a> </li>
+        <li> <a href="http://thehill.com/homenews/house/363968-financial-services-dems-press-mnuchin-for-documents-on-trumps-ties-to-russia?amp&amp;__twitter_impression=true">Dems push Mnuchin for documents on Trump, Russia business ties | TheHill</a> </li>
+        <li> <a href="http://thehill.com/policy/national-security/364020-hicks-warned-by-fbi-about-contacts-from-russians-report?amp&amp;__twitter_impression=true">Trump aide warned by FBI about contacts from Russians: report | TheHill</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -181,14 +198,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-17T09:27:12.365807Z -->
+
+<!--
+BUILT: 2020-04-17T09:52:28.323356Z
+-->
 
 
 </body>

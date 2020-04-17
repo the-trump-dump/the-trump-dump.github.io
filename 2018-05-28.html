@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <!--  BUILT: 2020-04-17T08:10:49.139311Z -->
+    <!--  BUILT: 2020-04-17T08:17:17.432663Z -->
     <title>
         The Daily Trump Dump
     </title>
@@ -126,15 +126,20 @@
 <h1> 2018-05-28 </h1>
 <ol>
         <li> <a href="http://thehill.com/homenews/campaign/389548-former-obama-officials-run-for-office-to-oppose-trump?amp&amp;__twitter_impression=true">Former Obama officials run for office to oppose Trump | TheHill</a> </li>
+        <li> <a href="https://news.vice.com/en_us/article/4353eq/border-patrol-beat-sexually-assaulted-and-denied-medical-care-to-immigrant-children-aclu-says">Border Patrol beat, sexually assaulted, and denied medical care to immigrant children, ACLU says – VICE News</a> </li>
 </ol>
 </div>
 
 <script>
+
     window.addEventListener('load', (e) => {
-        document.getElementsByName('a').forEach((aElement) => {
-            aElement.setAttribute('target', '_blank');
-        });
+        Array
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
+
 
 </script>
 </body>

@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <!--  BUILT: 2020-04-17T08:10:48.290714Z -->
+    <!--  BUILT: 2020-04-17T08:17:05.621996Z -->
     <title>
         The Daily Trump Dump
     </title>
@@ -125,16 +125,21 @@
     
 <h1> 2017-06-30 </h1>
 <ol>
+        <li> <a href="http://thehill.com/blogs/blog-briefing-room/news/340192-state-officials-refuse-to-turn-over-voter-roll-data-to-trump">States refuse to turn over immigration data</a> </li>
         <li> <a href="https://www.washingtonpost.com/blogs/plum-line/wp/2017/06/30/dont-sugarcoat-this-trump-just-called-for-32-million-people-to-lose-health-coverage/">Don’t sugarcoat this. Trump just called for 32 million people to lose health coverage. - The Washington Post</a> </li>
 </ol>
 </div>
 
 <script>
+
     window.addEventListener('load', (e) => {
-        document.getElementsByName('a').forEach((aElement) => {
-            aElement.setAttribute('target', '_blank');
-        });
+        Array
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
+
 
 </script>
 </body>

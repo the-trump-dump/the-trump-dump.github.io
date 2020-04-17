@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <!--  BUILT: 2020-04-17T08:10:50.049207Z -->
+    <!--  BUILT: 2020-04-17T08:17:32.864115Z -->
     <title>
         The Daily Trump Dump
     </title>
@@ -125,16 +125,22 @@
     
 <h1> 2020-01-10 </h1>
 <ol>
+        <li> <a href="https://www.politico.com/news/2020/01/09/trump-makes-misleading-brag-about-lower-cancer-deaths-096704">Trump makes misleading brag about lower cancer deaths - POLITICO</a> </li>
         <li> <a href="https://twitter.com/alexthomasdc/status/1215698228185837570?s=12">twitter.com</a> </li>
+        <li> <a href="https://www.washingtonpost.com/outlook/2020/01/09/senate-has-conducted-15-impeachment-trials-it-heard-witnesses-every-one/#click=https://t.co/U3kiNAnULd">The Senate has conducted 15 impeachment trials. It heard witnesses in every one. - The Washington Post</a> </li>
 </ol>
 </div>
 
 <script>
+
     window.addEventListener('load', (e) => {
-        document.getElementsByName('a').forEach((aElement) => {
-            aElement.setAttribute('target', '_blank');
-        });
+        Array
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
+
 
 </script>
 </body>

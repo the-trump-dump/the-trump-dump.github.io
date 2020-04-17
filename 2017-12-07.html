@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <!--  BUILT: 2020-04-17T08:10:48.634997Z -->
+    <!--  BUILT: 2020-04-17T08:17:09.621286Z -->
     <title>
         The Daily Trump Dump
     </title>
@@ -125,18 +125,21 @@
     
 <h1> 2017-12-07 </h1>
 <ol>
+        <li> <a href="https://venturebeat.com/2017/12/05/microsoft-launches-low-code-iot-cloud-service-out-of-beta-adds-new-azure-instances-and-more/">Microsoft launches low-code IoT cloud service out of beta, adds new Azure instances and more | VentureBeat</a> </li>
         <li> <a href="http://thehill.com/blogs/floor-action/house/363645-the-nearly-60-dems-who-voted-for-impeachment?amp&amp;__twitter_impression=true">The nearly 60 Dems who voted for impeachment | TheHill</a> </li>
-        <li> <a href="http://thehill.com/homenews/administration/363703-trump-didnt-seem-to-have-complete-understanding-of-jerusalem-decision?amp&amp;__twitter_impression=true">Trump didn't seem to have complete understanding of Jerusalem decision: report | TheHill</a> </li>
-        <li> <a href="https://www.wsj.com/amp/articles/trumps-frankenmoore-nightmare-1512603383?__twitter_impression=true">Trump’s Frankenmoore Nightmare - WSJ</a> </li>
 </ol>
 </div>
 
 <script>
+
     window.addEventListener('load', (e) => {
-        document.getElementsByName('a').forEach((aElement) => {
-            aElement.setAttribute('target', '_blank');
-        });
+        Array
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
+
 
 </script>
 </body>

@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <!--  BUILT: 2020-04-17T08:10:50.051230Z -->
+    <!--  BUILT: 2020-04-17T08:17:32.867231Z -->
     <title>
         The Daily Trump Dump
     </title>
@@ -126,17 +126,21 @@
 <h1> 2020-01-19 </h1>
 <ol>
         <li> <a href="https://www.nytimes.com/interactive/2020/01/15/magazine/rudy-giuliani.html?smid=nytcore-ios-share">How did we end up here?</a> </li>
+        <li> <a href="https://www.washingtonpost.com/politics/2020/01/18/new-text-messages-put-devin-nunes-hot-seat/">New text messages put Devin Nunes on the hot seat - The Washington Post</a> </li>
         <li> <a href="https://www.palmerreport.com/analysis/rex-tillerson-problem-suddenly-donald-trump/24539/">Donald Trump suddenly has a Rex Tillerson problem - Palmer Report</a> </li>
-        <li> <a href="https://www.nytimes.com/interactive/2020/01/19/opinion/amy-klobuchar-elizabeth-warren-nytimes-endorsement.html?smid=nytcore-ios-share">The NYT has endorsed two candidates for democrat president</a> </li>
 </ol>
 </div>
 
 <script>
+
     window.addEventListener('load', (e) => {
-        document.getElementsByName('a').forEach((aElement) => {
-            aElement.setAttribute('target', '_blank');
-        });
+        Array
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
+
 
 </script>
 </body>

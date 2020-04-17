@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <!--  BUILT: 2020-04-17T08:10:50.736819Z -->
+    <!--  BUILT: 2020-04-17T08:17:41.619314Z -->
     <title>
         The Daily Trump Dump
     </title>
@@ -131,6 +131,9 @@
             <div class="date">  2017-07-31</div>
             <UL>
                     <LI>
+                        <a href="https://www.washingtonpost.com/amphtml/news/the-fix/wp/2017/07/29/trump-erupts-at-gop-senators-they-look-like-fools/">Trump insults and threatens GOP senators in long rant after health bill failure</a>
+                    </LI>
+                    <LI>
                         <a href="http://www.vanityfair.com/news/2017/07/department-of-energy-risks-michael-lewis/amp">Why the Scariest Nuclear Threat May Be Coming from Inside the White House</a>
                     </LI>
                     <LI>
@@ -139,10 +142,10 @@
             </UL>
         </div>
         <div>
-            <div class="date">  2017-07-30</div>
+            <div class="date">  2017-07-28</div>
             <UL>
                     <LI>
-                        <a href="https://www.washingtonpost.com/amphtml/news/the-fix/wp/2017/07/29/trump-erupts-at-gop-senators-they-look-like-fools/">Trump insults and threatens GOP senators in long rant after health bill failure</a>
+                        <a href="https://www.foxnews.com/politics/anthony-scaramucci-uses-vulgar-language-to-lash-out-at-priebus-make-fun-of-bannon-in-interview">Anthony Scaramucci uses vulgar language to lash out at Priebus, make fun of Bannon in interview | Fox News</a>
                     </LI>
             </UL>
         </div>
@@ -163,9 +166,6 @@
                     </LI>
                     <LI>
                         <a href="http://scoutingwire.org/chief-perspective-presidential-visit/">From the Chief: Our Perspective on the Presidential Visit - Scouting Wire : Scouting Wire</a>
-                    </LI>
-                    <LI>
-                        <a href="https://www.foxnews.com/politics/anthony-scaramucci-uses-vulgar-language-to-lash-out-at-priebus-make-fun-of-bannon-in-interview">Anthony Scaramucci uses vulgar language to lash out at Priebus, make fun of Bannon in interview | Fox News</a>
                     </LI>
             </UL>
         </div>
@@ -284,7 +284,7 @@
             </UL>
         </div>
         <div>
-            <div class="date">  2017-07-06</div>
+            <div class="date">  2017-07-07</div>
             <UL>
                     <LI>
                         <a href="https://www.bloomberg.com/amp/news/articles/2017-07-07/russians-are-said-to-be-suspects-in-hacks-involving-nuclear-site">Russians Are Said to Be Suspects in Nuclear Site Hackings</a>
@@ -295,11 +295,15 @@
 </div>
 
 <script>
+
     window.addEventListener('load', (e) => {
-        document.getElementsByName('a').forEach((aElement) => {
-            aElement.setAttribute('target', '_blank');
-        });
+        Array
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
+
 
 </script>
 </body>

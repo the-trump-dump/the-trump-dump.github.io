@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <!--  BUILT: 2020-04-17T08:10:49.649501Z -->
+    <!--  BUILT: 2020-04-17T08:17:25.207455Z -->
     <title>
         The Daily Trump Dump
     </title>
@@ -125,17 +125,21 @@
     
 <h1> 2019-02-12 </h1>
 <ol>
-        <li> <a href="https://www.nytimes.com/2019/02/12/us/politics/bbc-cameraman-attacked.html">BBC Cameraman Is Attacked at Trump Rally - The New York Times</a> </li>
         <li> <a href="https://apple.news/AgSZVHNo8RwSA4mizfe9N2A">GOP livid with Trump over ignored Khashoggi report - POLITICO</a> </li>
+        <li> <a href="https://www.nytimes.com/2019/02/12/us/politics/bbc-cameraman-attacked.html">BBC Cameraman Is Attacked at Trump Rally - The New York Times</a> </li>
 </ol>
 </div>
 
 <script>
+
     window.addEventListener('load', (e) => {
-        document.getElementsByName('a').forEach((aElement) => {
-            aElement.setAttribute('target', '_blank');
-        });
+        Array
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
+
 
 </script>
 </body>

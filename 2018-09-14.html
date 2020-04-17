@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <!--  BUILT: 2020-04-17T08:10:49.406975Z -->
+    <!--  BUILT: 2020-04-17T08:17:21.296849Z -->
     <title>
         The Daily Trump Dump
     </title>
@@ -125,17 +125,20 @@
     
 <h1> 2018-09-14 </h1>
 <ol>
-        <li> <a href="https://www.bbc.com/news/world-us-canada-45526341">Winners and losers from the Manafort plea deal - BBC News</a> </li>
         <li> <a href="https://gizmodo.com/state-department-spent-52-000-on-motorized-curtains-fo-1829052559">Trump Administration Spends $52,000 on Curtains for Nikki Haley</a> </li>
 </ol>
 </div>
 
 <script>
+
     window.addEventListener('load', (e) => {
-        document.getElementsByName('a').forEach((aElement) => {
-            aElement.setAttribute('target', '_blank');
-        });
+        Array
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
+
 
 </script>
 </body>

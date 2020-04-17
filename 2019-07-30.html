@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <!--  BUILT: 2020-04-17T08:10:49.852186Z -->
+    <!--  BUILT: 2020-04-17T08:17:29.020086Z -->
     <title>
         The Daily Trump Dump
     </title>
@@ -125,16 +125,21 @@
     
 <h1> 2019-07-30 </h1>
 <ol>
+        <li> <a href="https://blogs.scientificamerican.com/voices/the-internet-is-a-cesspool-of-racist-pseudoscience/">The Internet Is a Cesspool of Racist Pseudoscience - Scientific American Blog Network</a> </li>
         <li> <a href="https://boingboing.net/2019/06/07/former-trump-advisor-charged-w.html">Former Trump advisor George Nader ordered jailed until his child porn trial / Boing Boing</a> </li>
 </ol>
 </div>
 
 <script>
+
     window.addEventListener('load', (e) => {
-        document.getElementsByName('a').forEach((aElement) => {
-            aElement.setAttribute('target', '_blank');
-        });
+        Array
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
+
 
 </script>
 </body>

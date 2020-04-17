@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <!--  BUILT: 2020-04-17T08:10:48.286091Z -->
+    <!--  BUILT: 2020-04-17T08:17:05.618568Z -->
     <title>
         The Daily Trump Dump
     </title>
@@ -125,19 +125,22 @@
     
 <h1> 2017-06-18 </h1>
 <ol>
-        <li> <a href="https://www.nytimes.com/2017/06/18/us/politics/michael-flynn-intel-group-trump.html?smprod=nytcore-iphone">NYTimes: How Michael Flynn’s Disdain for Limits Led to a Legal Quagmire</a> </li>
-        <li> <a href="https://www.nytimes.com/2017/06/16/us/politics/education-department-civil-rights-betsy-devos.html?smprod=nytcore-iphone">NYTimes: Education Dept. Says It Will Scale Back Civil Rights Investigations</a> </li>
-        <li> <a href="https://www.nytimes.com/2017/06/17/opinion/mr-trumps-dangerous-indifference-to-russia.html?smprod=nytcore-iphone">NYTimes: Mr. Trump’s Dangerous Indifference to Russia</a> </li>
         <li> <a href="https://www.nytimes.com/2017/06/16/opinion/only-mass-deportation-can-save-america.html?smprod=nytcore-iphone">NYTimes: Only Mass Deportation Can Save America</a> </li>
+        <li> <a href="https://www.nytimes.com/2017/06/16/us/politics/education-department-civil-rights-betsy-devos.html?smprod=nytcore-iphone">NYTimes: Education Dept. Says It Will Scale Back Civil Rights Investigations</a> </li>
+        <li> <a href="https://www.washingtonpost.com/blogs/plum-line/wp/2017/06/14/republicans-are-privately-angry-at-trump-for-accidentally-unmasking-their-big-scam/">The Washington Post: Republicans are privately angry at Trump for accidentally unmasking their big scam</a> </li>
 </ol>
 </div>
 
 <script>
+
     window.addEventListener('load', (e) => {
-        document.getElementsByName('a').forEach((aElement) => {
-            aElement.setAttribute('target', '_blank');
-        });
+        Array
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
+
 
 </script>
 </body>

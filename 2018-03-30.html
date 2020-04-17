@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <!--  BUILT: 2020-04-17T08:10:48.952003Z -->
+    <!--  BUILT: 2020-04-17T08:17:13.549648Z -->
     <title>
         The Daily Trump Dump
     </title>
@@ -125,19 +125,22 @@
     
 <h1> 2018-03-30 </h1>
 <ol>
-        <li> <a href="https://nyti.ms/2uuRtOf">Wooing Saudi Business, Tabloid Mogul Had a Powerful Friend: Trump</a> </li>
-        <li> <a href="https://nyti.ms/2uzn7ds">Trump Advisers Urge Tougher Russia Policy After Expulsions</a> </li>
-        <li> <a href="http://abcnews.go.com/Politics/exclusive-pruitts-epa-security-broke-door-lobbyist-condo/story?id=54129080">EXCLUSIVE: Pruitt's EPA security broke down door to lobbyist condo - ABC News</a> </li>
+        <li> <a href="http://thehill.com/homenews/administration/380869-trump-touts-border-wall-construction-during-stop-in-ohio?amp&amp;__twitter_impression=true">Trump touts construction on older border fence during stop in Ohio | TheHill</a> </li>
         <li> <a href="https://www.theguardian.com/us-news/2018/mar/30/fbi-questions-ted-malloch-trump-campaign-figure-and-farage-ally?subid=21356966&amp;CMP=GT_US_collection">FBI questions Ted Malloch, Trump campaign figure and Farage ally | US news | The Guardian</a> </li>
+        <li> <a href="https://amp.cnn.com/cnn/2018/03/27/politics/donald-trump-border-wall-military/index.html?__twitter_impression=true">Trump suggests US military foot the bill for border wall</a> </li>
 </ol>
 </div>
 
 <script>
+
     window.addEventListener('load', (e) => {
-        document.getElementsByName('a').forEach((aElement) => {
-            aElement.setAttribute('target', '_blank');
-        });
+        Array
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
+
 
 </script>
 </body>

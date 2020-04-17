@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <!--  BUILT: 2020-04-17T08:10:49.409406Z -->
+    <!--  BUILT: 2020-04-17T08:17:21.299003Z -->
     <title>
         The Daily Trump Dump
     </title>
@@ -126,15 +126,20 @@
 <h1> 2018-09-29 </h1>
 <ol>
         <li> <a href="https://www.nbcnews.com/politics/politics-news/white-house-limits-scope-fbi-s-investigation-allegations-against-brett-n915061">White House limits scope of the FBI's investigation into the allegations against Brett Kavanaugh</a> </li>
+        <li> <a href="https://int.nyt.com/data/documenthelper/178-kavanaugh-clinton-monica-lewin/9b9a46ab055ee2458fd5/optimized/full.pdf"></a> </li>
 </ol>
 </div>
 
 <script>
+
     window.addEventListener('load', (e) => {
-        document.getElementsByName('a').forEach((aElement) => {
-            aElement.setAttribute('target', '_blank');
-        });
+        Array
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
+
 
 </script>
 </body>

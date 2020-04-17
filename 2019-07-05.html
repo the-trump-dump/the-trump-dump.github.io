@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <!--  BUILT: 2020-04-17T08:10:49.845736Z -->
+    <!--  BUILT: 2020-04-17T08:17:29.013739Z -->
     <title>
         The Daily Trump Dump
     </title>
@@ -125,19 +125,22 @@
     
 <h1> 2019-07-05 </h1>
 <ol>
-        <li> <a href="https://twitter.com/chbooksdc/status/1146423970960482305?s=12">Reminder: the best way to avoid MAGA tourists in DC this holiday weekend is to enter a bookstore.</a> </li>
-        <li> <a href="https://www.youtube.com/watch?v=cb64rsrujck&amp;feature=share">Trump tries to undo his airport gaffe</a> </li>
         <li> <a href="https://www.vox.com/2019/7/4/20682674/trump-salute-to-america-speech-recap">Trump rain-soaked “Salute to America” speech steers clear of politics. - Vox</a> </li>
+        <li> <a href="https://twitter.com/chbooksdc/status/1146423970960482305?s=12">Reminder: the best way to avoid MAGA tourists in DC this holiday weekend is to enter a bookstore.</a> </li>
         <li> <a href="https://humanevents.com/2019/07/03/capitol-hill-books-insults-trump-supporters/?utm_referrer=https%253A%252F%252Fduckduckgo.com%252F">Famous DC Bookstore Insults Trump Fans, MAGA Hits Back | Human Events</a> </li>
 </ol>
 </div>
 
 <script>
+
     window.addEventListener('load', (e) => {
-        document.getElementsByName('a').forEach((aElement) => {
-            aElement.setAttribute('target', '_blank');
-        });
+        Array
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
+
 
 </script>
 </body>

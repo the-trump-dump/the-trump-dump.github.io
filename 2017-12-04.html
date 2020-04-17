@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <!--  BUILT: 2020-04-17T08:10:48.632629Z -->
+    <!--  BUILT: 2020-04-17T08:17:09.619732Z -->
     <title>
         The Daily Trump Dump
     </title>
@@ -126,19 +126,23 @@
 <h1> 2017-12-04 </h1>
 <ol>
         <li> <a href="https://www.nytimes.com/2017/12/03/us/politics/government-shutdown-republicans-congress-spending.html">G.O.P. Pushes to Avoid Government Shutdown, but the Path Is Tricky</a> </li>
+        <li> <a href="http://thehill.com/policy/finance/363039-grassley-ending-estate-tax-recognizes-people-that-are-investing-not-spending?amp">Grassley: Ending estate tax 'recognizes people that are investing,' not 'spending every darn penny' | TheHill</a> </li>
+        <li> <a href="http://thehill.com/homenews/administration/362990-trump-has-given-staffers-assignments-and-told-them-not-to-tell-kelly?amp">Trump has given staffers assignments and told them not to tell Kelly: report | TheHill</a> </li>
         <li> <a href="http://nymag.com/daily/intelligencer/2017/12/senate-gop-accidentally-killed-all-corporate-tax-deductions.html">Senate GOP Accidentally Killed All Corporate Tax Deductions</a> </li>
-        <li> <a href="http://thehill.com/policy/energy-environment/363204-greens-health-groups-sue-trump-epa-over-missed-obama-smog-rule?amp">Greens, health groups sue Trump EPA over missed Obama smog rule deadline | TheHill</a> </li>
         <li> <a href="http://thehill.com/homenews/administration/363136-white-house-lawyer-told-trump-that-flynn-misled-fbi-and-pence-report?amp">WH lawyer told Trump that Flynn misled FBI and Pence: report | TheHill</a> </li>
-        <li> <a href="http://thehill.com/homenews/media/363088-gop-strategist-impeachment-closer-than-people-think?amp">GOP strategist: Impeachment 'closer' than people think | TheHill</a> </li>
 </ol>
 </div>
 
 <script>
+
     window.addEventListener('load', (e) => {
-        document.getElementsByName('a').forEach((aElement) => {
-            aElement.setAttribute('target', '_blank');
-        });
+        Array
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
+
 
 </script>
 </body>

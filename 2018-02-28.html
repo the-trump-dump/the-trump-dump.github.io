@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <!--  BUILT: 2020-04-17T08:10:48.930934Z -->
+    <!--  BUILT: 2020-04-17T08:17:13.529615Z -->
     <title>
         The Daily Trump Dump
     </title>
@@ -125,20 +125,26 @@
     
 <h1> 2018-02-28 </h1>
 <ol>
-        <li> <a href="https://www.nytimes.com/2018/02/28/us/politics/hope-hicks-resign-communications-director.html">Hope Hicks to Resign as White House Communications Director</a> </li>
-        <li> <a href="http://thehill.com/business-a-lobbying/375940-dems-surge-in-generic-ballot-as-economy-fades-from-spotlight">Dems surge in generic ballot as economy fades from spotlight | TheHill</a> </li>
-        <li> <a href="https://www.motherjones.com/politics/2018/02/wisconsin-democrats-sue-to-force-scott-walker-to-hold-constitutionally-required-elections/">Wisconsin Democrats Sue to Force Scott Walker to Hold Constitutionally Required Elections – Mother Jones</a> </li>
         <li> <a href="https://twitter.com/MarshallCohen/status/968860857211019264">Trump has no idea on the separation of govt</a> </li>
+        <li> <a href="https://www.motherjones.com/politics/2018/02/wisconsin-democrats-sue-to-force-scott-walker-to-hold-constitutionally-required-elections/">Wisconsin Democrats Sue to Force Scott Walker to Hold Constitutionally Required Elections – Mother Jones</a> </li>
+        <li> <a href="https://www.nytimes.com/2018/02/28/us/politics/hope-hicks-resign-communications-director.html">Hope Hicks to Resign as White House Communications Director</a> </li>
         <li> <a href="https://www.vox.com/platform/amp/2018/2/27/17060494/mueller-investigation-trump-russia-business?__twitter_impression=true">Mueller is reportedly interested in Trump’s Russia business dealings before his presidential run - Vox</a> </li>
+        <li> <a href="https://apple.news/Ah3t171YUSEiRriZdujGk9g">Trump didn’t just launch his 2020 campaign — he’s been running for reelection for a year - Vox</a> </li>
+        <li> <a href="http://thehill.com/homenews/administration/375908-ben-carson-spent-31k-on-dining-set-for-his-office?amp&amp;__twitter_impression=true">Ben Carson spent $31K on dining set for his office | TheHill</a> </li>
+        <li> <a href="http://thehill.com/business-a-lobbying/375940-dems-surge-in-generic-ballot-as-economy-fades-from-spotlight">Dems surge in generic ballot as economy fades from spotlight | TheHill</a> </li>
 </ol>
 </div>
 
 <script>
+
     window.addEventListener('load', (e) => {
-        document.getElementsByName('a').forEach((aElement) => {
-            aElement.setAttribute('target', '_blank');
-        });
+        Array
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
+
 
 </script>
 </body>

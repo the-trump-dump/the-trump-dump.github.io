@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <!--  BUILT: 2020-04-17T08:10:49.406304Z -->
+    <!--  BUILT: 2020-04-17T08:17:21.296204Z -->
     <title>
         The Daily Trump Dump
     </title>
@@ -125,17 +125,20 @@
     
 <h1> 2018-09-12 </h1>
 <ol>
-        <li> <a href="https://www.yahoo.com/gma/manafort-seeking-plea-deal-special-counsel-avoid-cooperation-184022308.html">Manafort seeking plea deal with special counsel that would avoid cooperation ahead of second trial: Sources</a> </li>
         <li> <a href="http://thehill.com/blogs/blog-briefing-room/news/406085-trumps-plan-to-help-eliminate-federal-debt-was-to-print-money?__twitter_impression=true">Trump's plan to help eliminate the federal debt was to print money: Woodward book | TheHill</a> </li>
 </ol>
 </div>
 
 <script>
+
     window.addEventListener('load', (e) => {
-        document.getElementsByName('a').forEach((aElement) => {
-            aElement.setAttribute('target', '_blank');
-        });
+        Array
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
+
 
 </script>
 </body>

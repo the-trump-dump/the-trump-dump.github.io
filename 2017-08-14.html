@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <!--  BUILT: 2020-04-17T08:10:48.327731Z -->
+    <!--  BUILT: 2020-04-17T08:17:05.650317Z -->
     <title>
         The Daily Trump Dump
     </title>
@@ -126,16 +126,19 @@
 <h1> 2017-08-14 </h1>
 <ol>
         <li> <a href="http://thehill.com/opinion/juan-williams/346424-juan-williams-trump-ought-to-thank-obama?amp">Juan Williams: Trump ought to thank Obama | TheHill</a> </li>
-        <li> <a href="https://grabyourwallet.org/FYI%20Companies.html">#grabyourwallet | FYI Companies</a> </li>
 </ol>
 </div>
 
 <script>
+
     window.addEventListener('load', (e) => {
-        document.getElementsByName('a').forEach((aElement) => {
-            aElement.setAttribute('target', '_blank');
-        });
+        Array
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
+
 
 </script>
 </body>

@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <!--  BUILT: 2020-04-17T08:10:50.030428Z -->
+    <!--  BUILT: 2020-04-17T08:17:32.839619Z -->
     <title>
         The Daily Trump Dump
     </title>
@@ -125,17 +125,26 @@
     
 <h1> 2019-11-16 </h1>
 <ol>
+        <li> <a href="https://www-m.cnn.com/2019/11/15/politics/roger-stone-trial-verdict/index.html">Roger Stone: Trump associate found guilty of lies that protected Trump - CNNPolitics</a> </li>
+        <li> <a href="https://www.nytimes.com/2019/11/15/us/trump-pardons.html?smid=nytcore-ios-share">Trump clears 3 servicemen of war crimes</a> </li>
         <li> <a href="https://www.washingtonpost.com/opinions/2019/11/15/trump-is-throwing-sondland-under-bus-new-spin-has-fatal-defect/">Trump is throwing Sondland under the bus. But the new spin has a fatal defect.</a> </li>
+        <li> <a href="https://www.nytimes.com/2019/11/15/us/politics/marie-yovanovitch-testimony.html?smid=nytcore-ios-share">Trump intimidated witness during her testimony. absolutely incredible</a> </li>
+        <li> <a href="https://www.nytimes.com/2019/11/15/us/politics/roger-stone-trial-guilty.html?smid=nytcore-ios-share">Roger Stone convincted of crimes</a> </li>
+        <li> <a href="https://twitter.com/mkraju/status/1195479264444833797?s=12">I obtained a copy of David Holmes' opening statement, saying that he heard Trump telling Gordon Sondland: &quot;So, he's gonna do the investigation?&quot; Sondland tells Trump: &quot;He's gonna do it&quot; and that Zelensky will do &quot;anything you ask for.&quot; https://t.co/24RgVC</a> </li>
         <li> <a href="https://www.theatlantic.com/politics/archive/2019/10/trump-impeachment-quid-pro-quo/600640/">Why Trump Can't Escape Quid Pro Quo - The Atlantic</a> </li>
 </ol>
 </div>
 
 <script>
+
     window.addEventListener('load', (e) => {
-        document.getElementsByName('a').forEach((aElement) => {
-            aElement.setAttribute('target', '_blank');
-        });
+        Array
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
+
 
 </script>
 </body>

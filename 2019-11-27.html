@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <!--  BUILT: 2020-04-17T08:10:50.034948Z -->
+    <!--  BUILT: 2020-04-17T08:17:32.843403Z -->
     <title>
         The Daily Trump Dump
     </title>
@@ -125,19 +125,22 @@
     
 <h1> 2019-11-27 </h1>
 <ol>
-        <li> <a href="https://twitter.com/abcpolitics/status/1199415230406758401?s=12">First lady Melania Trump was welcomed to the stage at an opioid awareness summit in Baltimore with some cheers—but also a loud chorus of boos that continued for almost a minute. https://t.co/gL16F02DV9</a> </li>
         <li> <a href="https://www.nytimes.com/2019/11/27/nyregion/giuliani-ukraine-business-trump.html?smid=nytcore-ios-share">Giuliani double dealing the Ukrainians</a> </li>
-        <li> <a href="https://www.youtube.com/watch?v=6cmblpbsrom&amp;feature=share">DOJ report to undercut trumps claims that the FBI spies on him, on December 9th</a> </li>
         <li> <a href="https://twitter.com/realDonaldTrump/status/1199718185865535490?s=09">Donald J. Trump on Twitter: &quot;… &quot;</a> </li>
+        <li> <a href="https://thehill.com/homenews/campaign/472199-trump-crowd-chants-bull-after-he-says-polls-show-impeachment-backfiring-for?amp&amp;__twitter_impression=true">Trump crowd chants 'bulls---' after he says polls show impeachment backfiring for Democrats | TheHill</a> </li>
 </ol>
 </div>
 
 <script>
+
     window.addEventListener('load', (e) => {
-        document.getElementsByName('a').forEach((aElement) => {
-            aElement.setAttribute('target', '_blank');
-        });
+        Array
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
+
 
 </script>
 </body>

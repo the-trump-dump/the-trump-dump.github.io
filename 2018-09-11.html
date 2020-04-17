@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <!--  BUILT: 2020-04-17T08:10:49.405969Z -->
+    <!--  BUILT: 2020-04-17T08:17:21.295982Z -->
     <title>
         The Daily Trump Dump
     </title>
@@ -125,17 +125,21 @@
     
 <h1> 2018-09-11 </h1>
 <ol>
-        <li> <a href="https://www.nytimes.com/2018/09/10/climate/methane-emissions-epa.html">Trump Administration Wants to Make It Easier to Release Methane Into Air - The New York Times</a> </li>
         <li> <a href="http://thehill.com/homenews/media/406002-scarborough-9-11-op-ed-trump-more-of-a-threat-to-us-than-any-foreign-adversary">Scarborough 9/11 op-ed: Trump more of a threat to US 'than any foreign adversary' | TheHill</a> </li>
+        <li> <a href="https://www.nytimes.com/2018/09/10/climate/methane-emissions-epa.html">Trump Administration Wants to Make It Easier to Release Methane Into Air - The New York Times</a> </li>
 </ol>
 </div>
 
 <script>
+
     window.addEventListener('load', (e) => {
-        document.getElementsByName('a').forEach((aElement) => {
-            aElement.setAttribute('target', '_blank');
-        });
+        Array
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
+
 
 </script>
 </body>

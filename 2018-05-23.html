@@ -5,24 +5,66 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;700;800&family=Playfair+Display&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
           crossorigin="anonymous">
-    <style type="text/css">
 
+    <style type="text/css">
+        a {
+        }
+
+        .date {
+            font-weight: bolder;
+        }
+
+        body {
+            /*font-family: 'Noto Serif', serif;*/
+            font-family: 'Baloo Bhaina 2', cursive;
+            font-weight: 400;
+        }
+
+
+        .row h2 {
+            padding-top: 2em;
+            font-size: larger;
+        }
+
+        #menu {
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        #menu a {
+        }
     </style>
+
+
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,9 +196,11 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2018-05-23 </h1>
 <ol>
         <li> <a href="http://thehill.com/homenews/senate/389004-flake-blasts-news-that-dems-not-invited-to-briefing-on-russia-docs-this-is?amp&amp;__twitter_impression=true">Flake blasts news that Dems not invited to briefing on Russia docs: 'This is not right' | TheHill</a> </li>
@@ -175,6 +219,9 @@
         <li> <a href="https://www.buzzfeed.com/amphtml/davidmack/a-federal-court-just-ruled-trump-cant-block-people-on?__twitter_impression=true">A Federal Court Just Ruled Trump Can't Block People On Twitter</a> </li>
         <li> <a href="https://twitter.com/thehill/status/999252374278549505?s=12">Trump continues to push evidence-free claim of a “major spy scandal” in his presidential campaign: https://t.co/jkDh9ET6T0 https://t.co/vGbuSZ682e</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -189,14 +236,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-18T00:57:06.619934Z -->
+
+<!--
+BUILT: 2020-04-18T02:37:12.196253Z
+-->
 
 
 </body>

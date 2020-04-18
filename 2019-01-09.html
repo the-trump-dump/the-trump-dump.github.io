@@ -5,24 +5,66 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;700;800&family=Playfair+Display&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
           crossorigin="anonymous">
-    <style type="text/css">
 
+    <style type="text/css">
+        a {
+        }
+
+        .date {
+            font-weight: bolder;
+        }
+
+        body {
+            /*font-family: 'Noto Serif', serif;*/
+            font-family: 'Baloo Bhaina 2', cursive;
+            font-weight: 400;
+        }
+
+
+        .row h2 {
+            padding-top: 2em;
+            font-size: larger;
+        }
+
+        #menu {
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        #menu a {
+        }
     </style>
+
+
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,9 +196,11 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2019-01-09 </h1>
 <ol>
         <li> <a href="https://twitter.com/i/events/1082734759929733120">Trump demands barrier for border security 'crisis' in national address as shutdown continues</a> </li>
@@ -170,8 +214,8 @@
         <li> <a href="https://www.nytimes.com/2019/01/08/us/politics/manafort-trump-campaign-data-kilimnik.html">Manafort Accused of Sharing Trump Polling Data With Russian Associate - The New York Times</a> </li>
         <li> <a href="https://twitter.com/thedailybeast/status/1083061110264217600?s=12">The Daily Beast on Twitter: &quot;WATCH: Trump argues that we need a border wall to stop migrants just driving right across in their &quot;unbelievable vehicles... stronger, bigger, and faster vehicles than our police have, than ICE has&quot;… https://t.co/nqrwAp4bby&quot;</a> </li>
         <li> <a href="https://talkingpointsmemo.com/news/more-tuned-in-watch-dem-rebuttal-trump-address">More People Tuned In To Watch Dem Rebuttal Than Trump’s Address – Talking Points Memo</a> </li>
-        <li> <a href="https://thehill.com/homenews/morning-report/424267-the-hills-morning-report?amp&amp;__twitter_impression=true">The Hill's Morning Report — Trump to address nation as shutdown hits day 18 | TheHill</a> </li>
         <li> <a href="https://www.washingtonpost.com/politics/pence-calls-on-democrats-in-congress-to-accede-to-wall-funding-demand-end-shutdown/2019/01/08/944291ac-1338-11e9-90a8-136fa44b80ba_story.html">The Washington Post: Trump calls border situation ‘a crisis of the soul’</a> </li>
+        <li> <a href="https://thehill.com/homenews/morning-report/424267-the-hills-morning-report?amp&amp;__twitter_impression=true">The Hill's Morning Report — Trump to address nation as shutdown hits day 18 | TheHill</a> </li>
         <li> <a href="https://nyti.ms/2GZbF0M?smid=nytcore-ios-share">Trump’s Speech to the Nation: Live Updates and Fact Checks</a> </li>
         <li> <a href="https://twitter.com/sharanmshetty/status/1083070999363575808?s=12">Sharan Shetty on Twitter: &quot;<em>checks notes</em> his family moved to Qatar due to death threats… &quot;</a> </li>
         <li> <a href="https://thehill.com/policy/finance/424371-trump-fed-pick-withdraws-after-gop-criticism?amp&amp;__twitter_impression=true">Trump pick for Fed board withdraws after GOP criticism | TheHill</a> </li>
@@ -182,6 +226,9 @@
         <li> <a href="https://nyti.ms/2HdedZ8?smid=nytcore-ios-share">Rod Rosenstein Expected to Leave Justice Dept. Once Attorney General Is Confirmed</a> </li>
         <li> <a href="https://twitter.com/robertlusetich/status/1083041225035284480?s=12">Robert Lusetich on Twitter: &quot;184 California families who lost everything in the fires are still living in #FEMA temporary shelters as they rebuild their lives. More than 24,000 families need help. They are now pawns in a game because California doesn't su</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -196,14 +243,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-18T00:57:07.434219Z -->
+
+<!--
+BUILT: 2020-04-18T02:37:13.219878Z
+-->
 
 
 </body>

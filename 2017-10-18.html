@@ -5,24 +5,66 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;700;800&family=Playfair+Display&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
           crossorigin="anonymous">
-    <style type="text/css">
 
+    <style type="text/css">
+        a {
+        }
+
+        .date {
+            font-weight: bolder;
+        }
+
+        body {
+            /*font-family: 'Noto Serif', serif;*/
+            font-family: 'Baloo Bhaina 2', cursive;
+            font-weight: 400;
+        }
+
+
+        .row h2 {
+            padding-top: 2em;
+            font-size: larger;
+        }
+
+        #menu {
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        #menu a {
+        }
     </style>
+
+
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,9 +196,11 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2017-10-18 </h1>
 <ol>
         <li> <a href="http://thehill.com/policy/healthcare/health-insurance/356081-states-file-emergency-restraining-order-to-force?amp">States file emergency motion to force continuation of ObamaCare payments | TheHill</a> </li>
@@ -170,6 +214,9 @@
         <li> <a href="http://thehill.com/blogs/blog-briefing-room/355953-judge-orders-trump-to-turn-over-daca-legal-advice-report?amp">Judge orders Trump to turn over DACA legal advice: report | TheHill</a> </li>
         <li> <a href="http://thehill.com/homenews/media/356118-jake-tapper-fires-back-at-oreilly-for-ratings-dig-you-were-humiliated-in-front?amp">Jake Tapper fires back at O'Reilly for ratings dig: You were 'humiliated in front of the world' | TheHill</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -184,14 +231,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-18T00:57:05.443526Z -->
+
+<!--
+BUILT: 2020-04-18T02:37:10.757437Z
+-->
 
 
 </body>

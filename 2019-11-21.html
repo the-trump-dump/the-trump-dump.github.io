@@ -5,24 +5,66 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;700;800&family=Playfair+Display&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
           crossorigin="anonymous">
-    <style type="text/css">
 
+    <style type="text/css">
+        a {
+        }
+
+        .date {
+            font-weight: bolder;
+        }
+
+        body {
+            /*font-family: 'Noto Serif', serif;*/
+            font-family: 'Baloo Bhaina 2', cursive;
+            font-weight: 400;
+        }
+
+
+        .row h2 {
+            padding-top: 2em;
+            font-size: larger;
+        }
+
+        #menu {
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        #menu a {
+        }
     </style>
+
+
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,19 +196,24 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2019-11-21 </h1>
 <ol>
         <li> <a href="https://www.newsweek.com/donald-trump-anonymous-white-house-insider-memory-1472661">Trump Regularly 'Can't Remember What He's Said or Been Told,' White House Insider Says</a> </li>
         <li> <a href="https://www.thedailybeast.com/nikki-haley-used-system-for-unclassified-material-to-send-confidential-information?ref=home">Nikki Haley Used System for Unclassified Material to Send ‘Confidential’ Information</a> </li>
-        <li> <a href="https://www.washingtonpost.com/politics/fiona-hill-to-testify-in-impeachment-inquiry-about-a-fictional-narrative-on-ukrainian-interference/2019/11/21/6d1fe576-0c60-11ea-8397-a955cd542d00_story.html">Fiona Hill tells impeachment inquiry about a ‘fictional narrative’ on Ukrainian interference</a> </li>
         <li> <a href="https://www.reddit.com/user/washingtonpost/comments/dzb7rl/opinion_the_house_is_now_fully_entitled_to_hear/?utm_name=iossmf">Opinion | The House is now fully entitled to hear from Pence, Pompeo, Mulvaney and Giuliani</a> </li>
+        <li> <a href="https://www.washingtonpost.com/politics/fiona-hill-to-testify-in-impeachment-inquiry-about-a-fictional-narrative-on-ukrainian-interference/2019/11/21/6d1fe576-0c60-11ea-8397-a955cd542d00_story.html">Fiona Hill tells impeachment inquiry about a ‘fictional narrative’ on Ukrainian interference</a> </li>
         <li> <a href="https://www.cnn.com/2019/11/21/politics/gordon-sondland-testimony/index.html">The huge Gordon Sondland revelation almost everyone missed - CNNPolitics</a> </li>
         <li> <a href="https://www.washingtonpost.com/politics/impeachment-hearings-live-updates/2019/11/21/879521ca-0c31-11ea-8397-a955cd542d00_story.html">Impeachment hearings live updates: Hill said she told Sondland that his efforts in Ukraine would ‘blow up’</a> </li>
         <li> <a href="https://www.reddit.com/user/washingtonpost/comments/dz3sar/sondland_acknowledges_there_was_a_quid_pro_quo/?utm_name=iossmf">Sondland acknowledges there was a ‘quid pro quo’ involving Ukraine</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -181,14 +228,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-18T00:57:08.204952Z -->
+
+<!--
+BUILT: 2020-04-18T02:37:14.230359Z
+-->
 
 
 </body>

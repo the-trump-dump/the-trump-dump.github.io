@@ -5,24 +5,66 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;700;800&family=Playfair+Display&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
           crossorigin="anonymous">
-    <style type="text/css">
 
+    <style type="text/css">
+        a {
+        }
+
+        .date {
+            font-weight: bolder;
+        }
+
+        body {
+            /*font-family: 'Noto Serif', serif;*/
+            font-family: 'Baloo Bhaina 2', cursive;
+            font-weight: 400;
+        }
+
+
+        .row h2 {
+            padding-top: 2em;
+            font-size: larger;
+        }
+
+        #menu {
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        #menu a {
+        }
     </style>
+
+
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,9 +196,11 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2017-10-08 </h1>
 <ol>
         <li> <a href="http://thehill.com/business-a-lobbying/business-a-lobbying/354317-the-nras-power-by-the-numbers?amp">The NRA's power: By the numbers | TheHill</a> </li>
@@ -170,8 +214,8 @@
         <li> <a href="https://www.vox.com/platform/amp/world/2017/9/20/16330028/rex-tillerson-secretary-state-trump-un-haley">“He took the job and made it smaller”: how Rex Tillerson failed the State Department - Vox</a> </li>
         <li> <a href="https://www.nytimes.com/2017/10/08/us/politics/trump-corker.html">Trump Goes After Senator Bob Corker, Who Bites Back</a> </li>
         <li> <a href="https://www.vox.com/platform/amp/identities/2017/10/5/16429800/trump-sessions-transgender-workers">Trump’s Justice Department just rescinded a memo protecting transgender workers - Vox</a> </li>
-        <li> <a href="http://www.msnbc.com/the-last-word/watch/lawrence-no-one-defended-trump-after-moron-comment-1062766147917">Lawrence: No one defended Trump after 'moron' comment | MSNBC</a> </li>
         <li> <a href="https://www.nytimes.com/2017/10/06/opinion/trump-obama-iran-deal.html">Mr. Trump, Don’t Scrap the Iran Deal</a> </li>
+        <li> <a href="http://www.msnbc.com/the-last-word/watch/lawrence-no-one-defended-trump-after-moron-comment-1062766147917">Lawrence: No one defended Trump after 'moron' comment | MSNBC</a> </li>
         <li> <a href="http://thehill.com/homenews/administration/354442-mulvaney-west-wing-much-more-orderly-under-kelly?amp">Mulvaney: West Wing 'much more orderly' under Kelly | TheHill</a> </li>
         <li> <a href="https://www.vox.com/world/2017/10/6/16435752/ican-nobel-prize-2017-nuclear-weapons-explained">ICAN, the group that just won the 2017 Nobel Peace Prize, explained - Vox</a> </li>
         <li> <a href="https://t.co/aVHD59Kfr9?amp=1">http://thehill.com/homenews/house/353904-house-panel-approves-10b-for-border-wall?amp</a> </li>
@@ -183,6 +227,9 @@
         <li> <a href="https://www.nytimes.com/2017/10/07/us/politics/democrats-resistance-fundraising.html">The ‘Resistance,’ Raising Big Money, Upends Liberal Politics</a> </li>
         <li> <a href="https://www.vox.com/identities/2017/10/5/16429800/trump-sessions-transgender-workers">https://www.vox.com/platform/amp/identities/2017/10/5/16429800/trump-sessions-transgender-workers</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -197,14 +244,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-18T00:57:05.428984Z -->
+
+<!--
+BUILT: 2020-04-18T02:37:10.745055Z
+-->
 
 
 </body>

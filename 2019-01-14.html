@@ -5,24 +5,66 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;700;800&family=Playfair+Display&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
           crossorigin="anonymous">
-    <style type="text/css">
 
+    <style type="text/css">
+        a {
+        }
+
+        .date {
+            font-weight: bolder;
+        }
+
+        body {
+            /*font-family: 'Noto Serif', serif;*/
+            font-family: 'Baloo Bhaina 2', cursive;
+            font-weight: 400;
+        }
+
+
+        .row h2 {
+            padding-top: 2em;
+            font-size: larger;
+        }
+
+        #menu {
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        #menu a {
+        }
     </style>
+
+
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,9 +196,11 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2019-01-14 </h1>
 <ol>
         <li> <a href="https://nyti.ms/2RHydHG?smid=nytcore-ios-share">Donald Trump Just Cannot Help It</a> </li>
@@ -167,8 +211,8 @@
         <li> <a href="https://www.nytimes.com/2019/01/13/opinion/trump-impeachment-2020-election.html#click=https://t.co/rH0bOrPiLG">Opinion | What’s the Best Way to Dump Trump? - The New York Times</a> </li>
         <li> <a href="https://thehill.com/homenews/campaign/425074-trump-knocks-biden-obama-took-him-from-scrap-heap?amp">Trump knocks Biden: Obama 'took him off the trash heap’ | TheHill</a> </li>
         <li> <a href="https://nyti.ms/2HacKD3?smid=nytcore-ios-share">Down the Rabbit Hole With Donald</a> </li>
-        <li> <a href="https://nyti.ms/2HbjWPc?smid=nytcore-ios-share">Government Shutdown Across America</a> </li>
         <li> <a href="https://www.thedailybeast.com/kremlin-blessed-russias-nra-operation-us-intel-report-says">Kremlin Blessed Russia’s NRA Operation, U.S. Intel Report Says</a> </li>
+        <li> <a href="https://nyti.ms/2HbjWPc?smid=nytcore-ios-share">Government Shutdown Across America</a> </li>
         <li> <a href="https://nyti.ms/2ROgdvd?smid=nytcore-ios-share">Attorney General Nominee Promises to Allow Mueller to Finish His Work</a> </li>
         <li> <a href="https://twitter.com/i386/status/1084654104205352960?s=12">James Dumay on Twitter: &quot;&quot;Jeff Bozo&quot; - is POTUS a 5 year old?… &quot;</a> </li>
         <li> <a href="https://www.usatoday.com/story/news/politics/2019/01/10/president-trump-is-wheel-older-than-wall/2539339002/?smid=nytcore-ios-share">President Trump claims the wheel is older than the wall. Is he right?</a> </li>
@@ -180,6 +224,9 @@
         <li> <a href="https://nyti.ms/2RHEByF?smid=nytcore-ios-share">What’s the Best Way to Dump Trump?</a> </li>
         <li> <a href="https://www.washingtonpost.com/powerpost/house-democrats-move-to-censure-rep-steve-king-over-racial-statements/2019/01/14/a56854e4-182e-11e9-88fe-f9f77a3bcb6c_story.html">The Washington Post: House Democrats move to censure Rep. Steve King over racial statements</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -194,14 +241,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-18T00:57:07.441105Z -->
+
+<!--
+BUILT: 2020-04-18T02:37:13.225950Z
+-->
 
 
 </body>

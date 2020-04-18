@@ -5,24 +5,66 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;700;800&family=Playfair+Display&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
           crossorigin="anonymous">
-    <style type="text/css">
 
+    <style type="text/css">
+        a {
+        }
+
+        .date {
+            font-weight: bolder;
+        }
+
+        body {
+            /*font-family: 'Noto Serif', serif;*/
+            font-family: 'Baloo Bhaina 2', cursive;
+            font-weight: 400;
+        }
+
+
+        .row h2 {
+            padding-top: 2em;
+            font-size: larger;
+        }
+
+        #menu {
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        #menu a {
+        }
     </style>
+
+
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,9 +196,11 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2019-01-06 </h1>
 <ol>
         <li> <a href="https://www.newyorker.com/news/swamp-chronicles/is-fraud-part-of-the-trump-organizations-business-model/amp?mbid=chrome_ext&amp;__twitter_impression=true">Is Fraud Part of the Trump Organization’s Business Model?</a> </li>
@@ -172,9 +216,12 @@
         <li> <a href="https://itunes.apple.com/us/podcast/the-rachel-maddow-show/id294055449?mt=2&amp;i=1000426253069">The Rachel Maddow Show by NBC News on Apple Podcasts</a> </li>
         <li> <a href="https://thehill.com/homenews/senate/424015-manchin-slams-horrible-comments-from-dem-calling-for-impeachment-so?amp&amp;__twitter_impression=true">Manchin slams 'horrible' comments from Dem calling for Trump impeachment: 'So disgusting' | TheHill</a> </li>
         <li> <a href="https://www.cbsnews.com/amp/news/alexandria-ocasio-cortez-call-me-a-radical-60-minutes/?__twitter_impression=true">70 percent tax rates on the ultra rich would help pay for “Green New Deal,&quot; Rep. Alexandria Ocasio-Cortez tells 60 minutes - CBS News</a> </li>
-        <li> <a href="https://www.wsj.com/articles/impeachment-pretense-11546805677?cx_testId=16&amp;cx_testVariant=cx&amp;cx_artPos=0&amp;cx_tag=rate&amp;cx_navSource=newsReel#cxrecs_s">Impeachment Pretense - WSJ</a> </li>
         <li> <a href="https://thehill.com/homenews/senate/424015-manchin-slams-horrible-comments-from-dem-calling-for-impeachment-so?amp">Manchin slams 'horrible' comments from Dem calling for Trump impeachment: 'So disgusting' | TheHill</a> </li>
+        <li> <a href="https://www.wsj.com/articles/impeachment-pretense-11546805677?cx_testId=16&amp;cx_testVariant=cx&amp;cx_artPos=0&amp;cx_tag=rate&amp;cx_navSource=newsReel#cxrecs_s">Impeachment Pretense - WSJ</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -189,14 +236,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-18T00:57:07.430478Z -->
+
+<!--
+BUILT: 2020-04-18T02:37:13.216413Z
+-->
 
 
 </body>

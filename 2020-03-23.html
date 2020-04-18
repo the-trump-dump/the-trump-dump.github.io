@@ -5,24 +5,66 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;700;800&family=Playfair+Display&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
           crossorigin="anonymous">
-    <style type="text/css">
 
+    <style type="text/css">
+        a {
+        }
+
+        .date {
+            font-weight: bolder;
+        }
+
+        body {
+            /*font-family: 'Noto Serif', serif;*/
+            font-family: 'Baloo Bhaina 2', cursive;
+            font-weight: 400;
+        }
+
+
+        .row h2 {
+            padding-top: 2em;
+            font-size: larger;
+        }
+
+        #menu {
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        #menu a {
+        }
     </style>
+
+
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,15 +196,17 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2020-03-23 </h1>
 <ol>
         <li> <a href="https://www.nbcnews.com/health/health-news/man-dies-after-ingesting-chloroquine-attempt-prevent-coronavirus-n1167166">www.nbcnews.com</a> </li>
         <li> <a href="https://www.youtube.com/watch?v=lkgckmnztyo&amp;feature=share">Trump’s idiotic pressers</a> </li>
-        <li> <a href="https://www.washingtonpost.com/investigations/the-inside-story-of-the-cpac-scare-when-the-coronavirus-passed-within-a-handshake-of-the-president-no-public-health-agency-took-charge/2020/03/19/8fbebe42-67a3-11ea-b313-df458622c2cc_story.html?wpisrc=nl_rainbow&amp;wpmm=1">The inside story of the CPAC scare: When the coronavirus passed within a handshake of the president, no public health agency took charge - The Washington Post</a> </li>
         <li> <a href="https://www.cnn.com/2020/03/23/europe/coronavirus-lockdown-flouted-italy-uk-intl-gbr/index.html">People in the West are ignoring advice to stay home. That's because it's too confusing, one expert says</a> </li>
+        <li> <a href="https://www.washingtonpost.com/investigations/the-inside-story-of-the-cpac-scare-when-the-coronavirus-passed-within-a-handshake-of-the-president-no-public-health-agency-took-charge/2020/03/19/8fbebe42-67a3-11ea-b313-df458622c2cc_story.html?wpisrc=nl_rainbow&amp;wpmm=1">The inside story of the CPAC scare: When the coronavirus passed within a handshake of the president, no public health agency took charge - The Washington Post</a> </li>
         <li> <a href="https://twitter.com/atrupar/status/1241857374152949761?s=12">Trump on Romney going into isolation over coronavirus concerns: “gee, that’s too bad!”</a> </li>
         <li> <a href="https://www.youtube.com/watch?v=qh70rfwqsbo&amp;feature=share">Trump wins press conferences</a> </li>
         <li> <a href="https://www.cnn.com/2020/03/23/politics/fauci-trump-science-interview/index.html">Fauci on Trump: 'I can't jump in front of the microphone and push him down' - CNNPolitics</a> </li>
@@ -174,6 +218,9 @@
         <li> <a href="https://www.vox.com/platform/amp/future-perfect/2020/3/20/21179040/coronavirus-us-italy-not-overreacting?__twitter_impression=true">Why we’re not overreacting to the coronavirus pandemic, in one chart - Vox</a> </li>
         <li> <a href="https://www.nytimes.com/2020/03/23/world/coronavirus-updates-usa-world.html?referringSource=articleShare">They just shutdown the UK</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -188,14 +235,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-18T00:57:08.489724Z -->
+
+<!--
+BUILT: 2020-04-18T02:37:14.609526Z
+-->
 
 
 </body>

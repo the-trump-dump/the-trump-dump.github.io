@@ -5,24 +5,66 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;700;800&family=Playfair+Display&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
           crossorigin="anonymous">
-    <style type="text/css">
 
+    <style type="text/css">
+        a {
+        }
+
+        .date {
+            font-weight: bolder;
+        }
+
+        body {
+            /*font-family: 'Noto Serif', serif;*/
+            font-family: 'Baloo Bhaina 2', cursive;
+            font-weight: 400;
+        }
+
+
+        .row h2 {
+            padding-top: 2em;
+            font-size: larger;
+        }
+
+        #menu {
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        #menu a {
+        }
     </style>
+
+
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,9 +196,11 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2020-04-17 </h1>
 <ol>
         <li> <a href="https://thehill.com/homenews/administration/493278-fauci-diseases-like-coronavirus-dont-just-disappear">Fauci: Diseases like coronavirus 'don't just disappear' | TheHill</a> </li>
@@ -184,12 +228,15 @@
         <li> <a href="https://twitter.com/Yair_Rosenberg/status/1251229937694060544">(((Yair Rosenberg))) on Twitter: &quot;Just now: Asked by @mehdirhasan whether he'll be voting for Biden, Noam Chomsky says &quot;of course, I wouldn't hesitate for a second... I'm not going to vote for the destruction of organized human society.&quot;&quot; / Twitter</a> </li>
         <li> <a href="https://www.washingtonpost.com/world/2020/04/17/coronavirus-latest-news/">Live updates: Texas announces dates for relaxing some coronavirus-related restrictions</a> </li>
         <li> <a href="https://www.politico.com/news/2020/04/16/michael-cohen-prison-coronavirus-192050">Former Trump lawyer Michael Cohen being released from prison amid coronavirus - POLITICO</a> </li>
-        <li> <a href="https://thehill.com/homenews/news/493275-michael-cohen-to-be-released-early-from-prison-amid-coronavirus-pandemic-report">Michael Cohen to be released early from prison amid coronavirus pandemic: report | TheHill</a> </li>
         <li> <a href="https://thehill.com/policy/international/493277-coronavirus-ends-chinas-near-50-year-stint-of-economic-growth">Coronavirus ends China's near 50-year stint of economic growth | TheHill</a> </li>
+        <li> <a href="https://thehill.com/homenews/news/493275-michael-cohen-to-be-released-early-from-prison-amid-coronavirus-pandemic-report">Michael Cohen to be released early from prison amid coronavirus pandemic: report | TheHill</a> </li>
         <li> <a href="https://apple.news/AbSsbTF0oRZK40IZk_4KvEQ">apple.news</a> </li>
         <li> <a href="https://apple.news/A4ePnSryLS1G1Zh8_o4rIrw">apple.news</a> </li>
         <li> <a href="https://twitter.com/JoshuaPotash/status/1251265910498787329">Joshua Potash on Twitter: &quot;Okay I’m done. Another “liberate” protest, this time in Huntington Beach, California. And the guy with the “COVID-19 is a lie” sign - wearing a hazmat suit, mask, goggles, and gloves - says it all. https://t.co/9nbS0c4</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -204,14 +251,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-18T00:57:08.524502Z -->
+
+<!--
+BUILT: 2020-04-18T02:37:14.639816Z
+-->
 
 
 </body>

@@ -5,24 +5,66 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;700;800&family=Playfair+Display&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
           crossorigin="anonymous">
-    <style type="text/css">
 
+    <style type="text/css">
+        a {
+        }
+
+        .date {
+            font-weight: bolder;
+        }
+
+        body {
+            /*font-family: 'Noto Serif', serif;*/
+            font-family: 'Baloo Bhaina 2', cursive;
+            font-weight: 400;
+        }
+
+
+        .row h2 {
+            padding-top: 2em;
+            font-size: larger;
+        }
+
+        #menu {
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        #menu a {
+        }
     </style>
+
+
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,9 +196,11 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2019-10-07 </h1>
 <ol>
         <li> <a href="https://www-m.cnn.com/2019/10/02/politics/donald-trump-impeachment-finland-news-conference/">Donald Trump, at his absolute worst - CNNPolitics</a> </li>
@@ -173,9 +217,12 @@
         <li> <a href="https://www.cnn.com/2019/10/07/politics/trump-republicans-impeachment-reaction/index.html">New twists put Republicans on spot in impeachment saga</a> </li>
         <li> <a href="https://apple.news/A7kdHYGaRTuaI6GurrBmWuw">apple.news</a> </li>
         <li> <a href="https://twitter.com/cnn/status/1180887409547984896?s=12">“The Republican party has got to get a grip on itself,” Former Secy. of State Colin Powell on the state of the current GOP. “Republican leaders and members of the Congress… are holding back because they’re terrified of what will happen [to] any </a> </li>
-        <li> <a href="https://m.sfgate.com/politics/article/Donald-Trump-Jr-Kimberly-Guilfoyle-Mar-a-Lago-US-14456041.php">Trump was 'less than thrilled' about Don Jr. dating Kimberly Guilfoyle, The Atlantic writes - SFGate</a> </li>
         <li> <a href="https://www.independent.co.uk/news/world/americas/us-politics/trump-ukraine-impeachment-naftogaz-rudy-giuliani-donors-inquiry-gop-a9145651.html">www.independent.co.uk</a> </li>
+        <li> <a href="https://m.sfgate.com/politics/article/Donald-Trump-Jr-Kimberly-Guilfoyle-Mar-a-Lago-US-14456041.php">Trump was 'less than thrilled' about Don Jr. dating Kimberly Guilfoyle, The Atlantic writes - SFGate</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -190,14 +237,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-18T00:57:07.854825Z -->
+
+<!--
+BUILT: 2020-04-18T02:37:13.736995Z
+-->
 
 
 </body>

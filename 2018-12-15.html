@@ -5,24 +5,66 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;700;800&family=Playfair+Display&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
           crossorigin="anonymous">
-    <style type="text/css">
 
+    <style type="text/css">
+        a {
+        }
+
+        .date {
+            font-weight: bolder;
+        }
+
+        body {
+            /*font-family: 'Noto Serif', serif;*/
+            font-family: 'Baloo Bhaina 2', cursive;
+            font-weight: 400;
+        }
+
+
+        .row h2 {
+            padding-top: 2em;
+            font-size: larger;
+        }
+
+        #menu {
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        #menu a {
+        }
     </style>
+
+
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,17 +196,19 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2018-12-15 </h1>
 <ol>
         <li> <a href="https://nyti.ms/2A2iHfc?smid=nytcore-ios-share">Texas Judge Strikes Down Obama’s Affordable Care Act as Unconstitutional</a> </li>
         <li> <a href="https://nyti.ms/2QA9KnU?smid=nytcore-ios-share">How McKinsey Has Helped Raise the Stature of Authoritarian Governments</a> </li>
         <li> <a href="https://www.youtube.com/watch?v=dziw2xDm95c&amp;feature=share">Trumps Pattern During The Russia Investigation | TIME - YouTube</a> </li>
         <li> <a href="https://arstechnica.com/tech-policy/2018/12/ohio-congressman-we-can-fund-border-wall-with-wallcoin/">Ohio Congressman: We can fund border wall with “WallCoin” | Ars Technica</a> </li>
-        <li> <a href="https://www.washingtonpost.com/national/health-science/interior-secretary-zinke-resigns-amid-investigations/2018/12/15/481f9104-0077-11e9-ad40-cdfd0e0dd65a_story.html">The Washington Post: Interior Secretary Zinke resigns amid investigations</a> </li>
         <li> <a href="https://www.washingtonpost.com/amphtml/national/health-science/federal-judge-in-texas-rules-obama-health-care-law-unconstitutional/2018/12/14/9e8bb5a2-fd63-11e8-862a-b6a6f3ce8199_story.html?noredirect=on&amp;__twitter_impression=true">Federal judge in Texas rules entire Obama health-care law is unconstitutional</a> </li>
+        <li> <a href="https://www.washingtonpost.com/national/health-science/interior-secretary-zinke-resigns-amid-investigations/2018/12/15/481f9104-0077-11e9-ad40-cdfd0e0dd65a_story.html">The Washington Post: Interior Secretary Zinke resigns amid investigations</a> </li>
         <li> <a href="https://www.washingtonpost.com/politics/a-breakdown-in-trust-revelations-about-hush-money-and-russian-interference-renew-debate-over-the-legitimacy-of-trumps-2016-win/2018/12/14/6c873a6a-fe5b-11e8-83c0-b06139e540e5_story.html">The Washington Post: Debate over the legitimacy of Trump’s presidency swells after recent court filings</a> </li>
         <li> <a href="https://nyti.ms/2QuE2Z0?smid=nytcore-ios-share">As the Trumps Dodged Taxes, Their Tenants Paid a Price</a> </li>
         <li> <a href="https://amp.cnn.com/cnn/2018/12/14/politics/texas-aca-lawsuit/index.html?__twitter_impression=true">Federal judge in Texas strikes down Affordable Care Act - CNNPolitics</a> </li>
@@ -174,6 +218,9 @@
         <li> <a href="https://thehill.com/blogs/blog-briefing-room/news/421447-george-conway-rips-trump-defense-over-daniels-mcdougal-payments?amp&amp;__twitter_impression=true">George Conway rips Trump's defense of Daniels, McDougal payments | TheHill</a> </li>
         <li> <a href="https://www.washingtonpost.com/politics/trump-names-budget-director-mick-mulvaney-as-acting-white-house-chief-of-staff/2018/12/14/4d32a516-ffee-11e8-ad40-cdfd0e0dd65a_story.html">The Washington Post: Trump names budget director Mick Mulvaney as acting White House chief of staff</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -188,14 +235,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-18T00:57:07.109516Z -->
+
+<!--
+BUILT: 2020-04-18T02:37:12.761339Z
+-->
 
 
 </body>

@@ -5,24 +5,66 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;700;800&family=Playfair+Display&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
           crossorigin="anonymous">
-    <style type="text/css">
 
+    <style type="text/css">
+        a {
+        }
+
+        .date {
+            font-weight: bolder;
+        }
+
+        body {
+            /*font-family: 'Noto Serif', serif;*/
+            font-family: 'Baloo Bhaina 2', cursive;
+            font-weight: 400;
+        }
+
+
+        .row h2 {
+            padding-top: 2em;
+            font-size: larger;
+        }
+
+        #menu {
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        #menu a {
+        }
     </style>
+
+
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,12 +196,51 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    <div class="monthly">
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            <div class="monthly">
     <h1>
         2020-04
     </h1>
+        <div class="monthly">
+            <div class="date">
+                2020-04-18
+            </div>
+            <UL>
+                    <LI>
+                        <a href="https://www.independent.co.uk/news/world/americas/cuomo-press-conference-today-trump-coronavirus-response-twitter-a9471381.html">'If he's sitting watching TV, he should go to work': Cuomo roasts Trump over coronavirus response in fiery press conference | The Independent</a>
+                    </LI>
+                    <LI>
+                        <a href="https://ktla.com/news/california/california-gives-paid-sick-leave-as-part-of-7-billion-to-be-spent-on-outbreak-grapples-with-covid-19-hot-spots/">California sees worst 24-hour virus death toll as governor announces economic recovery efforts | KTLA</a>
+                    </LI>
+                    <LI>
+                        <a href="https://www.latimes.com/california/story/2020-04-07/all-la-residents-can-now-get-coronavirus-tests-heres-where-to-go">Where can I get a coronavirus test in L.A. County? - Los Angeles Times</a>
+                    </LI>
+                    <LI>
+                        <a href="https://www.latimes.com/california/liveblog/coronavirus-live-updates-friday-april-17">Coronavirus live updates: California death toll nears 1,000 - Los Angeles Times</a>
+                    </LI>
+                    <LI>
+                        <a href="https://www.latimes.com/california/liveblog/coronavirus-live-updates-friday-april-17#malaria-drugs-fail-to-help-coronavirus-patients-in-controlled-studies">Coronavirus live updates: California death toll nears 1,000 - Los Angeles Times</a>
+                    </LI>
+                    <LI>
+                        <a href="https://www.latimes.com/california/liveblog/coronavirus-live-updates-friday-april-17#coronavirus-infections-could-be-much-more-widespread-than-believed-california-study-suggests">Coronavirus live updates: California death toll nears 1,000 - Los Angeles Times</a>
+                    </LI>
+                    <LI>
+                        <a href="https://www.latimes.com/california/liveblog/coronavirus-live-updates-friday-april-17#ventura-county-faith-leaders-demand-officials-allow-socially-distant-gatherings">Coronavirus live updates: California death toll nears 1,000 - Los Angeles Times</a>
+                    </LI>
+                    <LI>
+                        <a href="https://www.latimes.com/california/liveblog/coronavirus-live-updates-friday-april-17#bay-area-counties-issue-order-for-residents-and-workers-to-wear-face-coverings-on-public-transportation-or-in-taxis">Coronavirus live updates: California death toll nears 1,000 - Los Angeles Times</a>
+                    </LI>
+                    <LI>
+                        <a href="https://www.latimes.com/california/liveblog/coronavirus-live-updates-friday-april-17#live-free-or-die-protesters-march-against-california-stay-at-home-rules-in-huntington-beach">Coronavirus live updates: California death toll nears 1,000 - Los Angeles Times</a>
+                    </LI>
+                    <LI>
+                        <a href="https://www.latimes.com/california/liveblog/coronavirus-live-updates-friday-april-17#grim-toll-at-california-nursing-homes-3-500-infected-with-coronavirus-newsom-says">Coronavirus live updates: California death toll nears 1,000 - Los Angeles Times</a>
+                    </LI>
+            </UL>
+        </div>
         <div class="monthly">
             <div class="date">
                 2020-04-17
@@ -1213,6 +1294,9 @@
             </UL>
         </div>
 </div>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -1227,14 +1311,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-18T00:57:09.868926Z -->
+
+<!--
+BUILT: 2020-04-18T02:37:16.061829Z
+-->
 
 
 </body>

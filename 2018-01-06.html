@@ -5,24 +5,66 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;700;800&family=Playfair+Display&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
           crossorigin="anonymous">
-    <style type="text/css">
 
+    <style type="text/css">
+        a {
+        }
+
+        .date {
+            font-weight: bolder;
+        }
+
+        body {
+            /*font-family: 'Noto Serif', serif;*/
+            font-family: 'Baloo Bhaina 2', cursive;
+            font-weight: 400;
+        }
+
+
+        .row h2 {
+            padding-top: 2em;
+            font-size: larger;
+        }
+
+        #menu {
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        #menu a {
+        }
     </style>
+
+
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,18 +196,23 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2018-01-06 </h1>
 <ol>
         <li> <a href="https://www.nytimes.com/2018/01/05/us/politics/trump-republicans-immigration-spending.html">White House Immigration Demands Imperil Bipartisan Talks</a> </li>
-        <li> <a href="https://www.washingtonpost.com/blogs/right-turn/wp/2018/01/05/a-heap-of-legal-trouble-for-trump-and-sessions/?undefined=&amp;wpisrc=nl_most&amp;wpmm=1">The New York Times report contains a heap of legal trouble for Trump and Sessions - The Washington Post</a> </li>
         <li> <a href="https://www.nytimes.com/2018/01/05/world/middleeast/israel-palestinians-state.html">As a 2-State Solution Loses Steam, a 1-State Plan Gains Traction</a> </li>
+        <li> <a href="https://www.washingtonpost.com/blogs/right-turn/wp/2018/01/05/a-heap-of-legal-trouble-for-trump-and-sessions/?undefined=&amp;wpisrc=nl_most&amp;wpmm=1">The New York Times report contains a heap of legal trouble for Trump and Sessions - The Washington Post</a> </li>
         <li> <a href="https://www.washingtonpost.com/news/post-politics/wp/2018/01/06/trump-boasts-that-hes-like-really-smart-and-a-very-stable-genius-amid-questions-over-his-mental-fitness/">The Washington Post: Trump boasts that he’s ‘like, really smart’ and a ‘very stable genius’ amid questions over his mental fitness</a> </li>
         <li> <a href="http://thehill.com/blogs/blog-briefing-room/news/367786-ron-paul-says-sessions-should-step-down-after-marijuana?amp&amp;__twitter_impression=true">Ron Paul says Sessions should step down after marijuana decision | TheHill</a> </li>
         <li> <a href="http://thehill.com/homenews/administration/367731-sessions-challenges-administrative-loophole-in-immigration-court?amp&amp;__twitter_impression=true">Sessions challenges administrative loophole in immigration court cases | TheHill</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -180,14 +227,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-18T00:57:05.856450Z -->
+
+<!--
+BUILT: 2020-04-18T02:37:11.249995Z
+-->
 
 
 </body>

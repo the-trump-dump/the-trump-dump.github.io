@@ -5,24 +5,66 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;700;800&family=Playfair+Display&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
           crossorigin="anonymous">
-    <style type="text/css">
 
+    <style type="text/css">
+        a {
+        }
+
+        .date {
+            font-weight: bolder;
+        }
+
+        body {
+            /*font-family: 'Noto Serif', serif;*/
+            font-family: 'Baloo Bhaina 2', cursive;
+            font-weight: 400;
+        }
+
+
+        .row h2 {
+            padding-top: 2em;
+            font-size: larger;
+        }
+
+        #menu {
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        #menu a {
+        }
     </style>
+
+
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,14 +196,16 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2018-04-28 </h1>
 <ol>
         <li> <a href="http://thehill.com/homenews/house/385035-house-chaplain-forced-out-by-ryan?amp&amp;__twitter_impression=true">House chaplain forced out by Ryan | TheHill</a> </li>
-        <li> <a href="https://www.washingtonpost.com/politics/trump-rebrands-diplomatic-norms-as-events-in-asia-europe-and-elsewhere-spin-on-his-axis/2018/04/27/c0b1181e-4a32-11e8-827e-190efaf1f1ee_story.html">The Washington Post: Trump rebrands diplomatic norms as events in Asia, Europe and elsewhere spin on his axis</a> </li>
         <li> <a href="https://nyti.ms/2FrlKgO">Trump’s Role in Midterm Elections Roils Republicans</a> </li>
+        <li> <a href="https://www.washingtonpost.com/politics/trump-rebrands-diplomatic-norms-as-events-in-asia-europe-and-elsewhere-spin-on-his-axis/2018/04/27/c0b1181e-4a32-11e8-827e-190efaf1f1ee_story.html">The Washington Post: Trump rebrands diplomatic norms as events in Asia, Europe and elsewhere spin on his axis</a> </li>
         <li> <a href="https://www.washingtonpost.com/news/to-your-health/wp/2018/04/27/bill-gates-calls-on-u-s-to-lead-fight-against-a-pandemic-that-could-kill-millions/">The Washington Post: Bill Gates calls on U.S. to prepare for ‘large and lethal modern-day pandemic’</a> </li>
         <li> <a href="https://nyti.ms/2KkgJKN">How Trump’s Mixed Signals Complicate America’s Role in the World</a> </li>
         <li> <a href="https://www.washingtonpost.com/politics/judge-puts-stormy-daniels-case-on-hold-for-90-days-citing-likelihood-michael-cohen-will-be-indicted/2018/04/27/34d87316-4a67-11e8-ad53-d5751c8f243f_story.html?noredirect=on">Stormy Daniels lawsuit: Judge puts case on hold for 90 days, citing likelihood Michael Cohen will be indicted - The Washington Post</a> </li>
@@ -169,6 +213,9 @@
         <li> <a href="https://www.youtube.com/watch?v=66dttqlfdte&amp;feature=share">Maher on Roseanne’s misguides attempt to embrace trump</a> </li>
         <li> <a href="https://nyti.ms/2FoDt8D">North Korea, Angela Merkel, Golden State Killer: Your Evening Briefing</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -183,14 +230,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-18T00:57:06.295421Z -->
+
+<!--
+BUILT: 2020-04-18T02:37:11.757400Z
+-->
 
 
 </body>

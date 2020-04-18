@@ -5,24 +5,66 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;700;800&family=Playfair+Display&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
           crossorigin="anonymous">
-    <style type="text/css">
 
+    <style type="text/css">
+        a {
+        }
+
+        .date {
+            font-weight: bolder;
+        }
+
+        body {
+            /*font-family: 'Noto Serif', serif;*/
+            font-family: 'Baloo Bhaina 2', cursive;
+            font-weight: 400;
+        }
+
+
+        .row h2 {
+            padding-top: 2em;
+            font-size: larger;
+        }
+
+        #menu {
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        #menu a {
+        }
     </style>
+
+
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,17 +196,19 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2018-10-06 </h1>
 <ol>
         <li> <a href="https://thehill.com/blogs/blog-briefing-room/news/410067-gop-senators-hometown-paper-rips-him-for-medieval-attitude?amp&amp;__twitter_impression=true">GOP senator's hometown paper rips him for 'medieval attitude toward all women' | TheHill</a> </li>
         <li> <a href="https://www.reddit.com/r/news/comments/9lyzye/kavanaugh_is_confirmed_to_the_supreme_court_by/?st=JMXZW7V8&amp;sh=56c3e44b">Kavanaugh is confirmed to the Supreme Court by Senate -- live updates</a> </li>
         <li> <a href="https://www.reddit.com/r/politics/comments/9lqnlf/nunes_buried_evidence_on_russian_meddling_to/?st=JMWSGHIE&amp;sh=8c823b4a">Nunes buried evidence on Russian meddling to protect Trump. I know because I’m on the committee</a> </li>
         <li> <a href="https://thehill.com/policy/national-security/410167-mueller-moves-for-forfeiture-order-to-seize-manafort-assets?amp&amp;__twitter_impression=true">Mueller moves for forfeiture order to seize Manafort assets | TheHill</a> </li>
-        <li> <a href="https://www.washingtonpost.com/opinions/vote-no-on-kavanaugh/2018/10/04/23495e3a-c7f3-11e8-b1ed-1d2d65b86d0c_story.html">Vote ‘no’ on Kavanaugh - The Washington Post</a> </li>
         <li> <a href="https://www.washingtonpost.com/politics/kavanaugh-vote-hours-before-a-key-test-grassley-says-he-doesnt-know-how-it-will-go/2018/10/05/a71d92ba-c886-11e8-b1ed-1d2d65b86d0c_story.html">Kavanaugh Supreme Court nomination secures votes for passage - The Washington Post</a> </li>
+        <li> <a href="https://www.washingtonpost.com/opinions/vote-no-on-kavanaugh/2018/10/04/23495e3a-c7f3-11e8-b1ed-1d2d65b86d0c_story.html">Vote ‘no’ on Kavanaugh - The Washington Post</a> </li>
         <li> <a href="https://www.washingtonpost.com/opinions/global-opinions/russian-hackers-were-caught-in-the-act--and-the-results-are-devastating/2018/10/05/5e72495a-c8b5-11e8-b1ed-1d2d65b86d0c_story.html">Russian hackers were caught in the act — and the results are devastating - The Washington Post</a> </li>
         <li> <a href="https://apple.news/AmbDKfqgzSy6GI3FcG3wT1w">Kavanaugh’s own court sent complaints about his testimony to Chief Justice Roberts - The Washington Post</a> </li>
         <li> <a href="https://www.reddit.com/r/politics/comments/9lpl8t/susan_collins_supports_kavanaugh_putting_him_in/?st=JMWSFRSS&amp;sh=2ac6e0e2">Susan Collins Supports Kavanaugh, Putting Him in Reach of Supreme Court</a> </li>
@@ -176,6 +220,9 @@
         <li> <a href="https://nyti.ms/2BYccvM?smid=nytcore-ios-share">Collins and Manchin Will Vote for Kavanaugh, Ensuring His Confirmation</a> </li>
         <li> <a href="https://thehill.com/blogs/blog-briefing-room/news/410089-kavanaugh-protesters-bring-beer-chant-chug-outside-mcconnells?amp&amp;__twitter_impression=true">Kavanaugh protesters bring beer, chant ‘chug’ outside McConnell’s home | TheHill</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -190,14 +237,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-18T00:57:07.029281Z -->
+
+<!--
+BUILT: 2020-04-18T02:37:12.706484Z
+-->
 
 
 </body>

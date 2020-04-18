@@ -5,24 +5,66 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;700;800&family=Playfair+Display&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
           crossorigin="anonymous">
-    <style type="text/css">
 
+    <style type="text/css">
+        a {
+        }
+
+        .date {
+            font-weight: bolder;
+        }
+
+        body {
+            /*font-family: 'Noto Serif', serif;*/
+            font-family: 'Baloo Bhaina 2', cursive;
+            font-weight: 400;
+        }
+
+
+        .row h2 {
+            padding-top: 2em;
+            font-size: larger;
+        }
+
+        #menu {
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        #menu a {
+        }
     </style>
+
+
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,20 +196,25 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2017-11-27 </h1>
 <ol>
         <li> <a href="https://www.nytimes.com/2017/11/26/business/dealbook/time-inc-meredith-corporation-koch-brothers.html">Time Inc. Sells Itself to Meredith Corp., Backed by Koch Brothers</a> </li>
-        <li> <a href="https://www.aclu.org/blog/voting-rights/fighting-voter-suppression/unsealed-documents-show-kris-kobach-dead-set">Unsealed Documents Show That Kris Kobach Is Dead Set on Suppressing the Right to Vote | American Civil Liberties Union</a> </li>
         <li> <a href="http://thehill.com/homenews/administration/361990-trump-calls-warren-pocahontas-at-event-honoring-native-american?amp">Trump calls Warren 'Pocahontas' at event honoring Native American veterans | TheHill</a> </li>
+        <li> <a href="https://www.aclu.org/blog/voting-rights/fighting-voter-suppression/unsealed-documents-show-kris-kobach-dead-set">Unsealed Documents Show That Kris Kobach Is Dead Set on Suppressing the Right to Vote | American Civil Liberties Union</a> </li>
         <li> <a href="http://thehill.com/homenews/administration/362016-freedomwatch-sues-to-remove-mueller?amp">FreedomWatch sues to remove Mueller | TheHill</a> </li>
         <li> <a href="https://twitter.com/aclu/status/935223454923665408">365 days later trumps voter fraud lie is still a lie</a> </li>
         <li> <a href="http://thehill.com/homenews/administration/361912-white-house-ethics-lawyer-resigns?amp">White House ethics lawyer resigns | TheHill</a> </li>
         <li> <a href="http://thehill.com/policy/finance/361992-montana-republican-opposes-current-version-of-tax-bill?amp">Montana Republican opposes current version of Senate tax bill | TheHill</a> </li>
         <li> <a href="https://www.nytimes.com/2017/11/26/business/trump-cfpb-consumer-agency.html">Battle for Control of Consumer Agency Heads to Court</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -182,14 +229,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-18T00:57:05.818970Z -->
+
+<!--
+BUILT: 2020-04-18T02:37:11.219282Z
+-->
 
 
 </body>

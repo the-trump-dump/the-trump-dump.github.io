@@ -5,24 +5,66 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;700;800&family=Playfair+Display&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
           crossorigin="anonymous">
-    <style type="text/css">
 
+    <style type="text/css">
+        a {
+        }
+
+        .date {
+            font-weight: bolder;
+        }
+
+        body {
+            /*font-family: 'Noto Serif', serif;*/
+            font-family: 'Baloo Bhaina 2', cursive;
+            font-weight: 400;
+        }
+
+
+        .row h2 {
+            padding-top: 2em;
+            font-size: larger;
+        }
+
+        #menu {
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        #menu a {
+        }
     </style>
+
+
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,22 +196,27 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2018-06-28 </h1>
 <ol>
         <li> <a href="http://thehill.com/homenews/administration/394560-trumps-irs-pick-owns-properties-at-trumps-hawaii-hotel?amp&amp;__twitter_impression=true">Trump’s IRS pick owns properties at Trump’s Hawaii hotel | TheHill</a> </li>
         <li> <a href="http://thehill.com/hilltv/rising/394658-lewandowski-pelosi-is-not-the-leader-of-the-democratic-party?amp&amp;__twitter_impression=true">Lewandowski: Pelosi is not the leader of the Democratic Party | TheHill</a> </li>
-        <li> <a href="https://t.co/CLEbijVSFm?amp=1">http://thehill.com/homenews/news/394605-ex-ice-attorney-faces-prison-time-for-stealing-identities-of-immigrants?amp#click=https://t.co/CLEbijVSFm</a> </li>
         <li> <a href="http://thehill.com/homenews/state-watch/394570-tennessee-lawmakers-name-medical-marijuana-bill-after-trump?amp&amp;__twitter_impression=true">Tennessee lawmakers name medical marijuana bill after Trump | TheHill</a> </li>
+        <li> <a href="https://t.co/CLEbijVSFm?amp=1">http://thehill.com/homenews/news/394605-ex-ice-attorney-faces-prison-time-for-stealing-identities-of-immigrants?amp#click=https://t.co/CLEbijVSFm</a> </li>
         <li> <a href="http://thehill.com/homenews/394549-dem-senator-trumps-next-nominee-for-supreme-court-will-overturn-roe-v-wade?amp&amp;__twitter_impression=true">Dem Senator: Trump's next Supreme Court nominee would overturn Roe v. Wade | TheHill</a> </li>
         <li> <a href="https://twitter.com/muslimiq/status/1012336711790186504?s=12">1) You're in New Jersey—not New York 2) You're from Ohio: •OHIO Firearm deaths: 12.9 per 100K •NEW YORK Firearm deaths: 4.4 per 100K •NEW JERSEY Firearm deaths: 5.5 per 100K You're ~3X more likely to be killed by a gun in your open carry home stat</a> </li>
         <li> <a href="https://ice.wikileaks.org/">ICE Patrol</a> </li>
         <li> <a href="https://www.nytimes.com/2018/06/27/us/politics/anthony-kennedy-career.html?smid=nytcore-ios-share">In Influence if Not in Title, This Has Been the Kennedy Court</a> </li>
-        <li> <a href="http://thehill.com/blogs/blog-briefing-room/394575-government-agents-interrupt-news-interview-with-ice-whistleblower?amp&amp;__twitter_impression=true">DHS agents interrupt news interview with ICE whistleblower | TheHill</a> </li>
         <li> <a href="http://thehill.com/homenews/administration/394637-mueller-investigating-russian-billionaires-invited-to-trump?amp&amp;__twitter_impression=true">Mueller investigating Russian billionaires invited to Trump inauguration festivities: report | TheHill</a> </li>
+        <li> <a href="http://thehill.com/blogs/blog-briefing-room/394575-government-agents-interrupt-news-interview-with-ice-whistleblower?amp&amp;__twitter_impression=true">DHS agents interrupt news interview with ICE whistleblower | TheHill</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -184,14 +231,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-18T00:57:06.654620Z -->
+
+<!--
+BUILT: 2020-04-18T02:37:12.228536Z
+-->
 
 
 </body>

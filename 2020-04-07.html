@@ -5,24 +5,66 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;700;800&family=Playfair+Display&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
           crossorigin="anonymous">
-    <style type="text/css">
 
+    <style type="text/css">
+        a {
+        }
+
+        .date {
+            font-weight: bolder;
+        }
+
+        body {
+            /*font-family: 'Noto Serif', serif;*/
+            font-family: 'Baloo Bhaina 2', cursive;
+            font-weight: 400;
+        }
+
+
+        .row h2 {
+            padding-top: 2em;
+            font-size: larger;
+        }
+
+        #menu {
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        #menu a {
+        }
     </style>
+
+
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,9 +196,11 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2020-04-07 </h1>
 <ol>
         <li> <a href="https://www.politicususa.com/2020/04/05/biden-rips-trump-for-close-to-criminal-firing-of-uss-theodore-roosevelt-captain.html">Biden Rips Trump For Close To Criminal Firing Of USS Theodore Roosevelt Captain</a> </li>
@@ -164,8 +208,8 @@
         <li> <a href="https://www.politicususa.com/2020/04/06/white-house-trade-adviser-navarro-claims-he-was-qualified-to-disagree-with-dr-fauci-on-coronavirus.html">White House Trade Adviser Navarro Claims He Was Qualified to Disagree with Dr. Fauci on Coronavirus</a> </li>
         <li> <a href="https://twitter.com/nowthisnews/status/1246966602639310848?s=12">twitter.com</a> </li>
         <li> <a href="https://www.politicususa.com/2020/04/06/new-poll-joe-biden-leads-donald-trump-by-6-points-in-florida.html">New Poll: Joe Biden Leads Donald Trump By 6 Points in Florida</a> </li>
-        <li> <a href="https://www.politicususa.com/2020/04/06/boris-johnson-intensive-care.html">Boris Johnson Downplayed The Coronavirus, Now He's In Intensive Care</a> </li>
         <li> <a href="https://www.politicususa.com/2020/04/05/gov-gretchen-whitmer-says-trumps-lack-of-a-national-plan-will-get-more-people-sick-and-killed.html">Gov. Gretchen Whitmer Says Trump's Lack Of A National Plan Will Get More People Killed</a> </li>
+        <li> <a href="https://www.politicususa.com/2020/04/06/boris-johnson-intensive-care.html">Boris Johnson Downplayed The Coronavirus, Now He's In Intensive Care</a> </li>
         <li> <a href="https://twitter.com/RandyRainbow/status/1247273566833385473">(11) Randy Rainbow on Twitter: &quot;🎶From now on I identify as #Cuomosexual...🎶 #StayHome #NewYorkTough ♥️🗽 https://t.co/5GzJziTdnh&quot; / Twitter</a> </li>
         <li> <a href="https://www.nytimes.com/2020/04/06/us/politics/navarro-warning-trump-coronavirus.html?referringSource=articleShare">Top WH adviser warned Donnie if the threat of COVID19</a> </li>
         <li> <a href="https://www.bloomberg.com/news/articles/2020-04-06/nyc-officials-foresee-mass-graves-to-cope-with-rising-death-toll">NYC Officials Mull Mass Graves to Cope with Rising Deaths - Bloomberg</a> </li>
@@ -187,6 +231,9 @@
         <li> <a href="https://www.nytimes.com/2020/04/07/us/coronavirus-idaho-bundy-patriot.html?referringSource=articleShare">Iowans calling stay at home orders unconstitutional wtaf</a> </li>
         <li> <a href="https://www.bloomberg.com/news/articles/2020-04-06/japan-s-abe-moves-to-declare-emergencies-in-tokyo-osaka-areas">Japan’s Abe Moves to Declare Emergency, Pass Record Stimulus - Bloomberg</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -201,14 +248,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-18T00:57:08.510684Z -->
+
+<!--
+BUILT: 2020-04-18T02:37:14.627805Z
+-->
 
 
 </body>

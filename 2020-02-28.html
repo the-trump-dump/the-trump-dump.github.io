@@ -5,24 +5,66 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;700;800&family=Playfair+Display&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
           crossorigin="anonymous">
-    <style type="text/css">
 
+    <style type="text/css">
+        a {
+        }
+
+        .date {
+            font-weight: bolder;
+        }
+
+        body {
+            /*font-family: 'Noto Serif', serif;*/
+            font-family: 'Baloo Bhaina 2', cursive;
+            font-weight: 400;
+        }
+
+
+        .row h2 {
+            padding-top: 2em;
+            font-size: larger;
+        }
+
+        #menu {
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        #menu a {
+        }
     </style>
+
+
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,14 +196,16 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2020-02-28 </h1>
 <ol>
-        <li> <a href="https://www.washingtonpost.com/politics/2020/02/28/poll-trumps-favorite-network-has-him-losing-his-most-likely-2020-opponents/">A poll from Trump’s favorite network has him losing to his most likely 2020 opponents</a> </li>
         <li> <a href="https://www.politico.com/news/2020/02/28/trump-navy-secretary-nomination-kenneth-braithwaite-118216">White House prepares to nominate Braithwaite as next Navy secretary - POLITICO</a> </li>
         <li> <a href="https://lawandcrime.com/high-profile/a-corrupt-response-and-cover-up-trump-admin-appears-to-have-sparked-coronavirus-outbreak/">Trump Admin May Have Caused Coronavirus Outbreak in U.S. | Law &amp; Crime</a> </li>
+        <li> <a href="https://www.washingtonpost.com/politics/2020/02/28/poll-trumps-favorite-network-has-him-losing-his-most-likely-2020-opponents/">A poll from Trump’s favorite network has him losing to his most likely 2020 opponents</a> </li>
         <li> <a href="https://www.huffpost.com/entry/mike-pompeo-coronavirus-not-a-hoax_n_5e593668c5b6450a30bdb765?amp=1&amp;guccounter=1">Coronavirus Is A Global Threat. Mike Pompeo Won't Say Whether He Thinks It's A Hoax. | HuffPost</a> </li>
         <li> <a href="https://www.washingtonpost.com/immigration/trump-remain-in-mexico-halted-federal-court/2020/02/28/87bbf85e-e481-11e9-b403-f738899982d2_story.html">Trump Remain in Mexico halted federal court</a> </li>
         <li> <a href="https://www.washingtonpost.com/local/legal-issues/former-white-house-counsel-don-mcgahn-does-not-have-to-testify-to-house-appeals-court-finds/2020/02/28/eb846412-3c5a-11ea-baca-eb7ace0a3455_story.html">Former White House counsel Don McGahn does not have to testify to House, appeals court finds</a> </li>
@@ -171,6 +215,9 @@
         <li> <a href="https://www.washingtonpost.com/climate-environment/2020/02/27/judge-voids-nearly-1-million-acres-oil-gas-leases-saying-trump-policy-undercut-public-input/">Judge voids nearly 1 million acres of oil and gas leases, saying Trump policy undercut public input</a> </li>
         <li> <a href="https://thehill.com/homenews/administration/484862-trump-shakes-up-justice-department-intelligence-community">Trump shakes up Justice Department, intelligence community | TheHill</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -185,14 +232,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-18T00:57:08.471836Z -->
+
+<!--
+BUILT: 2020-04-18T02:37:14.594035Z
+-->
 
 
 </body>

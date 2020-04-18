@@ -5,24 +5,66 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;700;800&family=Playfair+Display&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
           crossorigin="anonymous">
-    <style type="text/css">
 
+    <style type="text/css">
+        a {
+        }
+
+        .date {
+            font-weight: bolder;
+        }
+
+        body {
+            /*font-family: 'Noto Serif', serif;*/
+            font-family: 'Baloo Bhaina 2', cursive;
+            font-weight: 400;
+        }
+
+
+        .row h2 {
+            padding-top: 2em;
+            font-size: larger;
+        }
+
+        #menu {
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        #menu a {
+        }
     </style>
+
+
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,15 +196,17 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2019-01-08 </h1>
 <ol>
         <li> <a href="https://www.cnn.com/2019/01/08/media/trump-prime-time-speech-debate/index.html">Trump's border address sparks extraordinary debate inside and outside TV networks</a> </li>
-        <li> <a href="https://www.washingtonpost.com/amphtml/politics/2019/01/08/pence-explains-trumps-dubious-claim-hes-not-lying-he-just-doesnt-know-any-better/">Pence explains Trump’s dubious claim: He’s not lying; he just doesn’t know any better</a> </li>
         <li> <a href="https://twitter.com/jules_su/status/1079848339468836865?s=12">Jules Suzdaltsev on Twitter: &quot;Pretty crazy how Donald Trump's golf club is surrounded by high fences &amp; walls, AND YET UNDOCUMENTED IMMIGRANTS SEEM TO HAVE NO TROUBLE GETTING IN.… https://t.co/RJlrGlrljc&quot;</a> </li>
         <li> <a href="https://www-m.cnn.com/2019/01/08/politics/trump-border-wall-walk-up/index.html?r=https%3A%2F%2Fwww.cnn.com%2F%3Fno-st%3D9999999999">The border wall and the cascade of false claims as Trump makes his case for a crisis - CNNPolitics</a> </li>
+        <li> <a href="https://www.washingtonpost.com/amphtml/politics/2019/01/08/pence-explains-trumps-dubious-claim-hes-not-lying-he-just-doesnt-know-any-better/">Pence explains Trump’s dubious claim: He’s not lying; he just doesn’t know any better</a> </li>
         <li> <a href="https://nyti.ms/2RyEVzn?smid=nytcore-ios-share">Trump the Vulnerable</a> </li>
         <li> <a href="https://nyti.ms/2GYoFDS?smid=nytcore-ios-share">Russian Lawyer in Meeting at Trump Tower Is Charged in Case That Shows Kremlin Ties</a> </li>
         <li> <a href="https://nyti.ms/2Gdy365?smid=nytcore-ios-share">Will Trump’s Presidency Survive 2019?</a> </li>
@@ -180,6 +224,9 @@
         <li> <a href="https://nyti.ms/2GXBr5L?smid=nytcore-ios-share">The People vs. Donald J. Trump</a> </li>
         <li> <a href="https://www.cnn.com/2019/01/07/politics/donald-trump-shutdown-address/index.html">Donald Trump's speech will make the shutdown worse</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -194,14 +241,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-18T00:57:07.432365Z -->
+
+<!--
+BUILT: 2020-04-18T02:37:13.218153Z
+-->
 
 
 </body>

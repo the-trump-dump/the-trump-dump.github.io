@@ -5,24 +5,66 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;700;800&family=Playfair+Display&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
           crossorigin="anonymous">
-    <style type="text/css">
 
+    <style type="text/css">
+        a {
+        }
+
+        .date {
+            font-weight: bolder;
+        }
+
+        body {
+            /*font-family: 'Noto Serif', serif;*/
+            font-family: 'Baloo Bhaina 2', cursive;
+            font-weight: 400;
+        }
+
+
+        .row h2 {
+            padding-top: 2em;
+            font-size: larger;
+        }
+
+        #menu {
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        #menu a {
+        }
     </style>
+
+
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,22 +196,27 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2018-07-24 </h1>
 <ol>
         <li> <a href="https://www.nytimes.com/2018/07/24/opinion/dna-nature-genetics-education.html?smtyp=cur&amp;smid=tw-nytopinion">Opinion | Why Progressives Should Embrace the Genetics of Education - The New York Times</a> </li>
         <li> <a href="http://thehill.com/policy/defense/398624-mattis-trump-tweet-made-clear-iran-is-on-the-wrong-track?amp&amp;__twitter_impression=true">Mattis: Trump tweet made clear Iran is 'on the wrong track' | TheHill</a> </li>
         <li> <a href="https://www.nytimes.com/2018/07/24/opinion/congressional-republicans-criticize-trump.html?smtyp=cur&amp;smid=tw-nytopinion">Opinion | When Republicans Bash Trump - The New York Times</a> </li>
-        <li> <a href="https://www.cnn.com/2018/07/24/politics/jeff-sessions-hillary-clinton-lock-her-up/index.html">Jeff Sessions repeats 'lock her up' chant - CNNPolitics</a> </li>
         <li> <a href="https://nyti.ms/2OfDOQD?smid=nytcore-ios-share">Farmers to Receive Up to $12 Billion to Ease Pain From Trump’s Trade War</a> </li>
+        <li> <a href="https://www.cnn.com/2018/07/24/politics/jeff-sessions-hillary-clinton-lock-her-up/index.html">Jeff Sessions repeats 'lock her up' chant - CNNPolitics</a> </li>
         <li> <a href="https://www.vox.com/policy-and-politics/2018/7/23/17602278/donald-trump-approval-rating">Donald Trump approval rating: it’s bad - Vox</a> </li>
         <li> <a href="https://twitter.com/ABC/status/1021846913522515968">ABC News on Twitter: &quot;Pres. Trump is exploring revoking security clearances of several former intelligence chiefs and others, press secretary Sarah Sanders says, claiming, &quot;They've politicized and in some cases monetized their public service.&quot; https://t.c</a> </li>
         <li> <a href="https://www.americanprogress.org/issues/healthcare/news/2018/07/24/453917/estimated-increases-2019-premiums-congressional-district-due-aca-sabotage/">Estimated Increases in 2019 Premiums by Congressional District Due to ACA Sabotage - Center for American Progress</a> </li>
         <li> <a href="https://www.reddit.com/r/politics/comments/91inc3/trump_im_concerned_russia_may_interfere_in/?st=JK066AMK&amp;sh=4ec39c5b">Trump: I'm concerned Russia may interfere in election to help Democrats</a> </li>
         <li> <a href="https://www.nytimes.com/2018/07/24/business/ivanka-trump-brand-clothing.html?smid=nytcore-ios-share">Ivanka Trump Shuts Down Namesake Fashion Brand</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -184,14 +231,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-18T00:57:06.681805Z -->
+
+<!--
+BUILT: 2020-04-18T02:37:12.252238Z
+-->
 
 
 </body>

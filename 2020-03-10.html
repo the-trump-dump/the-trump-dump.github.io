@@ -5,24 +5,66 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;700;800&family=Playfair+Display&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
           crossorigin="anonymous">
-    <style type="text/css">
 
+    <style type="text/css">
+        a {
+        }
+
+        .date {
+            font-weight: bolder;
+        }
+
+        body {
+            /*font-family: 'Noto Serif', serif;*/
+            font-family: 'Baloo Bhaina 2', cursive;
+            font-weight: 400;
+        }
+
+
+        .row h2 {
+            padding-top: 2em;
+            font-size: larger;
+        }
+
+        #menu {
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        #menu a {
+        }
     </style>
+
+
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,9 +196,11 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2020-03-10 </h1>
 <ol>
         <li> <a href="https://www.politico.com/news/2020/03/09/donald-trump-obama-fake-news-tweets-124320">While market sinks, Trump tweets on Obama, 'fake news' and the Dem primary - POLITICO</a> </li>
@@ -164,10 +208,13 @@
         <li> <a href="https://www.washingtonpost.com/business/2020/03/09/securities-exchange-commission-asks-dc-employees-work-home-due-coronavirus-scare/">Securities and Exchange Commission asks DC employees to work from home due to coronavirus scare</a> </li>
         <li> <a href="https://www.nytimes.com/aponline/2020/03/09/world/europe/ap-eu-virus-outbreak-germany.html">Experts: Rapid Testing Helps Explain Few German Virus Deaths - The New York Times</a> </li>
         <li> <a href="https://www.washingtonpost.com/outlook/2020/03/10/trumps-critics-arent-politicizing-coronavirus-trump-is/">Trump’s critics aren’t ‘politicizing the coronavirus.’ Trump is. - The Washington Post</a> </li>
-        <li> <a href="https://www.politico.com/news/2020/03/05/trump-disputes-coronavirus-death-rate-121892">Trump floats his own coronavirus hunches on 'Hannity' - POLITICO</a> </li>
         <li> <a href="https://www.youtube.com/watch?v=TTafRoutf7M">(18) 'I don’t think it's a big deal': President Trump asked about getting a coronavirus test - YouTube</a> </li>
+        <li> <a href="https://www.politico.com/news/2020/03/05/trump-disputes-coronavirus-death-rate-121892">Trump floats his own coronavirus hunches on 'Hannity' - POLITICO</a> </li>
         <li> <a href="https://twitter.com/soledadobrien/status/1237197873453903872?s=20">Soledad O'Brien on Twitter: &quot;Wow Trish is a freaking nutjob. And that is not an exaggeration. https://t.co/aRqxpMf5YL&quot; / Twitter</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -182,14 +229,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-18T00:57:08.476123Z -->
+
+<!--
+BUILT: 2020-04-18T02:37:14.597889Z
+-->
 
 
 </body>

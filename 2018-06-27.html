@@ -5,24 +5,66 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;700;800&family=Playfair+Display&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
           crossorigin="anonymous">
-    <style type="text/css">
 
+    <style type="text/css">
+        a {
+        }
+
+        .date {
+            font-weight: bolder;
+        }
+
+        body {
+            /*font-family: 'Noto Serif', serif;*/
+            font-family: 'Baloo Bhaina 2', cursive;
+            font-weight: 400;
+        }
+
+
+        .row h2 {
+            padding-top: 2em;
+            font-size: larger;
+        }
+
+        #menu {
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        #menu a {
+        }
     </style>
+
+
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,14 +196,16 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2018-06-27 </h1>
 <ol>
         <li> <a href="https://www.cnbc.com/2018/06/27/anthony-kennedy-retiring-from-supreme-court.html">www.cnbc.com</a> </li>
-        <li> <a href="http://thehill.com/policy/national-security/fbi/394100-mueller-to-focus-on-possible-trump-russia-collusion-report?amp&amp;__twitter_impression=true">Mueller to focus on possible Trump-Russia collusion: report | TheHill</a> </li>
         <li> <a href="https://www.washingtonpost.com/news/the-fix/wp/2018/06/27/joe-crowley-and-the-democratic-party-are-the-big-losers-in-tuesdays-primaries/">The Washington Post: Winners and losers: Joe Crowley and the Democratic Party are the big losers in Tuesday’s primaries</a> </li>
+        <li> <a href="http://thehill.com/policy/national-security/fbi/394100-mueller-to-focus-on-possible-trump-russia-collusion-report?amp&amp;__twitter_impression=true">Mueller to focus on possible Trump-Russia collusion: report | TheHill</a> </li>
         <li> <a href="https://nyti.ms/2N1ZGhW?smid=nytcore-ios-share">Supreme Court Delivers a Sharp Blow to Labor Unions</a> </li>
         <li> <a href="https://www.washingtonpost.com/news/politics/wp/2018/06/27/in-major-blow-to-organized-labor-supreme-court-says-public-employee-unions-may-not-charge-fees-to-nonmembers/">The Washington Post: In major blow to organized labor, Supreme Court says public employee unions may not charge fees to nonmembers</a> </li>
         <li> <a href="http://thehill.com/regulation/court-battles/394200-sotomayor-issues-scathing-dissent-in-trump-travel-ban-case?amp&amp;__twitter_impression=true">Sotomayor issues scathing dissent in Trump travel ban case | TheHill</a> </li>
@@ -171,6 +215,9 @@
         <li> <a href="https://apple.news/AXqOXubOnQf2V1p3VJq52JA">17 states sue over Trump family separations - POLITICO</a> </li>
         <li> <a href="http://www.latimes.com/opinion/editorials/la-ed-waters-sanders-trump-20180626-story.html?outputType=amp">Making Trump officials miserable doesn't accomplish anything. Vote them out if you want change</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -185,14 +232,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-18T00:57:06.653651Z -->
+
+<!--
+BUILT: 2020-04-18T02:37:12.227663Z
+-->
 
 
 </body>

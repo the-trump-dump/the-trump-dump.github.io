@@ -5,24 +5,66 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;700;800&family=Playfair+Display&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
           crossorigin="anonymous">
-    <style type="text/css">
 
+    <style type="text/css">
+        a {
+        }
+
+        .date {
+            font-weight: bolder;
+        }
+
+        body {
+            /*font-family: 'Noto Serif', serif;*/
+            font-family: 'Baloo Bhaina 2', cursive;
+            font-weight: 400;
+        }
+
+
+        .row h2 {
+            padding-top: 2em;
+            font-size: larger;
+        }
+
+        #menu {
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        #menu a {
+        }
     </style>
+
+
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,16 +196,18 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2018-12-16 </h1>
 <ol>
         <li> <a href="https://www.inverse.com/article/51824-net-neutrality-there-are-5-days-to-save-what-ajit-pai-killed-last-year">Net Neutrality: There are 5 Days to Save What Ajit Pai Killed Last Year | Inverse</a> </li>
         <li> <a href="https://twitter.com/comey/status/1074354274010832896?s=12">false</a> </li>
         <li> <a href="https://www.cnn.com/2018/12/15/politics/nancy-pelosi-house-speaker-race/index.html">Pelosi and the battle with Dem rebels over speaker's gavel - CNNPolitics</a> </li>
-        <li> <a href="https://www.washingtonpost.com/business/2018/12/15/tucker-carlson-suggested-immigrants-make-us-dirtier-it-cost-fox-news-an-advertiser/?noredirect=on">Pacific Life: Tucker Carlson faces push back from company after immigration comments - The Washington Post</a> </li>
         <li> <a href="https://www.ucsusa.org/our-work/center-science-and-democracy/science-under-siege-department-interior-2018#.XBYHrhaIYlQ">Science Under Siege at the Department of the Interior (2018) | Union of Concerned Scientists</a> </li>
+        <li> <a href="https://www.washingtonpost.com/business/2018/12/15/tucker-carlson-suggested-immigrants-make-us-dirtier-it-cost-fox-news-an-advertiser/?noredirect=on">Pacific Life: Tucker Carlson faces push back from company after immigration comments - The Washington Post</a> </li>
         <li> <a href="https://www.nytimes.com/2018/12/13/opinion/the-argument-trump-crimes-russia-wasps.amp.html">Will Trump’s Presidency Survive 2019?</a> </li>
         <li> <a href="https://www.cnn.com/2018/12/16/media/trump-snl-christmas-wonderful-life/index.html">'SNL' shows what life would've been like if Trump were never elected president</a> </li>
         <li> <a href="https://www.foxnews.com/politics/obama-pushes-for-obamacare-enrollments-after-texas-judge-deems-law-unconstitutional">Obama pushes for ObamaCare enrollments after Texas judge deems law unconstitutional</a> </li>
@@ -177,6 +221,9 @@
         <li> <a href="https://www.washingtonpost.com/politics/mounting-legal-threats-surround-trump-as-nearly-every-organization-he-has-led-is-under-investigation/2018/12/15/4cfb4482-ffbb-11e8-862a-b6a6f3ce8199_story.html?noredirect=on">Mounting legal threats surround Trump as nearly every organization he has led is under investigation - The Washington Post</a> </li>
         <li> <a href="https://www.cnn.com/2018/12/13/opinions/melania-trump-interview-poll-brower/index.html">Melania shows she's a Trump through and through (opinion) - CNN</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -191,14 +238,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-18T00:57:07.110758Z -->
+
+<!--
+BUILT: 2020-04-18T02:37:12.762484Z
+-->
 
 
 </body>

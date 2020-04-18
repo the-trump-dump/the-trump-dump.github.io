@@ -5,24 +5,66 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;700;800&family=Playfair+Display&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
           crossorigin="anonymous">
-    <style type="text/css">
 
+    <style type="text/css">
+        a {
+        }
+
+        .date {
+            font-weight: bolder;
+        }
+
+        body {
+            /*font-family: 'Noto Serif', serif;*/
+            font-family: 'Baloo Bhaina 2', cursive;
+            font-weight: 400;
+        }
+
+
+        .row h2 {
+            padding-top: 2em;
+            font-size: larger;
+        }
+
+        #menu {
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        #menu a {
+        }
     </style>
+
+
 </head>
 <body>
 
+<div class="container">
 
-<div id="menu">
-    <a href="/">
-        Home
-    </a>
-</div>
-<div style="top: 50px; width: 100px" id="years">
-    <div id="years">
+    <div style="height: 50px;" class="w-100"></div>
+
+
+    <div class="row">
+        <div class="col" id="menu">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+
+    <div style="height: 50px;" class="w-100"></div>
+
+    <div class="row">
+        <div class="col-2">
+            <!--        YEARS   -->
+            <div id="years">
          <div>
     <H2> 2020 </H2>
     <DIV>
@@ -154,21 +196,26 @@
 
 </div>
 
-</div>
-<div style="top: 50px; left: 120px; position: absolute;" id="body">
-    
+            <!--        YEARS   -->
+        </div>
+        <div class="col-10">
+            <!--            CONTENT-->
+            
 <h1> 2019-10-24 </h1>
 <ol>
         <li> <a href="https://www.nytimes.com/2019/10/22/nyregion/trump-skating-rinks.html">Trump’s Company Wipes His Name From New York City Skating Rinks That It Runs - The New York Times</a> </li>
         <li> <a href="https://thehill.com/homenews/house/467179-house-chairman-asks-sergeant-at-arms-to-take-action-after-republicans-bring?amp&amp;__twitter_impression=true">House chairman asks sergeant-at-arms to 'take action' after Republicans bring electronics to secure hearing | TheHill</a> </li>
-        <li> <a href="https://www.washingtonpost.com/politics/trumps-heralded-whistleblower-office-at-va-has-failed-its-most-basic-mission-watchdog-says/2019/10/24/561e9022-f679-11e9-8cf0-4cc99f74d127_story.html#click=https://t.co/Mtt86JuQYP">Trump’s heralded whistleblower office at VA has failed its most basic mission, watchdog says - The Washington Post</a> </li>
         <li> <a href="https://www.washingtonpost.com/opinions/2019/10/22/impeachment-diary-words-that-could-end-presidency/">Impeachment Diary: The words that could end a presidency</a> </li>
+        <li> <a href="https://www.washingtonpost.com/politics/trumps-heralded-whistleblower-office-at-va-has-failed-its-most-basic-mission-watchdog-says/2019/10/24/561e9022-f679-11e9-8cf0-4cc99f74d127_story.html#click=https://t.co/Mtt86JuQYP">Trump’s heralded whistleblower office at VA has failed its most basic mission, watchdog says - The Washington Post</a> </li>
         <li> <a href="https://www.nytimes.com/2019/10/23/us/politics/republicans-storm-trump-impeachment-hearing.html?smid=nytcore-ios-share">Republicans physically invade testimony</a> </li>
         <li> <a href="https://amp.cnn.com/cnn/2019/10/23/politics/trump-us-building-wall-colorado/index.html#click=https://t.co/meWII9kFv7">Trump says US is building a wall in Colorado -- a state that doesn't border Mexico - CNNPolitics</a> </li>
         <li> <a href="https://www.nytimes.com/2019/10/23/nyregion/trump-taxes-vance.html?smid=nytcore-ios-share">Does trump have immunity if he shoots someone? His lawyer says yes</a> </li>
         <li> <a href="https://thehill.com/homenews/senate/467130-senate-gop-blocks-three-election-security-bills-for-second-day?amp">Senate GOP blocks three election security bills for second day | TheHill</a> </li>
         <li> <a href="https://www.washingtonpost.com/local/dc-lawmakers-slam-us-attorney-for-skipping-hate-crimes-hearing/2019/10/23/0422ed1c-f5da-11e9-ad8b-85e2aa00b5ce_story.html#click=https://t.co/BNawZD2ZSe">D.C. Council members slam U.S. Attorney Jessie Liu for skipping hate crime hearing - The Washington Post</a> </li>
 </ol>
+            <!--            CONTENT-->
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -183,14 +230,17 @@
 <script>
     window.addEventListener('load', () => {
         Array
-            .from(document.getElementsByTagName('a'))
-            .forEach((linkElement) => {
-                linkElement.setAttribute('target', '_href');
-            });
+                .from(document.getElementsByTagName('a'))
+                .forEach((linkElement) => {
+                    linkElement.setAttribute('target', '_href');
+                });
     });
 </script>
 
-<!--  BUILT: 2020-04-18T00:57:08.186100Z -->
+
+<!--
+BUILT: 2020-04-18T02:37:14.213599Z
+-->
 
 
 </body>

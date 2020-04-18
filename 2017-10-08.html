@@ -58,8 +58,9 @@
     <div class="row">
         <div class="col-2">
             <div class="col" id="menu">
-                <a href="/"> <img alt="The Trump Dump: a picture of a broken GOP and its idiotic despot of a leader, Donald J. Trump"
-                                  class="logo" src="static/Donald-GOP.png"/>
+                <a href="/"> <img
+                        alt="The Trump Dump: a picture of a broken GOP and its idiotic despot of a leader, Donald J. Trump"
+                        class="logo" src="static/Donald-GOP.png"/>
                 </a>
             </div>
         </div>
@@ -206,7 +207,7 @@
 
             <!--        YEARS   -->
         </div>
-        <div class="col-10">
+        <div class="col-10 content">
             <!--            CONTENT-->
             
 <h1> 2017-10-08 </h1>
@@ -224,8 +225,8 @@
         <li> <a href="https://www.vox.com/platform/amp/identities/2017/10/5/16429800/trump-sessions-transgender-workers">Trump’s Justice Department just rescinded a memo protecting transgender workers - Vox</a> </li>
         <li> <a href="https://www.nytimes.com/2017/10/06/opinion/trump-obama-iran-deal.html">Mr. Trump, Don’t Scrap the Iran Deal</a> </li>
         <li> <a href="http://www.msnbc.com/the-last-word/watch/lawrence-no-one-defended-trump-after-moron-comment-1062766147917">Lawrence: No one defended Trump after 'moron' comment | MSNBC</a> </li>
-        <li> <a href="http://thehill.com/homenews/administration/354442-mulvaney-west-wing-much-more-orderly-under-kelly?amp">Mulvaney: West Wing 'much more orderly' under Kelly | TheHill</a> </li>
         <li> <a href="https://www.vox.com/world/2017/10/6/16435752/ican-nobel-prize-2017-nuclear-weapons-explained">ICAN, the group that just won the 2017 Nobel Peace Prize, explained - Vox</a> </li>
+        <li> <a href="http://thehill.com/homenews/administration/354442-mulvaney-west-wing-much-more-orderly-under-kelly?amp">Mulvaney: West Wing 'much more orderly' under Kelly | TheHill</a> </li>
         <li> <a href="https://t.co/aVHD59Kfr9?amp=1">http://thehill.com/homenews/house/353904-house-panel-approves-10b-for-border-wall?amp</a> </li>
         <li> <a href="https://t.co/pfMykqjzbR?amp=1">http://thehill.com/business-a-lobbying/business-a-lobbying/354317-the-nras-power-by-the-numbers?amp</a> </li>
         <li> <a href="http://thehill.com/homenews/administration/354404-trump-to-sign-order-rolling-back-health-insurance-regulations-report?amp">Trump to sign order rolling back health insurance regulations: report | TheHill</a> </li>
@@ -251,17 +252,15 @@
         crossorigin="anonymous"></script>
 <script>
     window.addEventListener('load', () => {
-        Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+        $('.content a').each((i, linkElement) => {
+            $(linkElement).attr('target', '_blank');
+        });
     });
 </script>
 
 
 <!--
-BUILT: 2020-04-18T07:55:17.354131Z
+BUILT: 2020-04-18T08:25:29.231407Z
 -->
 
 

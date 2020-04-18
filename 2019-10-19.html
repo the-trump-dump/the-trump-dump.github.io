@@ -58,8 +58,9 @@
     <div class="row">
         <div class="col-2">
             <div class="col" id="menu">
-                <a href="/"> <img alt="The Trump Dump: a picture of a broken GOP and its idiotic despot of a leader, Donald J. Trump"
-                                  class="logo" src="static/Donald-GOP.png"/>
+                <a href="/"> <img
+                        alt="The Trump Dump: a picture of a broken GOP and its idiotic despot of a leader, Donald J. Trump"
+                        class="logo" src="static/Donald-GOP.png"/>
                 </a>
             </div>
         </div>
@@ -206,15 +207,15 @@
 
             <!--        YEARS   -->
         </div>
-        <div class="col-10">
+        <div class="col-10 content">
             <!--            CONTENT-->
             
 <h1> 2019-10-19 </h1>
 <ol>
-        <li> <a href="https://www.vox.com/2019/10/18/20920715/trump-dallas-rally-impeachment-pushback-schiff">Trump’s Dallas rally showed how weak his impeachment pushback is</a> </li>
         <li> <a href="https://www.theguardian.com/books/2019/oct/19/trump-predator-new-book-fresh-allegations?CMP=twt_gu#Echobox=1571476593">Trump the predator | Books | The Guardian</a> </li>
-        <li> <a href="https://thehill.com/homenews/campaign/466562-gabbard-on-clinton-attack-she-knows-she-cant-control-me">Gabbard on Clinton attack: She 'knows she can't control me' | TheHill</a> </li>
+        <li> <a href="https://www.vox.com/2019/10/18/20920715/trump-dallas-rally-impeachment-pushback-schiff">Trump’s Dallas rally showed how weak his impeachment pushback is</a> </li>
         <li> <a href="https://thehill.com/homenews/senate/466587-graham-im-seeking-to-make-trump-successful-but-not-at-all-costs-unless?amp#click=https://t.co/EIHT4Iwwso">Graham: I'm seeking to make Trump successful 'but not at all costs' | TheHill</a> </li>
+        <li> <a href="https://thehill.com/homenews/campaign/466562-gabbard-on-clinton-attack-she-knows-she-cant-control-me">Gabbard on Clinton attack: She 'knows she can't control me' | TheHill</a> </li>
         <li> <a href="https://www.nytimes.com/2019/10/19/us/politics/what-happened-in-the-impeachment-inquiry-this-week.html?smid=nytcore-ios-share">What happened n the impeachment inquiry this week? A quickish run down from The Times</a> </li>
         <li> <a href="https://amp.cnn.com/cnn/2019/10/18/politics/giuliani-shokin-state-visa-george-kent/index.html?__twitter_impression=true">Exclusive: Giuliani pushed Trump administration to grant a visa to a Ukrainian official promising dirt on Democrats - CNNPolitics</a> </li>
         <li> <a href="https://www.nytimes.com/2019/10/19/us/politics/durham-review-fbi-witnesses.html?smid=nytcore-ios-share">The FBI are reviewing the Russian inquiry. Holy shit. What a waste.</a> </li>
@@ -251,17 +252,15 @@
         crossorigin="anonymous"></script>
 <script>
     window.addEventListener('load', () => {
-        Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+        $('.content a').each((i, linkElement) => {
+            $(linkElement).attr('target', '_blank');
+        });
     });
 </script>
 
 
 <!--
-BUILT: 2020-04-18T07:55:20.298515Z
+BUILT: 2020-04-18T08:25:48.211649Z
 -->
 
 

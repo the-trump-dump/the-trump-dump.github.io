@@ -58,8 +58,9 @@
     <div class="row">
         <div class="col-2">
             <div class="col" id="menu">
-                <a href="/"> <img alt="The Trump Dump: a picture of a broken GOP and its idiotic despot of a leader, Donald J. Trump"
-                                  class="logo" src="static/Donald-GOP.png"/>
+                <a href="/"> <img
+                        alt="The Trump Dump: a picture of a broken GOP and its idiotic despot of a leader, Donald J. Trump"
+                        class="logo" src="static/Donald-GOP.png"/>
                 </a>
             </div>
         </div>
@@ -206,15 +207,15 @@
 
             <!--        YEARS   -->
         </div>
-        <div class="col-10">
+        <div class="col-10 content">
             <!--            CONTENT-->
             
 <h1> 2018-04-03 </h1>
 <ol>
         <li> <a href="http://abcnews.go.com/Politics/trump-launches-twitter-tirade-declares-daca-dead/story?id=54176459">Trump launches Twitter tirade and declares 'DACA is dead' - ABC News</a> </li>
         <li> <a href="https://twitter.com/ABCPolitics/status/981211573795500032">ABC News Politics on Twitter: &quot;NEW: Pres. Trump: &quot;Until we can have a wall and proper security, we're going to be guarding our border with the military. &quot;That's a big step. We really haven't done that before.&quot; https://t.co/ropeSGTYMc… https://t.co/2rXuN</a> </li>
-        <li> <a href="https://nyti.ms/2q17WnQ">Looming China Trade Action Divides Industry and Roils Markets</a> </li>
         <li> <a href="http://thehill.com/policy/national-security/381413-judge-hands-down-first-sentence-in-mueller-probe?amp&amp;__twitter_impression=true">Lawyer gets jail time in first sentence of Mueller probe | TheHill</a> </li>
+        <li> <a href="https://nyti.ms/2q17WnQ">Looming China Trade Action Divides Industry and Roils Markets</a> </li>
         <li> <a href="http://thehill.com/homenews/administration/381328-stormy-effect-trumps-support-falls-with-women-rises-with-men-in-new?amp#click=https://t.co/hmxo3iuZcj">'Stormy Effect': Trump's support falls with women, rises with men in new poll | TheHill</a> </li>
         <li> <a href="https://apple.news/AKSiIlyPbQiayGS22lTR6Xg">Kremlin says Trump suggested Putin visit the White House - Reuters</a> </li>
         <li> <a href="http://abcnews.go.com/International/amid-pressure-trump-mexico-dealing-migrant-caravan/story?id=54197928">Amid pressure from Trump, Mexico says it's dealing with migrant 'caravan' - ABC News</a> </li>
@@ -235,17 +236,15 @@
         crossorigin="anonymous"></script>
 <script>
     window.addEventListener('load', () => {
-        Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+        $('.content a').each((i, linkElement) => {
+            $(linkElement).attr('target', '_blank');
+        });
     });
 </script>
 
 
 <!--
-BUILT: 2020-04-18T07:55:18.407597Z
+BUILT: 2020-04-18T08:25:35.590280Z
 -->
 
 

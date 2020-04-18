@@ -58,8 +58,9 @@
     <div class="row">
         <div class="col-2">
             <div class="col" id="menu">
-                <a href="/"> <img alt="The Trump Dump: a picture of a broken GOP and its idiotic despot of a leader, Donald J. Trump"
-                                  class="logo" src="static/Donald-GOP.png"/>
+                <a href="/"> <img
+                        alt="The Trump Dump: a picture of a broken GOP and its idiotic despot of a leader, Donald J. Trump"
+                        class="logo" src="static/Donald-GOP.png"/>
                 </a>
             </div>
         </div>
@@ -206,7 +207,7 @@
 
             <!--        YEARS   -->
         </div>
-        <div class="col-10">
+        <div class="col-10 content">
             <!--            CONTENT-->
             
 <h1> 2019-09-28 </h1>
@@ -221,8 +222,8 @@
         <li> <a href="https://www.nytimes.com/2019/09/27/us/politics/house-democrats-impeachment-trump.html?smid=nytcore-ios-share">Pompeo is first to be subpoenaed in trump impeachment inquiry</a> </li>
         <li> <a href="https://www.youtube.com/watch?v=LVsx0RAURW0&amp;feature=push-sd&amp;attr_tag=wE9QAB-oZAK5RxRm%3A6">(7) Lindsey Graham CONFRONTED For Being A Hypocrite - YouTube</a> </li>
         <li> <a href="https://twitter.com/thehill/status/1177956125020479489?s=12">&quot;We will not allow the horrors of socialism and communism to be repeated in this country.&quot; Yesterday, President Trump delivered remarks at the Hispanic Heritage Month Reception at the White House. https://t.co/zwJ4TZBW9w</a> </li>
-        <li> <a href="https://apple.news/AHt57zHr4Tr6ugdIENpu99g">apple.news</a> </li>
         <li> <a href="https://apple.news/AXcqrWBPgSmCplM0y8hfy7w">apple.news</a> </li>
+        <li> <a href="https://apple.news/AHt57zHr4Tr6ugdIENpu99g">apple.news</a> </li>
 </ol>
             <!--            CONTENT-->
         </div>
@@ -240,17 +241,15 @@
         crossorigin="anonymous"></script>
 <script>
     window.addEventListener('load', () => {
-        Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+        $('.content a').each((i, linkElement) => {
+            $(linkElement).attr('target', '_blank');
+        });
     });
 </script>
 
 
 <!--
-BUILT: 2020-04-18T07:55:20.282533Z
+BUILT: 2020-04-18T08:25:48.193990Z
 -->
 
 

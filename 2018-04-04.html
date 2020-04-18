@@ -58,8 +58,9 @@
     <div class="row">
         <div class="col-2">
             <div class="col" id="menu">
-                <a href="/"> <img alt="The Trump Dump: a picture of a broken GOP and its idiotic despot of a leader, Donald J. Trump"
-                                  class="logo" src="static/Donald-GOP.png"/>
+                <a href="/"> <img
+                        alt="The Trump Dump: a picture of a broken GOP and its idiotic despot of a leader, Donald J. Trump"
+                        class="logo" src="static/Donald-GOP.png"/>
                 </a>
             </div>
         </div>
@@ -206,7 +207,7 @@
 
             <!--        YEARS   -->
         </div>
-        <div class="col-10">
+        <div class="col-10 content">
             <!--            CONTENT-->
             
 <h1> 2018-04-04 </h1>
@@ -218,8 +219,8 @@
         <li> <a href="https://itunes.apple.com/us/podcast/trump-inc/id1344894187?mt=2&amp;i=1000408136161">itunes.apple.com</a> </li>
         <li> <a href="https://mobile.nytimes.com/2017/11/01/us/politics/trump-russia-charges.html">In Call With Times Reporter, Trump Projects Air of Calm Over Charges - The New York Times</a> </li>
         <li> <a href="http://thehill.com/policy/cybersecurity/381449-researchers-say-fake-news-had-substantial-impact-on-2016-election?amp#click=https://t.co/Ju6AJiDLnD">Researchers say fake news had 'substantial impact' on 2016 election | TheHill</a> </li>
-        <li> <a href="http://thehill.com/homenews/state-watch/381548-walker-warns-of-blue-wave-in-wisconsin-after-liberal-clinches-judicial?amp">Walker warns of Dem wave in Wisconsin after liberal wins state judicial race | TheHill</a> </li>
         <li> <a href="http://thehill.com/policy/cybersecurity/381449-researchers-say-fake-news-had-substantial-impact-on-2016-election?amp&amp;__twitter_impression=true">Researchers say fake news had 'substantial impact' on 2016 election | TheHill</a> </li>
+        <li> <a href="http://thehill.com/homenews/state-watch/381548-walker-warns-of-blue-wave-in-wisconsin-after-liberal-clinches-judicial?amp">Walker warns of Dem wave in Wisconsin after liberal wins state judicial race | TheHill</a> </li>
         <li> <a href="http://thehill.com/blogs/blog-briefing-room/news/381545-wapo-mueller-preparing-report-on-trumps-actions-in-office?amp&amp;__twitter_impression=true">WaPo: Mueller preparing report on Trump's actions in office | TheHill</a> </li>
         <li> <a href="http://thehill.com/homenews/media/381542-foxs-shep-smith-fact-checks-trumps-amazon-claims-none-of-that-was-true?amp&amp;__twitter_impression=true">Fox's Shep Smith fact-checks Trump's Amazon claims: 'None of that was true' | TheHill</a> </li>
 </ol>
@@ -239,17 +240,15 @@
         crossorigin="anonymous"></script>
 <script>
     window.addEventListener('load', () => {
-        Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+        $('.content a').each((i, linkElement) => {
+            $(linkElement).attr('target', '_blank');
+        });
     });
 </script>
 
 
 <!--
-BUILT: 2020-04-18T07:55:18.408477Z
+BUILT: 2020-04-18T08:25:35.591414Z
 -->
 
 

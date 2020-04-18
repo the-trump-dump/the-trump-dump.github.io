@@ -58,8 +58,9 @@
     <div class="row">
         <div class="col-2">
             <div class="col" id="menu">
-                <a href="/"> <img alt="The Trump Dump: a picture of a broken GOP and its idiotic despot of a leader, Donald J. Trump"
-                                  class="logo" src="static/Donald-GOP.png"/>
+                <a href="/"> <img
+                        alt="The Trump Dump: a picture of a broken GOP and its idiotic despot of a leader, Donald J. Trump"
+                        class="logo" src="static/Donald-GOP.png"/>
                 </a>
             </div>
         </div>
@@ -206,15 +207,15 @@
 
             <!--        YEARS   -->
         </div>
-        <div class="col-10">
+        <div class="col-10 content">
             <!--            CONTENT-->
             
 <h1> 2017-10-07 </h1>
 <ol>
         <li> <a href="https://www.washingtonpost.com/politics/trump-recorded-having-extremely-lewd-conversation-about-women-in-2005/2016/10/07/3b9ce776-8cb4-11e6-bf8a-3d26847eeed4_story.html?tid=ss_tw">Trump recorded having extremely lewd conversation about women in 2005 - The Washington Post</a> </li>
         <li> <a href="http://thehill.com/homenews/administration/354356-trump-slams-late-night-comedians-for-unfunny-anti-trump-jokes?amp">Trump slams late night comedians for 'unfunny' anti-Trump jokes | TheHill</a> </li>
-        <li> <a href="http://www.38north.org/2017/10/mzagurek100417/">A Hypothetical Nuclear Attack on Seoul and Tokyo: The Human Cost of War on the Korean Peninsula | 38 North: Informed Analysis of North Korea</a> </li>
         <li> <a href="https://www.theguardian.com/us-news/2017/oct/07/trump-russia-steele-dossier-moscow?CMP=share_btn_tw">The Trump-Russia dossier: why its findings grow more significant by the day | US news | The Guardian</a> </li>
+        <li> <a href="http://www.38north.org/2017/10/mzagurek100417/">A Hypothetical Nuclear Attack on Seoul and Tokyo: The Human Cost of War on the Korean Peninsula | 38 North: Informed Analysis of North Korea</a> </li>
         <li> <a href="http://thehill.com/blogs/in-the-know/354193-jimmy-kimmel-goes-off-on-trumps-fake-news-claims-against-nbc?amp=1">Jimmy Kimmel goes off on Trump's 'fake news' claims against NBC | TheHill</a> </li>
         <li> <a href="https://www.vox.com/the-big-idea/2017/10/5/16426082/colonialism-racism-american-response-puerto-rico-maria">How colonialism and racism explain the inept US response to Hurricane Maria - Vox</a> </li>
         <li> <a href="https://www.washingtonpost.com/opinions/trump-is-on-track-to-win-reelection/2017/10/06/91cd2af0-aa15-11e7-850e-2bdd1236be5d_story.html">Trump is on track to win reelection - The Washington Post</a> </li>
@@ -251,17 +252,15 @@
         crossorigin="anonymous"></script>
 <script>
     window.addEventListener('load', () => {
-        Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+        $('.content a').each((i, linkElement) => {
+            $(linkElement).attr('target', '_blank');
+        });
     });
 </script>
 
 
 <!--
-BUILT: 2020-04-18T07:55:17.352017Z
+BUILT: 2020-04-18T08:25:29.229487Z
 -->
 
 

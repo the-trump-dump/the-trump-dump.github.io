@@ -58,8 +58,9 @@
     <div class="row">
         <div class="col-2">
             <div class="col" id="menu">
-                <a href="/"> <img alt="The Trump Dump: a picture of a broken GOP and its idiotic despot of a leader, Donald J. Trump"
-                                  class="logo" src="static/Donald-GOP.png"/>
+                <a href="/"> <img
+                        alt="The Trump Dump: a picture of a broken GOP and its idiotic despot of a leader, Donald J. Trump"
+                        class="logo" src="static/Donald-GOP.png"/>
                 </a>
             </div>
         </div>
@@ -206,7 +207,7 @@
 
             <!--        YEARS   -->
         </div>
-        <div class="col-10">
+        <div class="col-10 content">
             <!--            CONTENT-->
             
 <h1> 2019-10-04 </h1>
@@ -219,8 +220,8 @@
         <li> <a href="https://thehill.com/homenews/house/464193-gop-group-calls-on-five-house-republicans-to-speak-out-on-ukraine-scandal">GOP group calls out five House Republicans to speak up on Ukraine | TheHill</a> </li>
         <li> <a href="https://www.reddit.com/user/washingtonpost/comments/dczb29/opinion_trump_is_now_publicly_abusing_his_oath_of/?utm_name=iossmf">Opinion | Trump is now publicly abusing his oath of office</a> </li>
         <li> <a href="https://www.washingtonpost.com/opinions/2019/10/03/democrats-need-understand-why-trump-is-having-breakdown/">Democrats need to understand why Trump is going off the rails</a> </li>
-        <li> <a href="https://thehill.com/policy/finance/464261-new-york-prosecutors-blast-doj-filing-in-lawsuit-over-tax-return-subpoena?amp&amp;__twitter_impression=true">New York prosecutors blast DOJ filing in lawsuit over tax return subpoena | TheHill</a> </li>
         <li> <a href="https://thehill.com/homenews/senate/464302-gop-senator-says-he-doesnt-remember-signing-2016-letter-urging-reform-of">GOP senator says he doesn't remember signing 2016 letter urging 'reform' of Ukraine prosecutor's office | TheHill</a> </li>
+        <li> <a href="https://thehill.com/policy/finance/464261-new-york-prosecutors-blast-doj-filing-in-lawsuit-over-tax-return-subpoena?amp&amp;__twitter_impression=true">New York prosecutors blast DOJ filing in lawsuit over tax return subpoena | TheHill</a> </li>
 </ol>
             <!--            CONTENT-->
         </div>
@@ -238,17 +239,15 @@
         crossorigin="anonymous"></script>
 <script>
     window.addEventListener('load', () => {
-        Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+        $('.content a').each((i, linkElement) => {
+            $(linkElement).attr('target', '_blank');
+        });
     });
 </script>
 
 
 <!--
-BUILT: 2020-04-18T07:55:20.285998Z
+BUILT: 2020-04-18T08:25:48.197644Z
 -->
 
 

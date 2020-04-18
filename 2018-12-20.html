@@ -58,8 +58,9 @@
     <div class="row">
         <div class="col-2">
             <div class="col" id="menu">
-                <a href="/"> <img alt="The Trump Dump: a picture of a broken GOP and its idiotic despot of a leader, Donald J. Trump"
-                                  class="logo" src="static/Donald-GOP.png"/>
+                <a href="/"> <img
+                        alt="The Trump Dump: a picture of a broken GOP and its idiotic despot of a leader, Donald J. Trump"
+                        class="logo" src="static/Donald-GOP.png"/>
                 </a>
             </div>
         </div>
@@ -206,13 +207,13 @@
 
             <!--        YEARS   -->
         </div>
-        <div class="col-10">
+        <div class="col-10 content">
             <!--            CONTENT-->
             
 <h1> 2018-12-20 </h1>
 <ol>
-        <li> <a href="https://thehill.com/homenews/media/422220-trump-stops-following-ann-coulter-on-twitter-after-joke-presidency-comments">Trump stops following Ann Coulter on Twitter after 'joke presidency' comments | TheHill</a> </li>
         <li> <a href="https://nyti.ms/2GuAx05?smid=nytcore-ios-share">Fed Raises Interest Rates, Showing Confidence in Health of Economy</a> </li>
+        <li> <a href="https://thehill.com/homenews/media/422220-trump-stops-following-ann-coulter-on-twitter-after-joke-presidency-comments">Trump stops following Ann Coulter on Twitter after 'joke presidency' comments | TheHill</a> </li>
         <li> <a href="https://www.straitstimes.com/world/united-states/mattis-resigns-as-defense-chief-citing-differences-with-trump?xtor=CS3-18">Mattis resigns as defense chief, citing differences with Trump</a> </li>
         <li> <a href="https://nyti.ms/2Gx7id8?smid=nytcore-ios-share">Officials Say Trump Has Ordered Full Withdrawal of U.S. Troops From Syria</a> </li>
         <li> <a href="https://thehill.com/homenews/house/422362-gop-seeks-to-ram-through-trumps-5b-wall-demand?__twitter_impression=true">GOP seeks to ram through Trump’s $5B wall demand | TheHill</a> </li>
@@ -247,17 +248,15 @@
         crossorigin="anonymous"></script>
 <script>
     window.addEventListener('load', () => {
-        Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+        $('.content a').each((i, linkElement) => {
+            $(linkElement).attr('target', '_blank');
+        });
     });
 </script>
 
 
 <!--
-BUILT: 2020-04-18T07:55:19.415647Z
+BUILT: 2020-04-18T08:25:41.967074Z
 -->
 
 

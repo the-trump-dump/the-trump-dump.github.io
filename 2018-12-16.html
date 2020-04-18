@@ -58,8 +58,9 @@
     <div class="row">
         <div class="col-2">
             <div class="col" id="menu">
-                <a href="/"> <img alt="The Trump Dump: a picture of a broken GOP and its idiotic despot of a leader, Donald J. Trump"
-                                  class="logo" src="static/Donald-GOP.png"/>
+                <a href="/"> <img
+                        alt="The Trump Dump: a picture of a broken GOP and its idiotic despot of a leader, Donald J. Trump"
+                        class="logo" src="static/Donald-GOP.png"/>
                 </a>
             </div>
         </div>
@@ -206,7 +207,7 @@
 
             <!--        YEARS   -->
         </div>
-        <div class="col-10">
+        <div class="col-10 content">
             <!--            CONTENT-->
             
 <h1> 2018-12-16 </h1>
@@ -215,8 +216,8 @@
         <li> <a href="https://twitter.com/comey/status/1074354274010832896?s=12">false</a> </li>
         <li> <a href="https://www.cnn.com/2018/12/15/politics/nancy-pelosi-house-speaker-race/index.html">Pelosi and the battle with Dem rebels over speaker's gavel - CNNPolitics</a> </li>
         <li> <a href="https://www.ucsusa.org/our-work/center-science-and-democracy/science-under-siege-department-interior-2018#.XBYHrhaIYlQ">Science Under Siege at the Department of the Interior (2018) | Union of Concerned Scientists</a> </li>
-        <li> <a href="https://www.washingtonpost.com/business/2018/12/15/tucker-carlson-suggested-immigrants-make-us-dirtier-it-cost-fox-news-an-advertiser/?noredirect=on">Pacific Life: Tucker Carlson faces push back from company after immigration comments - The Washington Post</a> </li>
         <li> <a href="https://www.nytimes.com/2018/12/13/opinion/the-argument-trump-crimes-russia-wasps.amp.html">Will Trump’s Presidency Survive 2019?</a> </li>
+        <li> <a href="https://www.washingtonpost.com/business/2018/12/15/tucker-carlson-suggested-immigrants-make-us-dirtier-it-cost-fox-news-an-advertiser/?noredirect=on">Pacific Life: Tucker Carlson faces push back from company after immigration comments - The Washington Post</a> </li>
         <li> <a href="https://www.cnn.com/2018/12/16/media/trump-snl-christmas-wonderful-life/index.html">'SNL' shows what life would've been like if Trump were never elected president</a> </li>
         <li> <a href="https://www.foxnews.com/politics/obama-pushes-for-obamacare-enrollments-after-texas-judge-deems-law-unconstitutional">Obama pushes for ObamaCare enrollments after Texas judge deems law unconstitutional</a> </li>
         <li> <a href="https://www.reddit.com/r/politics/comments/a6idmv/monumental_disaster_at_the_department_of_the/?st=JPQLTM74&amp;sh=288e7721">Monumental Disaster at the Department of the Interior A new report documents suppression of science, denial of climate change, the silencing and intimidation of staff</a> </li>
@@ -245,17 +246,15 @@
         crossorigin="anonymous"></script>
 <script>
     window.addEventListener('load', () => {
-        Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+        $('.content a').each((i, linkElement) => {
+            $(linkElement).attr('target', '_blank');
+        });
     });
 </script>
 
 
 <!--
-BUILT: 2020-04-18T07:55:19.412045Z
+BUILT: 2020-04-18T08:25:41.963488Z
 -->
 
 

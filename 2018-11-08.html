@@ -58,8 +58,9 @@
     <div class="row">
         <div class="col-2">
             <div class="col" id="menu">
-                <a href="/"> <img alt="The Trump Dump: a picture of a broken GOP and its idiotic despot of a leader, Donald J. Trump"
-                                  class="logo" src="static/Donald-GOP.png"/>
+                <a href="/"> <img
+                        alt="The Trump Dump: a picture of a broken GOP and its idiotic despot of a leader, Donald J. Trump"
+                        class="logo" src="static/Donald-GOP.png"/>
                 </a>
             </div>
         </div>
@@ -206,7 +207,7 @@
 
             <!--        YEARS   -->
         </div>
-        <div class="col-10">
+        <div class="col-10 content">
             <!--            CONTENT-->
             
 <h1> 2018-11-08 </h1>
@@ -214,8 +215,8 @@
         <li> <a href="https://nyti.ms/2yZaV5e?smid=nytcore-ios-share">Trump Bars Immigrants Who Cross Border Illegally From Seeking Asylum</a> </li>
         <li> <a href="https://www.nytimes.com/interactive/2018/11/07/us/politics/how-democrats-took-the-house.html?em_pos=small&amp;emc=edit_up_20181107&amp;nl=upshot&amp;nl_art=0&amp;nlid=75718849emc%3Dedit_up_20181107&amp;ref=headline&amp;te=1">Sizing Up the 2018 Blue Wave - The New York Times</a> </li>
         <li> <a href="https://nyti.ms/2D88zUw?smid=nytcore-ios-share">How the House Fell: Republican Chaos and Democratic Focus</a> </li>
-        <li> <a href="https://thehill.com/homenews/house/415628-schiff-its-abundantly-clear-sessions-was-forced-out-for-not-ending-mueller?amp&amp;__twitter_impression=true">Schiff: It’s ‘abundantly clear’ Sessions was forced out for not ending Mueller probe | TheHill</a> </li>
         <li> <a href="https://nyti.ms/2D9TWQB?smid=nytcore-ios-share">Trump Bars CNN’s Acosta From the White House</a> </li>
+        <li> <a href="https://thehill.com/homenews/house/415628-schiff-its-abundantly-clear-sessions-was-forced-out-for-not-ending-mueller?amp&amp;__twitter_impression=true">Schiff: It’s ‘abundantly clear’ Sessions was forced out for not ending Mueller probe | TheHill</a> </li>
         <li> <a href="https://www.nytimes.com/2018/11/08/opinion/trump-attorney-general-sessions-unconstitutional.html">Opinion | Trump’s Appointment of the Acting Attorney General Is Unconstitutional - The New York Times</a> </li>
         <li> <a href="https://www.kansascity.com/news/politics-government/article221322090.html">Trump fires Jeff Sessions; Kris Kobach is rumored replacement | The Kansas City Star</a> </li>
         <li> <a href="https://nyti.ms/2D5HX6N?smid=nytcore-ios-share">With Sessions Firing, Trump Quickly Tests Democratic Resolve</a> </li>
@@ -250,17 +251,15 @@
         crossorigin="anonymous"></script>
 <script>
     window.addEventListener('load', () => {
-        Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+        $('.content a').each((i, linkElement) => {
+            $(linkElement).attr('target', '_blank');
+        });
     });
 </script>
 
 
 <!--
-BUILT: 2020-04-18T07:55:19.375840Z
+BUILT: 2020-04-18T08:25:41.931163Z
 -->
 
 

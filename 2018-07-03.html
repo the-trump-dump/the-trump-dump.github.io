@@ -58,8 +58,9 @@
     <div class="row">
         <div class="col-2">
             <div class="col" id="menu">
-                <a href="/"> <img alt="The Trump Dump: a picture of a broken GOP and its idiotic despot of a leader, Donald J. Trump"
-                                  class="logo" src="static/Donald-GOP.png"/>
+                <a href="/"> <img
+                        alt="The Trump Dump: a picture of a broken GOP and its idiotic despot of a leader, Donald J. Trump"
+                        class="logo" src="static/Donald-GOP.png"/>
                 </a>
             </div>
         </div>
@@ -206,14 +207,14 @@
 
             <!--        YEARS   -->
         </div>
-        <div class="col-10">
+        <div class="col-10 content">
             <!--            CONTENT-->
             
 <h1> 2018-07-03 </h1>
 <ol>
         <li> <a href="http://thehill.com/blogs/blog-briefing-room/news/395159-comey-nra-sells-fear?amp&amp;__twitter_impression=true">Comey says the National Rifle Association ‘sells fear’ | TheHill</a> </li>
-        <li> <a href="https://twitter.com/kurteichenwald/status/1014229529106239495?s=12">Senate Intelligence Committee (republican) report on Russian intervention in election: It happened, Putin approved it, he did it because he hated Clinton and preferred Trump. Just like every intelligence agency has found. Fox News disagrees based on nothi</a> </li>
         <li> <a href="https://twitter.com/thehill/status/1013959016559595520?s=12">Number of Americans who are “extremely proud” of their country hits record low https://t.co/8qfqFJ0Hmk https://t.co/KxElYiRCXT</a> </li>
+        <li> <a href="https://twitter.com/kurteichenwald/status/1014229529106239495?s=12">Senate Intelligence Committee (republican) report on Russian intervention in election: It happened, Putin approved it, he did it because he hated Clinton and preferred Trump. Just like every intelligence agency has found. Fox News disagrees based on nothi</a> </li>
         <li> <a href="http://thehill.com/homenews/administration/395375-poll-majority-says-trump-has-emboldened-racists?amp&amp;__twitter_impression=true">Poll: Majority says Trump has emboldened racists | TheHill</a> </li>
         <li> <a href="https://edition.cnn.com/2018/07/02/politics/scott-pruitt-whistleblower-secret-calendar/index.html">Whistleblower: EPA's Pruitt kept secret calendar to hide meetings - CNNPolitics</a> </li>
         <li> <a href="http://thehill.com/policy/technology/395290-trump-administration-recommends-against-allowing-china-mobile-access-to-us?amp&amp;__twitter_impression=true">Trump administration recommends against allowing China Mobile access to US market | TheHill</a> </li>
@@ -234,17 +235,15 @@
         crossorigin="anonymous"></script>
 <script>
     window.addEventListener('load', () => {
-        Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+        $('.content a').each((i, linkElement) => {
+            $(linkElement).attr('target', '_blank');
+        });
     });
 </script>
 
 
 <!--
-BUILT: 2020-04-18T07:55:18.877178Z
+BUILT: 2020-04-18T08:25:38.764694Z
 -->
 
 

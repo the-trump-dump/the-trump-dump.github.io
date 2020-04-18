@@ -58,8 +58,9 @@
     <div class="row">
         <div class="col-2">
             <div class="col" id="menu">
-                <a href="/"> <img alt="The Trump Dump: a picture of a broken GOP and its idiotic despot of a leader, Donald J. Trump"
-                                  class="logo" src="static/Donald-GOP.png"/>
+                <a href="/"> <img
+                        alt="The Trump Dump: a picture of a broken GOP and its idiotic despot of a leader, Donald J. Trump"
+                        class="logo" src="static/Donald-GOP.png"/>
                 </a>
             </div>
         </div>
@@ -206,7 +207,7 @@
 
             <!--        YEARS   -->
         </div>
-        <div class="col-10">
+        <div class="col-10 content">
             <!--            CONTENT-->
             
 <h1> 2018-10-01 </h1>
@@ -241,8 +242,8 @@
         <li> <a href="https://thehill.com/blogs/blog-briefing-room/news/409231-trump-jr-says-kavanaugh-hearings-metoo-make-him-fear-more-for?amp&amp;__twitter_impression=true">Trump Jr. says Kavanaugh hearings, #MeToo make him fear for his sons more than his daughters | TheHill</a> </li>
         <li> <a href="https://www.reddit.com/r/politics/comments/9kaxqe/feinstein_calls_on_white_house_fbi_to_release/?st=JMPRCXHE&amp;sh=6026529e">Feinstein calls on White House, FBI to release scope of Kavanaugh investigation</a> </li>
         <li> <a href="https://www.youtube.com/watch?v=iPyRKSFuMes&amp;feature=share">they almost got kavanaugh in a lie (see 7:37 as he panicks)</a> </li>
-        <li> <a href="https://www.reddit.com/r/democrats/comments/9kgehj/millionaire_republican_sen_chuck_grassley/?st=JMQLP36O&amp;sh=c0714054">Millionaire Republican Sen. Chuck Grassley Applying For Trump's Farm Bailout Funds</a> </li>
         <li> <a href="https://thehill.com/homenews/state-watch/409164-california-becomes-first-state-requiring-women-to-sit-on-corporate">California becomes first state requiring women to sit on corporate boards | TheHill</a> </li>
+        <li> <a href="https://www.reddit.com/r/democrats/comments/9kgehj/millionaire_republican_sen_chuck_grassley/?st=JMQLP36O&amp;sh=c0714054">Millionaire Republican Sen. Chuck Grassley Applying For Trump's Farm Bailout Funds</a> </li>
         <li> <a href="https://www.esquire.com/news-politics/amp23471864/devin-nunes-family-farm-iowa-california/?__twitter_impression=true">Devin Nunes's Family Farm Moved to Iowa, Employs Undocumented Workers</a> </li>
         <li> <a href="https://tonic.vice.com/en_us/article/pa8k9k/thousands-of-mental-health-professionals-agree-trump-is-dangerous">medical experts agree: trump is dangerous</a> </li>
 </ol>
@@ -262,17 +263,15 @@
         crossorigin="anonymous"></script>
 <script>
     window.addEventListener('load', () => {
-        Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+        $('.content a').each((i, linkElement) => {
+            $(linkElement).attr('target', '_blank');
+        });
     });
 </script>
 
 
 <!--
-BUILT: 2020-04-18T07:55:19.344225Z
+BUILT: 2020-04-18T08:25:41.901980Z
 -->
 
 

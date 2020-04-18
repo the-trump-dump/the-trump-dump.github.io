@@ -58,8 +58,9 @@
     <div class="row">
         <div class="col-2">
             <div class="col" id="menu">
-                <a href="/"> <img alt="The Trump Dump: a picture of a broken GOP and its idiotic despot of a leader, Donald J. Trump"
-                                  class="logo" src="static/Donald-GOP.png"/>
+                <a href="/"> <img
+                        alt="The Trump Dump: a picture of a broken GOP and its idiotic despot of a leader, Donald J. Trump"
+                        class="logo" src="static/Donald-GOP.png"/>
                 </a>
             </div>
         </div>
@@ -206,7 +207,7 @@
 
             <!--        YEARS   -->
         </div>
-        <div class="col-10">
+        <div class="col-10 content">
             <!--            CONTENT-->
             
 <h1> 2018-07-27 </h1>
@@ -219,8 +220,8 @@
         <li> <a href="http://www.bbc.co.uk/news/uk-44973586">UK halts co-operation with US over Islamic state suspects</a> </li>
         <li> <a href="http://thehill.com/homenews/senate/399000-children-pack-senate-office-building-to-protest-family-separations?amp&amp;__twitter_impression=true">Children pack Senate office building to protest family separations | TheHill</a> </li>
         <li> <a href="http://thehill.com/homenews/administration/399278-trump-had-repeatedly-asked-aides-to-ban-reporters-before-cnn-incident?amp">Trump had repeatedly asked aides to ban reporters before barring CNN journalist from press event: report | TheHill</a> </li>
-        <li> <a href="http://thehill.com/homenews/administration/399129-giuliani-attacks-cohen-after-trump-tower-report-hes-a-pathological">Giuliani attacks Cohen after Trump Tower report: He's a 'pathological liar' | TheHill</a> </li>
         <li> <a href="http://thehill.com/homenews/news/399270-mueller-releases-list-of-35-potential-witnesses-for-manaforts-virginia-trial?amp&amp;__twitter_impression=true">Mueller releases list of 35 potential witnesses for Manafort's Virginia trial | TheHill</a> </li>
+        <li> <a href="http://thehill.com/homenews/administration/399129-giuliani-attacks-cohen-after-trump-tower-report-hes-a-pathological">Giuliani attacks Cohen after Trump Tower report: He's a 'pathological liar' | TheHill</a> </li>
         <li> <a href="https://www.politico.com/story/2018/07/26/did-china-think-donald-trump-was-bluffing-on-trade-how-beijing-got-it-wrong-713053">Did China think Donald Trump was bluffing on trade? How Beijing got it wrong - POLITICO</a> </li>
         <li> <a href="https://nyti.ms/2mIEQIC?smid=nytcore-ios-share">Prosecutors Seek to Question Trump Organization’s Finance Chief</a> </li>
 </ol>
@@ -240,17 +241,15 @@
         crossorigin="anonymous"></script>
 <script>
     window.addEventListener('load', () => {
-        Array
-                .from(document.getElementsByTagName('a'))
-                .forEach((linkElement) => {
-                    linkElement.setAttribute('target', '_href');
-                });
+        $('.content a').each((i, linkElement) => {
+            $(linkElement).attr('target', '_blank');
+        });
     });
 </script>
 
 
 <!--
-BUILT: 2020-04-18T07:55:18.899525Z
+BUILT: 2020-04-18T08:25:38.786615Z
 -->
 
 

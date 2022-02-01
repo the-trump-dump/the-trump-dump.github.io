@@ -3,6 +3,9 @@
     <H2> 2022 </H2>
     <DIV>
             <div class="year">
+                <a href="2022-02.html">February</a>
+            </div>
+            <div class="year">
                 <a href="2022-01.html">January</a>
             </div>
     </DIV>
